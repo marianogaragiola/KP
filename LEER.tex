@@ -1,0 +1,204 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\author{Mariano Garagiola}
+\title{Cosas para leer que pueden ayudar}
+
+\begin{document}
+\maketitle
+
+Bueno, aca voy a ir poniendo algunas cosas que pueden llegar a ser \'utiles para calcular las matrices y 
+los elementos de matriz en el m\'etodo $kp$.
+
+Para empezar voy a escribir la base que suele aparecer en los libros para que quede bien registrada y no tenga
+ que andar buscandola cada vez que la quiera usar. La base es la siguiente:
+\begin{equation}
+\label{basebloch1}
+\begin{split}
+S&=|S\rangle=1\\
+p_x&=|X\rangle=\frac{x}{r}=\sqrt{3} \text{sin}\theta \text{cos}\varphi \\
+p_y&=|Y\rangle=\frac{y}{r}=\sqrt{3} \text{sin}\theta \text{sin}\varphi \\
+p_z&=|Z\rangle=\frac{z}{r}=\sqrt{3} \text{cos}\theta
+\end{split}
+\end{equation}
+
+Otra base que suele usarse es la siguiente:
+\begin{equation}
+\label{basebloch2}
+\begin{split}
+&|u_{1/2,1/2}^c\rangle=|S\rangle \uparrow \\
+&|u_{1/2,-1/2}^c\rangle=|S\rangle \downarrow \\
+&|u_{3/2,-3/2}^v\rangle=\frac{i}{\sqrt{2}}(|X\rangle-i|Y\rangle)\downarrow \\
+&|u_{3/2,3/2}^v\rangle=\frac{1}{\sqrt{2}}(|X\rangle+i|Y\rangle)\uparrow \\
+&|u_{3/2,1/2}^v\rangle=\frac{i}{\sqrt{6}}[(|X\rangle+i|Y\rangle)\downarrow-2|Z\rangle\uparrow] \\
+&|u_{3/2,-1/2}^v\rangle=\frac{1}{\sqrt{6}}[(|X\rangle-i|Y\rangle)\uparrow+2|Z\rangle\downarrow] \\
+&|u_{1/2,1/2}^v\rangle=\frac{1}{\sqrt{3}}[(|X\rangle+i|Y\rangle)\downarrow+|Z\rangle\uparrow ] \\
+&|u_{1/2,-1/2}^v\rangle=\frac{i}{\sqrt{3}}[-(|X\rangle-i|Y\rangle)\uparrow+|Z\rangle\downarrow ] 
+\end{split}
+\end{equation}
+
+Algunas de las cosas que tengo que calcular son los valores de expectacion de $\vec{p}=-i\hslash \nabla$ en la esfera unidad ($r=1$), 
+para eso me conviene escribir las derivadas en coordenadas esf\'ericas. De esta forma obtendria lo siguiente:
+\begin{equation}
+\hat{p}_i = -i \hslash \left( \frac{\partial r}{\partial x}\frac{\partial}{\partial r}+\frac{\partial \varphi}{\partial x}\frac{\partial}{\partial \varphi}
++\frac{\partial \theta}{\partial x}\frac{\partial}{\partial \theta} \right) \hspace{1cm} i=x,y,z
+\end{equation}
+
+Escribiendo las coordenadas esf\'ericas en t\'ermino de las coordenadas cartesianas:
+\begin{equation}
+\begin{split}
+&r=\sqrt{x^2+y^2+z^2} \\
+&\varphi=\text{atan}\left(\frac{y}{x}\right)\\
+&\theta=\text{atan}\left(\frac{\sqrt{x^2+y^2}}{z}\right)
+\end{split}
+\end{equation}
+
+Con esto, obtengo lo siguiente:
+\begin{equation}
+\begin{split}
+\hat{p}_x&=-i\hslash\left[\frac{x}{r}\frac{\partial}{\partial r}-\frac{sin\varphi}{r sin\theta}\frac{\partial}{\partial \varphi}+\frac{cos\varphi cos\theta}{r} \frac{\partial}{\partial \theta} \right] \\
+\hat{p}_y&=-i\hslash\left[\frac{y}{r}\frac{\partial}{\partial r}-\frac{cos\varphi}{r sin\theta}\frac{\partial}{\partial \varphi}+\frac{sin\varphi cos\theta}{r} \frac{\partial}{\partial \theta} \right] \\
+\hat{p}_z&=-i\hslash\left[\frac{z}{r}\frac{\partial}{\partial r}-\frac{sin\theta}{r} \frac{\partial}{\partial \theta} \right]
+\end{split}
+\end{equation}
+
+Si bien puse todo en coordenadas esf\'ericas, me conviene poner todo en coordenadas cartesianas, si no me equivoco es mas facil 
+para calcular las cosas \footnote{No se bien por qu\'e, pero cuando calculo como act\'ua el operador, o componentes del operador 
+$\vec{p}$ sobre las funciones \ref{basebloch2} me da distinto a cuando uso coordenadas cartesianas, hay un factor $\sqrt{3}$ que me 
+molesta}
+
+Entonces, en coordenadas cartesianas el operador momento es $\hat{p}_i=-i\hslash \frac{\partial}{\partial x_i}$ con $i=x,y,z$, con esto 
+obtenemos que:
+\begin{equation}\label{paplicado}
+\hat{p}_j|I\rangle= -\frac{i\hslash}{r}\left[\delta_{ij}-\frac{x_ix_j}{r^2} \right]
+\end{equation}
+donde $i,j=x,y,z$ y $|I\rangle=|X\rangle, |Y\rangle, |Z\rangle$
+
+Con la ecuaci\'on \ref{paplicado} puedo calular los elementos de matriz de la forma $\langle u|\vec{p}|u'\rangle$. Entonces, 
+tenemos:
+\begin{equation}
+\begin{split}
+\langle S|\hat{p}_x|X\rangle&=\int_{R_a} \left[-\frac{i\hslash}{r}\left(1-\frac{x^2}{r^2} \right) \right]dV \\
+                            &=-i\hslash\int_{R_a} \left(\frac{1}{r}-\frac{sin^2\theta cos^2\phi}{r} \right) r^2 sin\theta dr d\theta d\phi \\
+                            &=-i\frac{8}{3} \pi\hslash \left( \frac{a^2}{2} \right)
+\end{split}
+\end{equation}
+donde $R_{a}$ es la esfera de radio $a$ y $dV$ es el elemento de volumen en coordenadas esf\'ericas.
+
+De la misma forma se puede ver que:
+\begin{equation}
+\langle S|\hat{p}_i|p_j\rangle=P \delta_{ij}
+\end{equation}
+y
+\begin{equation}
+\langle p_j|\hat{p}_i|p_k\rangle=0
+\end{equation}
+
+
+Ahora voy a ver que pasa cuando aplicamos dos veces alguna componenete del operador momento. Para eso usando el resultado de 
+\ref{paplicado}, obtengo:
+\begin{equation}
+\hat{p}_k\hat{p}_j|p_i\rangle=-\hslash^2\left[-\frac{(x_i\delta_{jk}+x_j\delta{ik}+x_k\delta_{ij})}{r^3}+3\frac{x_ix_jx_k}{r^5}\right]
+\end{equation}
+entonces:
+\begin{equation}\label{p2aplicado}
+\langle p_l|\hat{p}_k\hat{p}_j|p_i\rangle=-\hslash^2\int_{R_a} \frac{x_l}{r}\left[-\frac{(x_i\delta_{jk}+x_j\delta_{ik}+x_k\delta_{ij})}{r^3}+3\frac{x_ix_jx_k}{r^5}\right] dV
+\end{equation}
+
+Con las ecuaciones \ref{paplicado} y (\ref{p2aplicado}) obtengo las siguiente matrices:
+Para las componentes del operador $\vec{p}$ en la base $|S\rangle$, $|X\rangle$, $|Y\rangle$ y $|Z\rangle$:
+\begin{equation}\label{px}
+p_x=\bordermatrix{~   &       |S\rangle & |X\rangle & |Y\rangle & |Z\rangle \cr
+                  \langle S| & 0        & P         & 0         & 0 \cr
+                  \langle X| & P        & 0         & 0         & 0 \cr
+                  \langle Y| & 0        & 0         & 0         & 0 \cr
+                  \langle Z| & 0        & 0         & 0         & 0 \cr}
+\end{equation}
+\begin{equation}\label{py}
+p_y=\begin{pmatrix}
+    0 & 0 & P & 0 \\
+    0 & 0 & 0 & 0 \\
+    P & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0
+    \end{pmatrix}
+\end{equation}
+\begin{equation}\label{pz}
+p_z=\begin{pmatrix}
+    0 & 0 & 0 & P \\
+    0 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0 \\
+    P & 0 & 0 & 0
+    \end{pmatrix}
+\end{equation}
+donde $P=-i\frac{4}{3} \hslash \pi a^2$.
+
+Para el caso de operadores de segundo orden en $p$ tenemos:
+\begin{equation}
+p_x^2=\frac{8}{5}\hslash^2\pi a \bordermatrix{~   &       |X\rangle & |Y\rangle & |Z\rangle \cr
+                                              \langle X| & 1        &  0         & 0        \cr
+                                              \langle Y| & 0        &  1/3       & 0        \cr
+                                              \langle Z| & 0        &  0         & 1/3      \cr}
+\end{equation}
+\begin{equation}
+p_y^2=\frac{8}{5}\hslash^2\pi a \bordermatrix{~   &       |X\rangle & |Y\rangle & |Z\rangle \cr
+                                              \langle X| & 1/3      &  0         & 0        \cr
+                                              \langle Y| & 0        &  1         & 0        \cr
+                                              \langle Z| & 0        &  0         & 1/3      \cr}
+\end{equation}
+
+\begin{equation}
+p_z^2=\frac{8}{5}\hslash^2\pi a \bordermatrix{~   &       |X\rangle & |Y\rangle & |Z\rangle \cr
+                                              \langle X| & 1/3      &  0         & 0        \cr
+                                              \langle Y| & 0        &  1/3       & 0        \cr
+                                              \langle Z| & 0        &  0         & 1        \cr}
+\end{equation}
+
+
+
+\begin{equation}
+p_xp_y=p_yp_x=\frac{8}{15}\hslash^2\pi a \begin{pmatrix}
+                                         0 & 1 & 0 \\
+                                         1 & 0 & 0 \\
+                                         0 & 0 & 0
+                                         \end{pmatrix}
+\end{equation}
+
+\begin{equation}
+p_xp_z=p_zp_x=\frac{8}{15}\hslash^2\pi a \begin{pmatrix}
+                                         0 & 0 & 1 \\
+                                         0 & 0 & 0 \\
+                                         1 & 0 & 0
+                                         \end{pmatrix}
+\end{equation}
+
+\begin{equation}
+p_yp_z=p_zp_y=\frac{8}{15}\hslash^2\pi a \begin{pmatrix}
+                                         0 & 0 & 0 \\
+                                         0 & 0 & 1 \\
+                                         0 & 1 & 0
+                                         \end{pmatrix}
+\end{equation}
+
+
+Lo que tengo que hacer ahora es calcular el siguiente hamiltoniano:
+\begin{equation}\label{hamiltoniano}
+\bordermatrix{~      &     u_{1/2,1/2}^c & u_{1/2,-1/2}^c & u_{3/2,3/2}^v & u_{3/2,1/2}^v & u_{3/2,-1/2}^v & u_{3/2,-3/2}^v & u_{1/2,1/2}^v & u_{1/2,-1/2}^v \cr
+      u_{1/2,1/2}^c  & E_g+\frac{\alpha}{2m_0}p^2 & 0 & \frac{i}{\sqrt{2}} Vp_{+} & \sqrt{\frac{2}{3}}Vp_z & \frac{i}{\sqrt{6}}Vp_{-} & 0 & \frac{i}{\sqrt{3}}Vp_z & \frac{1}{\sqrt{3}}Vp_{-} \cr
+      u_{1/2,-1/2}^c & 0 & E_g+\frac{\alpha}{2m_0}p^2 & 0 & -\frac{1}{\sqrt{6}}Vp_{+} & i\sqrt{\frac{2}{3}}Vp_z & -\frac{1}{\sqrt{2}}Vp_{-} & \frac{i}{\sqrt{3}}Vp_{+} & -\frac{1}{\sqrt{3}}Vp_{z}  \cr
+      u_{3/2,3/2}^v  & -\frac{i}{\sqrt{2}}Vp_{-} & 0 & -(P+Q) & -L & -M & 0 & -i\sqrt{\frac{1}{2}}L & i\sqrt{2}M \cr
+      u_{3/2,1/2}^v  & \sqrt{\frac{2}{3}}Vp_z & -\frac{1}{\sqrt{6}}Vp_{-} & -L^* & -(P-Q) & 0 & -M & i\sqrt{2}Q & -i\sqrt{\frac{3}{2}}L \cr
+      u_{3/2,-1/2}^v & -\frac{i}{\sqrt{6}}Vp_{+} & -i\sqrt{\frac{2}{3}}Vp_z & -M^* & 0 & -(P-Q) & L & i\sqrt{\frac{3}{2}}L^* & i\sqrt{2}Q \cr
+      u_{3/2,-3/2}^v & 0 & -\frac{1}{\sqrt{2}}Vp_{+} & 0 & -M^* & L^* & -(P+Q) & i\sqrt{2}M^* & i\sqrt{\frac{1}{2}}L^* \cr
+      u_{1/2,1/2}^v  & -i\frac{i}{\sqrt{3}}Vp_z & -\frac{i}{\sqrt{3}}Vp_{-} & i\sqrt{\frac{1}{2}}L^* & -i\sqrt{2}Q & -i\sqrt{\frac{3}{2}}L & -i\sqrt{2}M & -\Delta-P & 0 \cr
+      u_{1/2,-1/2}^v & \frac{1}{\sqrt{3}}Vp_{+} & -\frac{1}{\sqrt{3}}Vp_z & -i\sqrt{2}M^* & i\sqrt{\frac{3}{2}}L^* & -i\sqrt{2}Q & -i\sqrt{\frac{1}{2}}L & 0 & -\Delta-P \cr}
+\end{equation}
+
+\end{document}

@@ -1,0 +1,347 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      9817,        338]
+NotebookOptionsPosition[      8573,        293]
+NotebookOutlinePosition[      8910,        308]
+CellTagsIndexPosition[      8867,        305]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+Defino las coordenas esf\[EAcute]ricas en funci\[OAcute]n de las coordenadas \
+cartesianas.\
+\>", "Text",
+ CellChangeTimes->{{3.622818312525549*^9, 3.622818339204941*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"r", "[", 
+   RowBox[{"x_", ",", "y_", ",", "z_"}], "]"}], ":=", 
+  SqrtBox[
+   RowBox[{
+    SuperscriptBox["x", "2"], "+", 
+    SuperscriptBox["y", "2"], "+", 
+    SuperscriptBox["z", "2"]}]]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Phi]", "[", 
+   RowBox[{"x_", ",", "y_", ",", "z_"}], "]"}], ":=", 
+  RowBox[{"ArcTan", "[", 
+   RowBox[{"y", "/", "x"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Theta]", "[", 
+   RowBox[{"x_", ",", "y_", ",", "z_"}], "]"}], ":=", 
+  RowBox[{"ArcTan", "[", 
+   RowBox[{
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], "+", 
+      SuperscriptBox["y", "2"]}]], "/", "z"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.622817958333631*^9, 3.622818040131321*^9}, {
+  3.6228816937332478`*^9, 3.6228816980962877`*^9}}],
+
+Cell["Calculo las derivadas de r.", "Text",
+ CellChangeTimes->{{3.622818346413349*^9, 3.622818355108471*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  SubscriptBox["\[PartialD]", "x"], 
+  RowBox[{"r", "[", 
+   RowBox[{"x", ",", "y", ",", "z"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[PartialD]", "y"], 
+  RowBox[{"r", "[", 
+   RowBox[{"x", ",", "y", ",", "z"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[PartialD]", "z"], 
+  RowBox[{"r", "[", 
+   RowBox[{"x", ",", "y", ",", "z"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.6228181890581093`*^9, 3.6228182165539637`*^9}, {
+  3.6228183640464067`*^9, 3.622818375055914*^9}}],
+
+Cell[BoxData[
+ FractionBox["x", 
+  SqrtBox[
+   RowBox[{
+    SuperscriptBox["x", "2"], "+", 
+    SuperscriptBox["y", "2"], "+", 
+    SuperscriptBox["z", "2"]}]]]], "Output",
+ CellChangeTimes->{{3.622818201382133*^9, 3.622818217117659*^9}, 
+   3.622818375475111*^9, 3.622881470086887*^9, 3.622882665351009*^9}],
+
+Cell[BoxData[
+ FractionBox["y", 
+  SqrtBox[
+   RowBox[{
+    SuperscriptBox["x", "2"], "+", 
+    SuperscriptBox["y", "2"], "+", 
+    SuperscriptBox["z", "2"]}]]]], "Output",
+ CellChangeTimes->{{3.622818201382133*^9, 3.622818217117659*^9}, 
+   3.622818375475111*^9, 3.622881470086887*^9, 3.6228826653534727`*^9}],
+
+Cell[BoxData[
+ FractionBox["z", 
+  SqrtBox[
+   RowBox[{
+    SuperscriptBox["x", "2"], "+", 
+    SuperscriptBox["y", "2"], "+", 
+    SuperscriptBox["z", "2"]}]]]], "Output",
+ CellChangeTimes->{{3.622818201382133*^9, 3.622818217117659*^9}, 
+   3.622818375475111*^9, 3.622881470086887*^9, 3.622882665354863*^9}]
+}, Open  ]],
+
+Cell["Calculo las derivadas de \[Phi].", "Text",
+ CellChangeTimes->{{3.622818385477808*^9, 3.6228184083483877`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   SubscriptBox["\[PartialD]", "x"], 
+   RowBox[{"\[Phi]", "[", 
+    RowBox[{"x", ",", "y", ",", "z"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   SubscriptBox["\[PartialD]", "y"], 
+   RowBox[{"\[Phi]", "[", 
+    RowBox[{"x", ",", "y", ",", "z"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["\[PartialD]", "z"], 
+  RowBox[{"\[Phi]", "[", 
+   RowBox[{"x", ",", "y", ",", "z"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.622818412574933*^9, 3.622818471494416*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox["y", 
+   RowBox[{
+    SuperscriptBox["x", "2"], "+", 
+    SuperscriptBox["y", "2"]}]]}]], "Output",
+ CellChangeTimes->{{3.622818447052644*^9, 3.622818471986644*^9}, 
+   3.622881471943707*^9, 3.622882667201393*^9}],
+
+Cell[BoxData[
+ FractionBox["x", 
+  RowBox[{
+   SuperscriptBox["x", "2"], "+", 
+   SuperscriptBox["y", "2"]}]]], "Output",
+ CellChangeTimes->{{3.622818447052644*^9, 3.622818471986644*^9}, 
+   3.622881471943707*^9, 3.622882667202973*^9}],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{{3.622818447052644*^9, 3.622818471986644*^9}, 
+   3.622881471943707*^9, 3.622882667204237*^9}]
+}, Open  ]],
+
+Cell["Calculo las derivadas de \[Theta].", "Text",
+ CellChangeTimes->{{3.6228184811397533`*^9, 3.6228184895394163`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   SubscriptBox["\[PartialD]", "x"], 
+   RowBox[{"\[Theta]", "[", 
+    RowBox[{"x", ",", "y", ",", "z"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   SubscriptBox["\[PartialD]", "y"], 
+   RowBox[{"\[Theta]", "[", 
+    RowBox[{"x", ",", "y", ",", "z"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   SubscriptBox["\[PartialD]", "z"], 
+   RowBox[{"\[Theta]", "[", 
+    RowBox[{"x", ",", "y", ",", "z"}], "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6228184908013077`*^9, 3.622818514238908*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"x", " ", "z"}], 
+  RowBox[{
+   SqrtBox[
+    RowBox[{
+     SuperscriptBox["x", "2"], "+", 
+     SuperscriptBox["y", "2"]}]], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     SuperscriptBox["x", "2"], "+", 
+     SuperscriptBox["y", "2"], "+", 
+     SuperscriptBox["z", "2"]}], ")"}]}]]], "Output",
+ CellChangeTimes->{3.622818514802658*^9, 3.6228814740694227`*^9, 
+  3.62288170303528*^9, 3.622882668756323*^9}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"y", " ", "z"}], 
+  RowBox[{
+   SqrtBox[
+    RowBox[{
+     SuperscriptBox["x", "2"], "+", 
+     SuperscriptBox["y", "2"]}]], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     SuperscriptBox["x", "2"], "+", 
+     SuperscriptBox["y", "2"], "+", 
+     SuperscriptBox["z", "2"]}], ")"}]}]]], "Output",
+ CellChangeTimes->{3.622818514802658*^9, 3.6228814740694227`*^9, 
+  3.62288170303528*^9, 3.6228826687576723`*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   SqrtBox[
+    RowBox[{
+     SuperscriptBox["x", "2"], "+", 
+     SuperscriptBox["y", "2"]}]], 
+   RowBox[{
+    SuperscriptBox["x", "2"], "+", 
+    SuperscriptBox["y", "2"], "+", 
+    SuperscriptBox["z", "2"]}]]}]], "Output",
+ CellChangeTimes->{3.622818514802658*^9, 3.6228814740694227`*^9, 
+  3.62288170303528*^9, 3.622882668758765*^9}]
+}, Open  ]],
+
+Cell["Ahora voy a hacer algunas derivadas.", "Text",
+ CellChangeTimes->{{3.622882581632639*^9, 3.6228825928318768`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Z", "[", 
+   RowBox[{"x_", ",", "y_", ",", "z_"}], "]"}], ":=", 
+  FractionBox["z", 
+   SqrtBox[
+    RowBox[{
+     SuperscriptBox["x", "2"], "+", 
+     SuperscriptBox["y", "2"], "+", 
+     SuperscriptBox["z", "2"]}]]]}]], "Input",
+ CellChangeTimes->{{3.622882601107787*^9, 3.622882639144312*^9}, {
+  3.622884433156087*^9, 3.622884457048585*^9}, {3.622888266637598*^9, 
+  3.6228882669290733`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["\[PartialD]", "z"], 
+  RowBox[{"Z", "[", 
+   RowBox[{"x", ",", "y", ",", "z"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.622882676291823*^9, 3.6228826940740023`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   FractionBox[
+    SuperscriptBox["z", "2"], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["x", "2"], "+", 
+       SuperscriptBox["y", "2"], "+", 
+       SuperscriptBox["z", "2"]}], ")"}], 
+     RowBox[{"3", "/", "2"}]]]}], "+", 
+  FractionBox["1", 
+   SqrtBox[
+    RowBox[{
+     SuperscriptBox["x", "2"], "+", 
+     SuperscriptBox["y", "2"], "+", 
+     SuperscriptBox["z", "2"]}]]]}]], "Output",
+ CellChangeTimes->{3.622882694849112*^9, 3.622884460067046*^9, 
+  3.6228882693915033`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["\[PartialD]", "x"], 
+  RowBox[{"Z", "[", 
+   RowBox[{"x", ",", "y", ",", "z"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.622888247690155*^9, 3.62288825895296*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"x", " ", "z"}], 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["x", "2"], "+", 
+      SuperscriptBox["y", "2"], "+", 
+      SuperscriptBox["z", "2"]}], ")"}], 
+    RowBox[{"3", "/", "2"}]]]}]], "Output",
+ CellChangeTimes->{{3.622888259489382*^9, 3.622888270910757*^9}}]
+}, Open  ]]
+},
+WindowSize->{740, 718},
+WindowMargins->{{144, Automatic}, {-7, Automatic}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 181, 4, 30, "Text"],
+Cell[741, 26, 814, 24, 113, "Input"],
+Cell[1558, 52, 109, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[1692, 57, 539, 14, 78, "Input"],
+Cell[2234, 73, 308, 8, 60, "Output"],
+Cell[2545, 83, 310, 8, 60, "Output"],
+Cell[2858, 93, 308, 8, 60, "Output"]
+}, Open  ]],
+Cell[3181, 104, 116, 1, 31, "Text"],
+Cell[CellGroupData[{
+Cell[3322, 109, 581, 17, 78, "Input"],
+Cell[3906, 128, 256, 7, 50, "Output"],
+Cell[4165, 137, 235, 6, 50, "Output"],
+Cell[4403, 145, 142, 2, 32, "Output"]
+}, Open  ]],
+Cell[4560, 150, 120, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[4705, 155, 627, 18, 78, "Input"],
+Cell[5335, 175, 438, 14, 61, "Output"],
+Cell[5776, 191, 440, 14, 61, "Output"],
+Cell[6219, 207, 382, 12, 64, "Output"]
+}, Open  ]],
+Cell[6616, 222, 120, 1, 30, "Text"],
+Cell[6739, 225, 431, 12, 69, "Input"],
+Cell[CellGroupData[{
+Cell[7195, 241, 206, 5, 32, "Input"],
+Cell[7404, 248, 559, 19, 66, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8000, 272, 203, 5, 32, "Input"],
+Cell[8206, 279, 351, 11, 87, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
