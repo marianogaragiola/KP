@@ -1,0 +1,5523 @@
+# Grace project file
+#
+@version 50125
+@page size 792, 612
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 8 to "Courier", "Courier"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 14 to "NimbusMonoL-BoldOblique", "NimbusMonoL-BoldOblique"
+@map font 15 to "NimbusMonoL-Regular", "NimbusMonoL-Regular"
+@map font 16 to "NimbusMonoL-RegularOblique", "NimbusMonoL-RegularOblique"
+@map font 17 to "NimbusRomanNo9L-Medium", "NimbusRomanNo9L-Medium"
+@map font 18 to "NimbusRomanNo9L-MediumItalic", "NimbusRomanNo9L-MediumItalic"
+@map font 19 to "NimbusRomanNo9L-Regular", "NimbusRomanNo9L-Regular"
+@map font 20 to "NimbusRomanNo9L-RegularItalic", "NimbusRomanNo9L-RegularItalic"
+@map font 21 to "NimbusSansL-Bold", "NimbusSansL-Bold"
+@map font 22 to "NimbusSansL-BoldCondensed", "NimbusSansL-BoldCondensed"
+@map font 23 to "NimbusSansL-BoldCondensedItalic", "NimbusSansL-BoldCondensedItalic"
+@map font 24 to "NimbusSansL-BoldItalic", "NimbusSansL-BoldItalic"
+@map font 25 to "NimbusSansL-Regular", "NimbusSansL-Regular"
+@map font 26 to "NimbusSansL-RegularCondensed", "NimbusSansL-RegularCondensed"
+@map font 27 to "NimbusSansL-RegularCondensedItalic", "NimbusSansL-RegularCondensedItalic"
+@map font 28 to "NimbusSansL-RegularItalic", "NimbusSansL-RegularItalic"
+@map font 29 to "StandardSymbolsL-Regular", "StandardSymbolsL-Regular"
+@map font 12 to "Symbol", "Symbol"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 36 to "URWBookmanL-DemiBold", "URWBookmanL-DemiBold"
+@map font 37 to "URWBookmanL-DemiBoldItalic", "URWBookmanL-DemiBoldItalic"
+@map font 38 to "URWBookmanL-Light", "URWBookmanL-Light"
+@map font 39 to "URWBookmanL-LightItalic", "URWBookmanL-LightItalic"
+@map font 40 to "URWChanceryL-MediumItalic", "URWChanceryL-MediumItalic"
+@map font 41 to "URWGothicL-Book", "URWGothicL-Book"
+@map font 42 to "URWGothicL-BookOblique", "URWGothicL-BookOblique"
+@map font 43 to "URWGothicL-Demi", "URWGothicL-Demi"
+@map font 44 to "URWGothicL-DemiOblique", "URWGothicL-DemiOblique"
+@map font 45 to "URWPalladioL-Bold", "URWPalladioL-Bold"
+@map font 46 to "URWPalladioL-BoldItalic", "URWPalladioL-BoldItalic"
+@map font 47 to "URWPalladioL-Italic", "URWPalladioL-Italic"
+@map font 48 to "URWPalladioL-Roman", "URWPalladioL-Roman"
+@map font 55 to "Utopia-Bold", "Utopia-Bold"
+@map font 56 to "Utopia-BoldItalic", "Utopia-BoldItalic"
+@map font 57 to "Utopia-Italic", "Utopia-Italic"
+@map font 58 to "Utopia-Regular", "Utopia-Regular"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (220, 220, 220), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 255, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@reference date 0
+@date wrap off
+@date wrap year 1950
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 0
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%.8g"
+@background color 0
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "Mon May 22 09:56:09 2017"
+@r0 off
+@link r0 to g0
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 off
+@link r1 to g0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 off
+@link r2 to g0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 off
+@link r3 to g0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 off
+@link r4 to g0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world 0, -50, 0.8, 0
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view 0.350000, 0.200000, 0.950000, 0.800000
+@    title ""
+@    title font 0
+@    title size 1.500000
+@    title color 1
+@    subtitle ""
+@    subtitle font 0
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 2.5
+@    xaxis  label "k\sz\N [nm\S-1\N]"
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 0
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 0.2
+@    xaxis  tick minor ticks 1
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.250000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 2.5
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 2.5
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.750000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format general
+@    xaxis  ticklabel prec 5
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.250000
+@    xaxis  ticklabel font 0
+@    xaxis  ticklabel color 1
+@    xaxis  tick place both
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 2.5
+@    yaxis  label "E [meV]"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 0
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 10
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.250000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 2.5
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 2.5
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.750000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format general
+@    yaxis  ticklabel prec 5
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.250000
+@    yaxis  ticklabel font 0
+@    yaxis  ticklabel color 1
+@    yaxis  tick place both
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend on
+@    legend loctype view
+@    legend 0.85, 0.8
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 1.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 0
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 1.0
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@    s4017 hidden false
+@    s4017 type xy
+@    s4017 symbol 0
+@    s4017 symbol size 1.000000
+@    s4017 symbol color 10
+@    s4017 symbol pattern 1
+@    s4017 symbol fill color 10
+@    s4017 symbol fill pattern 0
+@    s4017 symbol linewidth 1.0
+@    s4017 symbol linestyle 1
+@    s4017 symbol char 65
+@    s4017 symbol char font 0
+@    s4017 symbol skip 0
+@    s4017 line type 1
+@    s4017 line linestyle 1
+@    s4017 line linewidth 1.0
+@    s4017 line color 10
+@    s4017 line pattern 1
+@    s4017 baseline type 0
+@    s4017 baseline off
+@    s4017 dropline off
+@    s4017 fill type 0
+@    s4017 fill rule 0
+@    s4017 fill color 1
+@    s4017 fill pattern 1
+@    s4017 avalue off
+@    s4017 avalue type 2
+@    s4017 avalue char size 1.000000
+@    s4017 avalue font 0
+@    s4017 avalue color 1
+@    s4017 avalue rot 0
+@    s4017 avalue format general
+@    s4017 avalue prec 3
+@    s4017 avalue prepend ""
+@    s4017 avalue append ""
+@    s4017 avalue offset 0.000000 , 0.000000
+@    s4017 errorbar on
+@    s4017 errorbar place both
+@    s4017 errorbar color 10
+@    s4017 errorbar pattern 1
+@    s4017 errorbar size 1.000000
+@    s4017 errorbar linewidth 1.0
+@    s4017 errorbar linestyle 1
+@    s4017 errorbar riser linewidth 1.0
+@    s4017 errorbar riser linestyle 1
+@    s4017 errorbar riser clip off
+@    s4017 errorbar riser clip length 0.100000
+@    s4017 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4017 legend  ""
+@    s4018 hidden false
+@    s4018 type xy
+@    s4018 symbol 0
+@    s4018 symbol size 1.000000
+@    s4018 symbol color 11
+@    s4018 symbol pattern 1
+@    s4018 symbol fill color 11
+@    s4018 symbol fill pattern 0
+@    s4018 symbol linewidth 1.0
+@    s4018 symbol linestyle 1
+@    s4018 symbol char 65
+@    s4018 symbol char font 0
+@    s4018 symbol skip 0
+@    s4018 line type 1
+@    s4018 line linestyle 1
+@    s4018 line linewidth 1.0
+@    s4018 line color 11
+@    s4018 line pattern 1
+@    s4018 baseline type 0
+@    s4018 baseline off
+@    s4018 dropline off
+@    s4018 fill type 0
+@    s4018 fill rule 0
+@    s4018 fill color 1
+@    s4018 fill pattern 1
+@    s4018 avalue off
+@    s4018 avalue type 2
+@    s4018 avalue char size 1.000000
+@    s4018 avalue font 0
+@    s4018 avalue color 1
+@    s4018 avalue rot 0
+@    s4018 avalue format general
+@    s4018 avalue prec 3
+@    s4018 avalue prepend ""
+@    s4018 avalue append ""
+@    s4018 avalue offset 0.000000 , 0.000000
+@    s4018 errorbar on
+@    s4018 errorbar place both
+@    s4018 errorbar color 11
+@    s4018 errorbar pattern 1
+@    s4018 errorbar size 1.000000
+@    s4018 errorbar linewidth 1.0
+@    s4018 errorbar linestyle 1
+@    s4018 errorbar riser linewidth 1.0
+@    s4018 errorbar riser linestyle 1
+@    s4018 errorbar riser clip off
+@    s4018 errorbar riser clip length 0.100000
+@    s4018 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4018 legend  ""
+@    s4019 hidden false
+@    s4019 type xy
+@    s4019 symbol 0
+@    s4019 symbol size 1.000000
+@    s4019 symbol color 12
+@    s4019 symbol pattern 1
+@    s4019 symbol fill color 12
+@    s4019 symbol fill pattern 0
+@    s4019 symbol linewidth 1.0
+@    s4019 symbol linestyle 1
+@    s4019 symbol char 65
+@    s4019 symbol char font 0
+@    s4019 symbol skip 0
+@    s4019 line type 1
+@    s4019 line linestyle 1
+@    s4019 line linewidth 1.0
+@    s4019 line color 12
+@    s4019 line pattern 1
+@    s4019 baseline type 0
+@    s4019 baseline off
+@    s4019 dropline off
+@    s4019 fill type 0
+@    s4019 fill rule 0
+@    s4019 fill color 1
+@    s4019 fill pattern 1
+@    s4019 avalue off
+@    s4019 avalue type 2
+@    s4019 avalue char size 1.000000
+@    s4019 avalue font 0
+@    s4019 avalue color 1
+@    s4019 avalue rot 0
+@    s4019 avalue format general
+@    s4019 avalue prec 3
+@    s4019 avalue prepend ""
+@    s4019 avalue append ""
+@    s4019 avalue offset 0.000000 , 0.000000
+@    s4019 errorbar on
+@    s4019 errorbar place both
+@    s4019 errorbar color 12
+@    s4019 errorbar pattern 1
+@    s4019 errorbar size 1.000000
+@    s4019 errorbar linewidth 1.0
+@    s4019 errorbar linestyle 1
+@    s4019 errorbar riser linewidth 1.0
+@    s4019 errorbar riser linestyle 1
+@    s4019 errorbar riser clip off
+@    s4019 errorbar riser clip length 0.100000
+@    s4019 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4019 legend  ""
+@    s4020 hidden false
+@    s4020 type xy
+@    s4020 symbol 0
+@    s4020 symbol size 1.000000
+@    s4020 symbol color 13
+@    s4020 symbol pattern 1
+@    s4020 symbol fill color 13
+@    s4020 symbol fill pattern 0
+@    s4020 symbol linewidth 1.0
+@    s4020 symbol linestyle 1
+@    s4020 symbol char 65
+@    s4020 symbol char font 0
+@    s4020 symbol skip 0
+@    s4020 line type 1
+@    s4020 line linestyle 1
+@    s4020 line linewidth 1.0
+@    s4020 line color 13
+@    s4020 line pattern 1
+@    s4020 baseline type 0
+@    s4020 baseline off
+@    s4020 dropline off
+@    s4020 fill type 0
+@    s4020 fill rule 0
+@    s4020 fill color 1
+@    s4020 fill pattern 1
+@    s4020 avalue off
+@    s4020 avalue type 2
+@    s4020 avalue char size 1.000000
+@    s4020 avalue font 0
+@    s4020 avalue color 1
+@    s4020 avalue rot 0
+@    s4020 avalue format general
+@    s4020 avalue prec 3
+@    s4020 avalue prepend ""
+@    s4020 avalue append ""
+@    s4020 avalue offset 0.000000 , 0.000000
+@    s4020 errorbar on
+@    s4020 errorbar place both
+@    s4020 errorbar color 13
+@    s4020 errorbar pattern 1
+@    s4020 errorbar size 1.000000
+@    s4020 errorbar linewidth 1.0
+@    s4020 errorbar linestyle 1
+@    s4020 errorbar riser linewidth 1.0
+@    s4020 errorbar riser linestyle 1
+@    s4020 errorbar riser clip off
+@    s4020 errorbar riser clip length 0.100000
+@    s4020 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4020 legend  ""
+@    s4021 hidden false
+@    s4021 type xy
+@    s4021 symbol 0
+@    s4021 symbol size 1.000000
+@    s4021 symbol color 14
+@    s4021 symbol pattern 1
+@    s4021 symbol fill color 14
+@    s4021 symbol fill pattern 0
+@    s4021 symbol linewidth 1.0
+@    s4021 symbol linestyle 1
+@    s4021 symbol char 65
+@    s4021 symbol char font 0
+@    s4021 symbol skip 0
+@    s4021 line type 1
+@    s4021 line linestyle 1
+@    s4021 line linewidth 1.0
+@    s4021 line color 14
+@    s4021 line pattern 1
+@    s4021 baseline type 0
+@    s4021 baseline off
+@    s4021 dropline off
+@    s4021 fill type 0
+@    s4021 fill rule 0
+@    s4021 fill color 1
+@    s4021 fill pattern 1
+@    s4021 avalue off
+@    s4021 avalue type 2
+@    s4021 avalue char size 1.000000
+@    s4021 avalue font 0
+@    s4021 avalue color 1
+@    s4021 avalue rot 0
+@    s4021 avalue format general
+@    s4021 avalue prec 3
+@    s4021 avalue prepend ""
+@    s4021 avalue append ""
+@    s4021 avalue offset 0.000000 , 0.000000
+@    s4021 errorbar on
+@    s4021 errorbar place both
+@    s4021 errorbar color 14
+@    s4021 errorbar pattern 1
+@    s4021 errorbar size 1.000000
+@    s4021 errorbar linewidth 1.0
+@    s4021 errorbar linestyle 1
+@    s4021 errorbar riser linewidth 1.0
+@    s4021 errorbar riser linestyle 1
+@    s4021 errorbar riser clip off
+@    s4021 errorbar riser clip length 0.100000
+@    s4021 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4021 legend  ""
+@    s4022 hidden false
+@    s4022 type xy
+@    s4022 symbol 0
+@    s4022 symbol size 1.000000
+@    s4022 symbol color 15
+@    s4022 symbol pattern 1
+@    s4022 symbol fill color 15
+@    s4022 symbol fill pattern 0
+@    s4022 symbol linewidth 1.0
+@    s4022 symbol linestyle 1
+@    s4022 symbol char 65
+@    s4022 symbol char font 0
+@    s4022 symbol skip 0
+@    s4022 line type 1
+@    s4022 line linestyle 1
+@    s4022 line linewidth 1.0
+@    s4022 line color 15
+@    s4022 line pattern 1
+@    s4022 baseline type 0
+@    s4022 baseline off
+@    s4022 dropline off
+@    s4022 fill type 0
+@    s4022 fill rule 0
+@    s4022 fill color 1
+@    s4022 fill pattern 1
+@    s4022 avalue off
+@    s4022 avalue type 2
+@    s4022 avalue char size 1.000000
+@    s4022 avalue font 0
+@    s4022 avalue color 1
+@    s4022 avalue rot 0
+@    s4022 avalue format general
+@    s4022 avalue prec 3
+@    s4022 avalue prepend ""
+@    s4022 avalue append ""
+@    s4022 avalue offset 0.000000 , 0.000000
+@    s4022 errorbar on
+@    s4022 errorbar place both
+@    s4022 errorbar color 15
+@    s4022 errorbar pattern 1
+@    s4022 errorbar size 1.000000
+@    s4022 errorbar linewidth 1.0
+@    s4022 errorbar linestyle 1
+@    s4022 errorbar riser linewidth 1.0
+@    s4022 errorbar riser linestyle 1
+@    s4022 errorbar riser clip off
+@    s4022 errorbar riser clip length 0.100000
+@    s4022 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4022 legend  ""
+@    s4023 hidden false
+@    s4023 type xy
+@    s4023 symbol 0
+@    s4023 symbol size 1.000000
+@    s4023 symbol color 1
+@    s4023 symbol pattern 1
+@    s4023 symbol fill color 1
+@    s4023 symbol fill pattern 0
+@    s4023 symbol linewidth 1.0
+@    s4023 symbol linestyle 1
+@    s4023 symbol char 65
+@    s4023 symbol char font 0
+@    s4023 symbol skip 0
+@    s4023 line type 1
+@    s4023 line linestyle 1
+@    s4023 line linewidth 1.0
+@    s4023 line color 1
+@    s4023 line pattern 1
+@    s4023 baseline type 0
+@    s4023 baseline off
+@    s4023 dropline off
+@    s4023 fill type 0
+@    s4023 fill rule 0
+@    s4023 fill color 1
+@    s4023 fill pattern 1
+@    s4023 avalue off
+@    s4023 avalue type 2
+@    s4023 avalue char size 1.000000
+@    s4023 avalue font 0
+@    s4023 avalue color 1
+@    s4023 avalue rot 0
+@    s4023 avalue format general
+@    s4023 avalue prec 3
+@    s4023 avalue prepend ""
+@    s4023 avalue append ""
+@    s4023 avalue offset 0.000000 , 0.000000
+@    s4023 errorbar on
+@    s4023 errorbar place both
+@    s4023 errorbar color 1
+@    s4023 errorbar pattern 1
+@    s4023 errorbar size 1.000000
+@    s4023 errorbar linewidth 1.0
+@    s4023 errorbar linestyle 1
+@    s4023 errorbar riser linewidth 1.0
+@    s4023 errorbar riser linestyle 1
+@    s4023 errorbar riser clip off
+@    s4023 errorbar riser clip length 0.100000
+@    s4023 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4023 legend  ""
+@    s4024 hidden false
+@    s4024 type xy
+@    s4024 symbol 0
+@    s4024 symbol size 1.000000
+@    s4024 symbol color 1
+@    s4024 symbol pattern 1
+@    s4024 symbol fill color 1
+@    s4024 symbol fill pattern 0
+@    s4024 symbol linewidth 1.0
+@    s4024 symbol linestyle 1
+@    s4024 symbol char 65
+@    s4024 symbol char font 0
+@    s4024 symbol skip 0
+@    s4024 line type 1
+@    s4024 line linestyle 1
+@    s4024 line linewidth 1.0
+@    s4024 line color 1
+@    s4024 line pattern 1
+@    s4024 baseline type 0
+@    s4024 baseline off
+@    s4024 dropline off
+@    s4024 fill type 0
+@    s4024 fill rule 0
+@    s4024 fill color 1
+@    s4024 fill pattern 1
+@    s4024 avalue off
+@    s4024 avalue type 2
+@    s4024 avalue char size 1.000000
+@    s4024 avalue font 0
+@    s4024 avalue color 1
+@    s4024 avalue rot 0
+@    s4024 avalue format general
+@    s4024 avalue prec 3
+@    s4024 avalue prepend ""
+@    s4024 avalue append ""
+@    s4024 avalue offset 0.000000 , 0.000000
+@    s4024 errorbar on
+@    s4024 errorbar place both
+@    s4024 errorbar color 1
+@    s4024 errorbar pattern 1
+@    s4024 errorbar size 1.000000
+@    s4024 errorbar linewidth 1.0
+@    s4024 errorbar linestyle 1
+@    s4024 errorbar riser linewidth 1.0
+@    s4024 errorbar riser linestyle 1
+@    s4024 errorbar riser clip off
+@    s4024 errorbar riser clip length 0.100000
+@    s4024 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4024 legend  ""
+@    s4025 hidden false
+@    s4025 type xy
+@    s4025 symbol 0
+@    s4025 symbol size 1.000000
+@    s4025 symbol color 1
+@    s4025 symbol pattern 1
+@    s4025 symbol fill color 1
+@    s4025 symbol fill pattern 0
+@    s4025 symbol linewidth 1.0
+@    s4025 symbol linestyle 1
+@    s4025 symbol char 65
+@    s4025 symbol char font 0
+@    s4025 symbol skip 0
+@    s4025 line type 1
+@    s4025 line linestyle 1
+@    s4025 line linewidth 1.0
+@    s4025 line color 1
+@    s4025 line pattern 1
+@    s4025 baseline type 0
+@    s4025 baseline off
+@    s4025 dropline off
+@    s4025 fill type 0
+@    s4025 fill rule 0
+@    s4025 fill color 1
+@    s4025 fill pattern 1
+@    s4025 avalue off
+@    s4025 avalue type 2
+@    s4025 avalue char size 1.000000
+@    s4025 avalue font 0
+@    s4025 avalue color 1
+@    s4025 avalue rot 0
+@    s4025 avalue format general
+@    s4025 avalue prec 3
+@    s4025 avalue prepend ""
+@    s4025 avalue append ""
+@    s4025 avalue offset 0.000000 , 0.000000
+@    s4025 errorbar on
+@    s4025 errorbar place both
+@    s4025 errorbar color 1
+@    s4025 errorbar pattern 1
+@    s4025 errorbar size 1.000000
+@    s4025 errorbar linewidth 1.0
+@    s4025 errorbar linestyle 1
+@    s4025 errorbar riser linewidth 1.0
+@    s4025 errorbar riser linestyle 1
+@    s4025 errorbar riser clip off
+@    s4025 errorbar riser clip length 0.100000
+@    s4025 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4025 legend  ""
+@    s4026 hidden false
+@    s4026 type xy
+@    s4026 symbol 0
+@    s4026 symbol size 1.000000
+@    s4026 symbol color 1
+@    s4026 symbol pattern 1
+@    s4026 symbol fill color 1
+@    s4026 symbol fill pattern 0
+@    s4026 symbol linewidth 1.0
+@    s4026 symbol linestyle 1
+@    s4026 symbol char 65
+@    s4026 symbol char font 0
+@    s4026 symbol skip 0
+@    s4026 line type 1
+@    s4026 line linestyle 1
+@    s4026 line linewidth 1.0
+@    s4026 line color 1
+@    s4026 line pattern 1
+@    s4026 baseline type 0
+@    s4026 baseline off
+@    s4026 dropline off
+@    s4026 fill type 0
+@    s4026 fill rule 0
+@    s4026 fill color 1
+@    s4026 fill pattern 1
+@    s4026 avalue off
+@    s4026 avalue type 2
+@    s4026 avalue char size 1.000000
+@    s4026 avalue font 0
+@    s4026 avalue color 1
+@    s4026 avalue rot 0
+@    s4026 avalue format general
+@    s4026 avalue prec 3
+@    s4026 avalue prepend ""
+@    s4026 avalue append ""
+@    s4026 avalue offset 0.000000 , 0.000000
+@    s4026 errorbar on
+@    s4026 errorbar place both
+@    s4026 errorbar color 1
+@    s4026 errorbar pattern 1
+@    s4026 errorbar size 1.000000
+@    s4026 errorbar linewidth 1.0
+@    s4026 errorbar linestyle 1
+@    s4026 errorbar riser linewidth 1.0
+@    s4026 errorbar riser linestyle 1
+@    s4026 errorbar riser clip off
+@    s4026 errorbar riser clip length 0.100000
+@    s4026 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4026 legend  ""
+@    s4027 hidden false
+@    s4027 type xy
+@    s4027 symbol 0
+@    s4027 symbol size 1.000000
+@    s4027 symbol color 1
+@    s4027 symbol pattern 1
+@    s4027 symbol fill color 1
+@    s4027 symbol fill pattern 0
+@    s4027 symbol linewidth 1.0
+@    s4027 symbol linestyle 1
+@    s4027 symbol char 65
+@    s4027 symbol char font 0
+@    s4027 symbol skip 0
+@    s4027 line type 1
+@    s4027 line linestyle 1
+@    s4027 line linewidth 1.0
+@    s4027 line color 1
+@    s4027 line pattern 1
+@    s4027 baseline type 0
+@    s4027 baseline off
+@    s4027 dropline off
+@    s4027 fill type 0
+@    s4027 fill rule 0
+@    s4027 fill color 1
+@    s4027 fill pattern 1
+@    s4027 avalue off
+@    s4027 avalue type 2
+@    s4027 avalue char size 1.000000
+@    s4027 avalue font 0
+@    s4027 avalue color 1
+@    s4027 avalue rot 0
+@    s4027 avalue format general
+@    s4027 avalue prec 3
+@    s4027 avalue prepend ""
+@    s4027 avalue append ""
+@    s4027 avalue offset 0.000000 , 0.000000
+@    s4027 errorbar on
+@    s4027 errorbar place both
+@    s4027 errorbar color 1
+@    s4027 errorbar pattern 1
+@    s4027 errorbar size 1.000000
+@    s4027 errorbar linewidth 1.0
+@    s4027 errorbar linestyle 1
+@    s4027 errorbar riser linewidth 1.0
+@    s4027 errorbar riser linestyle 1
+@    s4027 errorbar riser clip off
+@    s4027 errorbar riser clip length 0.100000
+@    s4027 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4027 legend  ""
+@    s4028 hidden false
+@    s4028 type xy
+@    s4028 symbol 0
+@    s4028 symbol size 1.000000
+@    s4028 symbol color 2
+@    s4028 symbol pattern 1
+@    s4028 symbol fill color 2
+@    s4028 symbol fill pattern 0
+@    s4028 symbol linewidth 1.0
+@    s4028 symbol linestyle 1
+@    s4028 symbol char 65
+@    s4028 symbol char font 0
+@    s4028 symbol skip 0
+@    s4028 line type 1
+@    s4028 line linestyle 1
+@    s4028 line linewidth 1.0
+@    s4028 line color 2
+@    s4028 line pattern 1
+@    s4028 baseline type 0
+@    s4028 baseline off
+@    s4028 dropline off
+@    s4028 fill type 0
+@    s4028 fill rule 0
+@    s4028 fill color 1
+@    s4028 fill pattern 1
+@    s4028 avalue off
+@    s4028 avalue type 2
+@    s4028 avalue char size 1.000000
+@    s4028 avalue font 0
+@    s4028 avalue color 1
+@    s4028 avalue rot 0
+@    s4028 avalue format general
+@    s4028 avalue prec 3
+@    s4028 avalue prepend ""
+@    s4028 avalue append ""
+@    s4028 avalue offset 0.000000 , 0.000000
+@    s4028 errorbar on
+@    s4028 errorbar place both
+@    s4028 errorbar color 2
+@    s4028 errorbar pattern 1
+@    s4028 errorbar size 1.000000
+@    s4028 errorbar linewidth 1.0
+@    s4028 errorbar linestyle 1
+@    s4028 errorbar riser linewidth 1.0
+@    s4028 errorbar riser linestyle 1
+@    s4028 errorbar riser clip off
+@    s4028 errorbar riser clip length 0.100000
+@    s4028 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4028 legend  ""
+@    s4029 hidden false
+@    s4029 type xy
+@    s4029 symbol 0
+@    s4029 symbol size 1.000000
+@    s4029 symbol color 3
+@    s4029 symbol pattern 1
+@    s4029 symbol fill color 3
+@    s4029 symbol fill pattern 0
+@    s4029 symbol linewidth 1.0
+@    s4029 symbol linestyle 1
+@    s4029 symbol char 65
+@    s4029 symbol char font 0
+@    s4029 symbol skip 0
+@    s4029 line type 1
+@    s4029 line linestyle 1
+@    s4029 line linewidth 1.0
+@    s4029 line color 3
+@    s4029 line pattern 1
+@    s4029 baseline type 0
+@    s4029 baseline off
+@    s4029 dropline off
+@    s4029 fill type 0
+@    s4029 fill rule 0
+@    s4029 fill color 1
+@    s4029 fill pattern 1
+@    s4029 avalue off
+@    s4029 avalue type 2
+@    s4029 avalue char size 1.000000
+@    s4029 avalue font 0
+@    s4029 avalue color 1
+@    s4029 avalue rot 0
+@    s4029 avalue format general
+@    s4029 avalue prec 3
+@    s4029 avalue prepend ""
+@    s4029 avalue append ""
+@    s4029 avalue offset 0.000000 , 0.000000
+@    s4029 errorbar on
+@    s4029 errorbar place both
+@    s4029 errorbar color 3
+@    s4029 errorbar pattern 1
+@    s4029 errorbar size 1.000000
+@    s4029 errorbar linewidth 1.0
+@    s4029 errorbar linestyle 1
+@    s4029 errorbar riser linewidth 1.0
+@    s4029 errorbar riser linestyle 1
+@    s4029 errorbar riser clip off
+@    s4029 errorbar riser clip length 0.100000
+@    s4029 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4029 legend  ""
+@    s4030 hidden false
+@    s4030 type xy
+@    s4030 symbol 0
+@    s4030 symbol size 1.000000
+@    s4030 symbol color 4
+@    s4030 symbol pattern 1
+@    s4030 symbol fill color 4
+@    s4030 symbol fill pattern 0
+@    s4030 symbol linewidth 1.0
+@    s4030 symbol linestyle 1
+@    s4030 symbol char 65
+@    s4030 symbol char font 0
+@    s4030 symbol skip 0
+@    s4030 line type 1
+@    s4030 line linestyle 1
+@    s4030 line linewidth 1.0
+@    s4030 line color 4
+@    s4030 line pattern 1
+@    s4030 baseline type 0
+@    s4030 baseline off
+@    s4030 dropline off
+@    s4030 fill type 0
+@    s4030 fill rule 0
+@    s4030 fill color 1
+@    s4030 fill pattern 1
+@    s4030 avalue off
+@    s4030 avalue type 2
+@    s4030 avalue char size 1.000000
+@    s4030 avalue font 0
+@    s4030 avalue color 1
+@    s4030 avalue rot 0
+@    s4030 avalue format general
+@    s4030 avalue prec 3
+@    s4030 avalue prepend ""
+@    s4030 avalue append ""
+@    s4030 avalue offset 0.000000 , 0.000000
+@    s4030 errorbar on
+@    s4030 errorbar place both
+@    s4030 errorbar color 4
+@    s4030 errorbar pattern 1
+@    s4030 errorbar size 1.000000
+@    s4030 errorbar linewidth 1.0
+@    s4030 errorbar linestyle 1
+@    s4030 errorbar riser linewidth 1.0
+@    s4030 errorbar riser linestyle 1
+@    s4030 errorbar riser clip off
+@    s4030 errorbar riser clip length 0.100000
+@    s4030 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4030 legend  ""
+@    s4031 hidden false
+@    s4031 type xy
+@    s4031 symbol 0
+@    s4031 symbol size 1.000000
+@    s4031 symbol color 5
+@    s4031 symbol pattern 1
+@    s4031 symbol fill color 5
+@    s4031 symbol fill pattern 0
+@    s4031 symbol linewidth 1.0
+@    s4031 symbol linestyle 1
+@    s4031 symbol char 65
+@    s4031 symbol char font 0
+@    s4031 symbol skip 0
+@    s4031 line type 1
+@    s4031 line linestyle 1
+@    s4031 line linewidth 1.0
+@    s4031 line color 5
+@    s4031 line pattern 1
+@    s4031 baseline type 0
+@    s4031 baseline off
+@    s4031 dropline off
+@    s4031 fill type 0
+@    s4031 fill rule 0
+@    s4031 fill color 1
+@    s4031 fill pattern 1
+@    s4031 avalue off
+@    s4031 avalue type 2
+@    s4031 avalue char size 1.000000
+@    s4031 avalue font 0
+@    s4031 avalue color 1
+@    s4031 avalue rot 0
+@    s4031 avalue format general
+@    s4031 avalue prec 3
+@    s4031 avalue prepend ""
+@    s4031 avalue append ""
+@    s4031 avalue offset 0.000000 , 0.000000
+@    s4031 errorbar on
+@    s4031 errorbar place both
+@    s4031 errorbar color 5
+@    s4031 errorbar pattern 1
+@    s4031 errorbar size 1.000000
+@    s4031 errorbar linewidth 1.0
+@    s4031 errorbar linestyle 1
+@    s4031 errorbar riser linewidth 1.0
+@    s4031 errorbar riser linestyle 1
+@    s4031 errorbar riser clip off
+@    s4031 errorbar riser clip length 0.100000
+@    s4031 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4031 legend  ""
+@    s4032 hidden false
+@    s4032 type xy
+@    s4032 symbol 0
+@    s4032 symbol size 1.000000
+@    s4032 symbol color 6
+@    s4032 symbol pattern 1
+@    s4032 symbol fill color 6
+@    s4032 symbol fill pattern 0
+@    s4032 symbol linewidth 1.0
+@    s4032 symbol linestyle 1
+@    s4032 symbol char 65
+@    s4032 symbol char font 0
+@    s4032 symbol skip 0
+@    s4032 line type 1
+@    s4032 line linestyle 1
+@    s4032 line linewidth 1.0
+@    s4032 line color 6
+@    s4032 line pattern 1
+@    s4032 baseline type 0
+@    s4032 baseline off
+@    s4032 dropline off
+@    s4032 fill type 0
+@    s4032 fill rule 0
+@    s4032 fill color 1
+@    s4032 fill pattern 1
+@    s4032 avalue off
+@    s4032 avalue type 2
+@    s4032 avalue char size 1.000000
+@    s4032 avalue font 0
+@    s4032 avalue color 1
+@    s4032 avalue rot 0
+@    s4032 avalue format general
+@    s4032 avalue prec 3
+@    s4032 avalue prepend ""
+@    s4032 avalue append ""
+@    s4032 avalue offset 0.000000 , 0.000000
+@    s4032 errorbar on
+@    s4032 errorbar place both
+@    s4032 errorbar color 6
+@    s4032 errorbar pattern 1
+@    s4032 errorbar size 1.000000
+@    s4032 errorbar linewidth 1.0
+@    s4032 errorbar linestyle 1
+@    s4032 errorbar riser linewidth 1.0
+@    s4032 errorbar riser linestyle 1
+@    s4032 errorbar riser clip off
+@    s4032 errorbar riser clip length 0.100000
+@    s4032 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4032 legend  ""
+@    s4033 hidden false
+@    s4033 type xy
+@    s4033 symbol 0
+@    s4033 symbol size 1.000000
+@    s4033 symbol color 7
+@    s4033 symbol pattern 1
+@    s4033 symbol fill color 7
+@    s4033 symbol fill pattern 0
+@    s4033 symbol linewidth 1.0
+@    s4033 symbol linestyle 1
+@    s4033 symbol char 65
+@    s4033 symbol char font 0
+@    s4033 symbol skip 0
+@    s4033 line type 1
+@    s4033 line linestyle 1
+@    s4033 line linewidth 1.0
+@    s4033 line color 7
+@    s4033 line pattern 1
+@    s4033 baseline type 0
+@    s4033 baseline off
+@    s4033 dropline off
+@    s4033 fill type 0
+@    s4033 fill rule 0
+@    s4033 fill color 1
+@    s4033 fill pattern 1
+@    s4033 avalue off
+@    s4033 avalue type 2
+@    s4033 avalue char size 1.000000
+@    s4033 avalue font 0
+@    s4033 avalue color 1
+@    s4033 avalue rot 0
+@    s4033 avalue format general
+@    s4033 avalue prec 3
+@    s4033 avalue prepend ""
+@    s4033 avalue append ""
+@    s4033 avalue offset 0.000000 , 0.000000
+@    s4033 errorbar on
+@    s4033 errorbar place both
+@    s4033 errorbar color 7
+@    s4033 errorbar pattern 1
+@    s4033 errorbar size 1.000000
+@    s4033 errorbar linewidth 1.0
+@    s4033 errorbar linestyle 1
+@    s4033 errorbar riser linewidth 1.0
+@    s4033 errorbar riser linestyle 1
+@    s4033 errorbar riser clip off
+@    s4033 errorbar riser clip length 0.100000
+@    s4033 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4033 legend  ""
+@    s4034 hidden false
+@    s4034 type xy
+@    s4034 symbol 0
+@    s4034 symbol size 1.000000
+@    s4034 symbol color 8
+@    s4034 symbol pattern 1
+@    s4034 symbol fill color 8
+@    s4034 symbol fill pattern 0
+@    s4034 symbol linewidth 1.0
+@    s4034 symbol linestyle 1
+@    s4034 symbol char 65
+@    s4034 symbol char font 0
+@    s4034 symbol skip 0
+@    s4034 line type 1
+@    s4034 line linestyle 1
+@    s4034 line linewidth 1.0
+@    s4034 line color 8
+@    s4034 line pattern 1
+@    s4034 baseline type 0
+@    s4034 baseline off
+@    s4034 dropline off
+@    s4034 fill type 0
+@    s4034 fill rule 0
+@    s4034 fill color 1
+@    s4034 fill pattern 1
+@    s4034 avalue off
+@    s4034 avalue type 2
+@    s4034 avalue char size 1.000000
+@    s4034 avalue font 0
+@    s4034 avalue color 1
+@    s4034 avalue rot 0
+@    s4034 avalue format general
+@    s4034 avalue prec 3
+@    s4034 avalue prepend ""
+@    s4034 avalue append ""
+@    s4034 avalue offset 0.000000 , 0.000000
+@    s4034 errorbar on
+@    s4034 errorbar place both
+@    s4034 errorbar color 8
+@    s4034 errorbar pattern 1
+@    s4034 errorbar size 1.000000
+@    s4034 errorbar linewidth 1.0
+@    s4034 errorbar linestyle 1
+@    s4034 errorbar riser linewidth 1.0
+@    s4034 errorbar riser linestyle 1
+@    s4034 errorbar riser clip off
+@    s4034 errorbar riser clip length 0.100000
+@    s4034 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4034 legend  ""
+@    s4035 hidden false
+@    s4035 type xy
+@    s4035 symbol 0
+@    s4035 symbol size 1.000000
+@    s4035 symbol color 9
+@    s4035 symbol pattern 1
+@    s4035 symbol fill color 9
+@    s4035 symbol fill pattern 0
+@    s4035 symbol linewidth 1.0
+@    s4035 symbol linestyle 1
+@    s4035 symbol char 65
+@    s4035 symbol char font 0
+@    s4035 symbol skip 0
+@    s4035 line type 1
+@    s4035 line linestyle 1
+@    s4035 line linewidth 1.0
+@    s4035 line color 9
+@    s4035 line pattern 1
+@    s4035 baseline type 0
+@    s4035 baseline off
+@    s4035 dropline off
+@    s4035 fill type 0
+@    s4035 fill rule 0
+@    s4035 fill color 1
+@    s4035 fill pattern 1
+@    s4035 avalue off
+@    s4035 avalue type 2
+@    s4035 avalue char size 1.000000
+@    s4035 avalue font 0
+@    s4035 avalue color 1
+@    s4035 avalue rot 0
+@    s4035 avalue format general
+@    s4035 avalue prec 3
+@    s4035 avalue prepend ""
+@    s4035 avalue append ""
+@    s4035 avalue offset 0.000000 , 0.000000
+@    s4035 errorbar on
+@    s4035 errorbar place both
+@    s4035 errorbar color 9
+@    s4035 errorbar pattern 1
+@    s4035 errorbar size 1.000000
+@    s4035 errorbar linewidth 1.0
+@    s4035 errorbar linestyle 1
+@    s4035 errorbar riser linewidth 1.0
+@    s4035 errorbar riser linestyle 1
+@    s4035 errorbar riser clip off
+@    s4035 errorbar riser clip length 0.100000
+@    s4035 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4035 legend  ""
+@    s4036 hidden false
+@    s4036 type xy
+@    s4036 symbol 0
+@    s4036 symbol size 1.000000
+@    s4036 symbol color 10
+@    s4036 symbol pattern 1
+@    s4036 symbol fill color 10
+@    s4036 symbol fill pattern 0
+@    s4036 symbol linewidth 1.0
+@    s4036 symbol linestyle 1
+@    s4036 symbol char 65
+@    s4036 symbol char font 0
+@    s4036 symbol skip 0
+@    s4036 line type 1
+@    s4036 line linestyle 1
+@    s4036 line linewidth 1.0
+@    s4036 line color 10
+@    s4036 line pattern 1
+@    s4036 baseline type 0
+@    s4036 baseline off
+@    s4036 dropline off
+@    s4036 fill type 0
+@    s4036 fill rule 0
+@    s4036 fill color 1
+@    s4036 fill pattern 1
+@    s4036 avalue off
+@    s4036 avalue type 2
+@    s4036 avalue char size 1.000000
+@    s4036 avalue font 0
+@    s4036 avalue color 1
+@    s4036 avalue rot 0
+@    s4036 avalue format general
+@    s4036 avalue prec 3
+@    s4036 avalue prepend ""
+@    s4036 avalue append ""
+@    s4036 avalue offset 0.000000 , 0.000000
+@    s4036 errorbar on
+@    s4036 errorbar place both
+@    s4036 errorbar color 10
+@    s4036 errorbar pattern 1
+@    s4036 errorbar size 1.000000
+@    s4036 errorbar linewidth 1.0
+@    s4036 errorbar linestyle 1
+@    s4036 errorbar riser linewidth 1.0
+@    s4036 errorbar riser linestyle 1
+@    s4036 errorbar riser clip off
+@    s4036 errorbar riser clip length 0.100000
+@    s4036 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4036 legend  ""
+@    s4037 hidden false
+@    s4037 type xy
+@    s4037 symbol 0
+@    s4037 symbol size 1.000000
+@    s4037 symbol color 11
+@    s4037 symbol pattern 1
+@    s4037 symbol fill color 11
+@    s4037 symbol fill pattern 0
+@    s4037 symbol linewidth 1.0
+@    s4037 symbol linestyle 1
+@    s4037 symbol char 65
+@    s4037 symbol char font 0
+@    s4037 symbol skip 0
+@    s4037 line type 1
+@    s4037 line linestyle 1
+@    s4037 line linewidth 1.0
+@    s4037 line color 11
+@    s4037 line pattern 1
+@    s4037 baseline type 0
+@    s4037 baseline off
+@    s4037 dropline off
+@    s4037 fill type 0
+@    s4037 fill rule 0
+@    s4037 fill color 1
+@    s4037 fill pattern 1
+@    s4037 avalue off
+@    s4037 avalue type 2
+@    s4037 avalue char size 1.000000
+@    s4037 avalue font 0
+@    s4037 avalue color 1
+@    s4037 avalue rot 0
+@    s4037 avalue format general
+@    s4037 avalue prec 3
+@    s4037 avalue prepend ""
+@    s4037 avalue append ""
+@    s4037 avalue offset 0.000000 , 0.000000
+@    s4037 errorbar on
+@    s4037 errorbar place both
+@    s4037 errorbar color 11
+@    s4037 errorbar pattern 1
+@    s4037 errorbar size 1.000000
+@    s4037 errorbar linewidth 1.0
+@    s4037 errorbar linestyle 1
+@    s4037 errorbar riser linewidth 1.0
+@    s4037 errorbar riser linestyle 1
+@    s4037 errorbar riser clip off
+@    s4037 errorbar riser clip length 0.100000
+@    s4037 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4037 legend  ""
+@    s4038 hidden false
+@    s4038 type xy
+@    s4038 symbol 0
+@    s4038 symbol size 1.000000
+@    s4038 symbol color 12
+@    s4038 symbol pattern 1
+@    s4038 symbol fill color 12
+@    s4038 symbol fill pattern 0
+@    s4038 symbol linewidth 1.0
+@    s4038 symbol linestyle 1
+@    s4038 symbol char 65
+@    s4038 symbol char font 0
+@    s4038 symbol skip 0
+@    s4038 line type 1
+@    s4038 line linestyle 1
+@    s4038 line linewidth 1.0
+@    s4038 line color 12
+@    s4038 line pattern 1
+@    s4038 baseline type 0
+@    s4038 baseline off
+@    s4038 dropline off
+@    s4038 fill type 0
+@    s4038 fill rule 0
+@    s4038 fill color 1
+@    s4038 fill pattern 1
+@    s4038 avalue off
+@    s4038 avalue type 2
+@    s4038 avalue char size 1.000000
+@    s4038 avalue font 0
+@    s4038 avalue color 1
+@    s4038 avalue rot 0
+@    s4038 avalue format general
+@    s4038 avalue prec 3
+@    s4038 avalue prepend ""
+@    s4038 avalue append ""
+@    s4038 avalue offset 0.000000 , 0.000000
+@    s4038 errorbar on
+@    s4038 errorbar place both
+@    s4038 errorbar color 12
+@    s4038 errorbar pattern 1
+@    s4038 errorbar size 1.000000
+@    s4038 errorbar linewidth 1.0
+@    s4038 errorbar linestyle 1
+@    s4038 errorbar riser linewidth 1.0
+@    s4038 errorbar riser linestyle 1
+@    s4038 errorbar riser clip off
+@    s4038 errorbar riser clip length 0.100000
+@    s4038 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4038 legend  ""
+@    s4039 hidden false
+@    s4039 type xy
+@    s4039 symbol 0
+@    s4039 symbol size 1.000000
+@    s4039 symbol color 13
+@    s4039 symbol pattern 1
+@    s4039 symbol fill color 13
+@    s4039 symbol fill pattern 0
+@    s4039 symbol linewidth 1.0
+@    s4039 symbol linestyle 1
+@    s4039 symbol char 65
+@    s4039 symbol char font 0
+@    s4039 symbol skip 0
+@    s4039 line type 1
+@    s4039 line linestyle 1
+@    s4039 line linewidth 1.0
+@    s4039 line color 13
+@    s4039 line pattern 1
+@    s4039 baseline type 0
+@    s4039 baseline off
+@    s4039 dropline off
+@    s4039 fill type 0
+@    s4039 fill rule 0
+@    s4039 fill color 1
+@    s4039 fill pattern 1
+@    s4039 avalue off
+@    s4039 avalue type 2
+@    s4039 avalue char size 1.000000
+@    s4039 avalue font 0
+@    s4039 avalue color 1
+@    s4039 avalue rot 0
+@    s4039 avalue format general
+@    s4039 avalue prec 3
+@    s4039 avalue prepend ""
+@    s4039 avalue append ""
+@    s4039 avalue offset 0.000000 , 0.000000
+@    s4039 errorbar on
+@    s4039 errorbar place both
+@    s4039 errorbar color 13
+@    s4039 errorbar pattern 1
+@    s4039 errorbar size 1.000000
+@    s4039 errorbar linewidth 1.0
+@    s4039 errorbar linestyle 1
+@    s4039 errorbar riser linewidth 1.0
+@    s4039 errorbar riser linestyle 1
+@    s4039 errorbar riser clip off
+@    s4039 errorbar riser clip length 0.100000
+@    s4039 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4039 legend  ""
+@    s4040 hidden false
+@    s4040 type xy
+@    s4040 symbol 0
+@    s4040 symbol size 1.000000
+@    s4040 symbol color 14
+@    s4040 symbol pattern 1
+@    s4040 symbol fill color 14
+@    s4040 symbol fill pattern 0
+@    s4040 symbol linewidth 1.0
+@    s4040 symbol linestyle 1
+@    s4040 symbol char 65
+@    s4040 symbol char font 0
+@    s4040 symbol skip 0
+@    s4040 line type 1
+@    s4040 line linestyle 1
+@    s4040 line linewidth 1.0
+@    s4040 line color 14
+@    s4040 line pattern 1
+@    s4040 baseline type 0
+@    s4040 baseline off
+@    s4040 dropline off
+@    s4040 fill type 0
+@    s4040 fill rule 0
+@    s4040 fill color 1
+@    s4040 fill pattern 1
+@    s4040 avalue off
+@    s4040 avalue type 2
+@    s4040 avalue char size 1.000000
+@    s4040 avalue font 0
+@    s4040 avalue color 1
+@    s4040 avalue rot 0
+@    s4040 avalue format general
+@    s4040 avalue prec 3
+@    s4040 avalue prepend ""
+@    s4040 avalue append ""
+@    s4040 avalue offset 0.000000 , 0.000000
+@    s4040 errorbar on
+@    s4040 errorbar place both
+@    s4040 errorbar color 14
+@    s4040 errorbar pattern 1
+@    s4040 errorbar size 1.000000
+@    s4040 errorbar linewidth 1.0
+@    s4040 errorbar linestyle 1
+@    s4040 errorbar riser linewidth 1.0
+@    s4040 errorbar riser linestyle 1
+@    s4040 errorbar riser clip off
+@    s4040 errorbar riser clip length 0.100000
+@    s4040 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4040 legend  ""
+@    s4041 hidden false
+@    s4041 type xy
+@    s4041 symbol 0
+@    s4041 symbol size 1.000000
+@    s4041 symbol color 15
+@    s4041 symbol pattern 1
+@    s4041 symbol fill color 15
+@    s4041 symbol fill pattern 0
+@    s4041 symbol linewidth 1.0
+@    s4041 symbol linestyle 1
+@    s4041 symbol char 65
+@    s4041 symbol char font 0
+@    s4041 symbol skip 0
+@    s4041 line type 1
+@    s4041 line linestyle 1
+@    s4041 line linewidth 1.0
+@    s4041 line color 15
+@    s4041 line pattern 1
+@    s4041 baseline type 0
+@    s4041 baseline off
+@    s4041 dropline off
+@    s4041 fill type 0
+@    s4041 fill rule 0
+@    s4041 fill color 1
+@    s4041 fill pattern 1
+@    s4041 avalue off
+@    s4041 avalue type 2
+@    s4041 avalue char size 1.000000
+@    s4041 avalue font 0
+@    s4041 avalue color 1
+@    s4041 avalue rot 0
+@    s4041 avalue format general
+@    s4041 avalue prec 3
+@    s4041 avalue prepend ""
+@    s4041 avalue append ""
+@    s4041 avalue offset 0.000000 , 0.000000
+@    s4041 errorbar on
+@    s4041 errorbar place both
+@    s4041 errorbar color 15
+@    s4041 errorbar pattern 1
+@    s4041 errorbar size 1.000000
+@    s4041 errorbar linewidth 1.0
+@    s4041 errorbar linestyle 1
+@    s4041 errorbar riser linewidth 1.0
+@    s4041 errorbar riser linestyle 1
+@    s4041 errorbar riser clip off
+@    s4041 errorbar riser clip length 0.100000
+@    s4041 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4041 legend  ""
+@    s4042 hidden false
+@    s4042 type xy
+@    s4042 symbol 0
+@    s4042 symbol size 1.000000
+@    s4042 symbol color 1
+@    s4042 symbol pattern 1
+@    s4042 symbol fill color 1
+@    s4042 symbol fill pattern 0
+@    s4042 symbol linewidth 1.0
+@    s4042 symbol linestyle 1
+@    s4042 symbol char 65
+@    s4042 symbol char font 0
+@    s4042 symbol skip 0
+@    s4042 line type 1
+@    s4042 line linestyle 1
+@    s4042 line linewidth 1.0
+@    s4042 line color 1
+@    s4042 line pattern 1
+@    s4042 baseline type 0
+@    s4042 baseline off
+@    s4042 dropline off
+@    s4042 fill type 0
+@    s4042 fill rule 0
+@    s4042 fill color 1
+@    s4042 fill pattern 1
+@    s4042 avalue off
+@    s4042 avalue type 2
+@    s4042 avalue char size 1.000000
+@    s4042 avalue font 0
+@    s4042 avalue color 1
+@    s4042 avalue rot 0
+@    s4042 avalue format general
+@    s4042 avalue prec 3
+@    s4042 avalue prepend ""
+@    s4042 avalue append ""
+@    s4042 avalue offset 0.000000 , 0.000000
+@    s4042 errorbar on
+@    s4042 errorbar place both
+@    s4042 errorbar color 1
+@    s4042 errorbar pattern 1
+@    s4042 errorbar size 1.000000
+@    s4042 errorbar linewidth 1.0
+@    s4042 errorbar linestyle 1
+@    s4042 errorbar riser linewidth 1.0
+@    s4042 errorbar riser linestyle 1
+@    s4042 errorbar riser clip off
+@    s4042 errorbar riser clip length 0.100000
+@    s4042 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4042 legend  ""
+@    s4043 hidden false
+@    s4043 type xy
+@    s4043 symbol 0
+@    s4043 symbol size 1.000000
+@    s4043 symbol color 1
+@    s4043 symbol pattern 1
+@    s4043 symbol fill color 1
+@    s4043 symbol fill pattern 0
+@    s4043 symbol linewidth 1.0
+@    s4043 symbol linestyle 1
+@    s4043 symbol char 65
+@    s4043 symbol char font 0
+@    s4043 symbol skip 0
+@    s4043 line type 1
+@    s4043 line linestyle 1
+@    s4043 line linewidth 1.0
+@    s4043 line color 1
+@    s4043 line pattern 1
+@    s4043 baseline type 0
+@    s4043 baseline off
+@    s4043 dropline off
+@    s4043 fill type 0
+@    s4043 fill rule 0
+@    s4043 fill color 1
+@    s4043 fill pattern 1
+@    s4043 avalue off
+@    s4043 avalue type 2
+@    s4043 avalue char size 1.000000
+@    s4043 avalue font 0
+@    s4043 avalue color 1
+@    s4043 avalue rot 0
+@    s4043 avalue format general
+@    s4043 avalue prec 3
+@    s4043 avalue prepend ""
+@    s4043 avalue append ""
+@    s4043 avalue offset 0.000000 , 0.000000
+@    s4043 errorbar on
+@    s4043 errorbar place both
+@    s4043 errorbar color 1
+@    s4043 errorbar pattern 1
+@    s4043 errorbar size 1.000000
+@    s4043 errorbar linewidth 1.0
+@    s4043 errorbar linestyle 1
+@    s4043 errorbar riser linewidth 1.0
+@    s4043 errorbar riser linestyle 1
+@    s4043 errorbar riser clip off
+@    s4043 errorbar riser clip length 0.100000
+@    s4043 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4043 legend  ""
+@    s4044 hidden false
+@    s4044 type xy
+@    s4044 symbol 0
+@    s4044 symbol size 1.000000
+@    s4044 symbol color 1
+@    s4044 symbol pattern 1
+@    s4044 symbol fill color 1
+@    s4044 symbol fill pattern 0
+@    s4044 symbol linewidth 1.0
+@    s4044 symbol linestyle 1
+@    s4044 symbol char 65
+@    s4044 symbol char font 0
+@    s4044 symbol skip 0
+@    s4044 line type 1
+@    s4044 line linestyle 1
+@    s4044 line linewidth 1.0
+@    s4044 line color 1
+@    s4044 line pattern 1
+@    s4044 baseline type 0
+@    s4044 baseline off
+@    s4044 dropline off
+@    s4044 fill type 0
+@    s4044 fill rule 0
+@    s4044 fill color 1
+@    s4044 fill pattern 1
+@    s4044 avalue off
+@    s4044 avalue type 2
+@    s4044 avalue char size 1.000000
+@    s4044 avalue font 0
+@    s4044 avalue color 1
+@    s4044 avalue rot 0
+@    s4044 avalue format general
+@    s4044 avalue prec 3
+@    s4044 avalue prepend ""
+@    s4044 avalue append ""
+@    s4044 avalue offset 0.000000 , 0.000000
+@    s4044 errorbar on
+@    s4044 errorbar place both
+@    s4044 errorbar color 1
+@    s4044 errorbar pattern 1
+@    s4044 errorbar size 1.000000
+@    s4044 errorbar linewidth 1.0
+@    s4044 errorbar linestyle 1
+@    s4044 errorbar riser linewidth 1.0
+@    s4044 errorbar riser linestyle 1
+@    s4044 errorbar riser clip off
+@    s4044 errorbar riser clip length 0.100000
+@    s4044 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4044 legend  ""
+@    s4045 hidden false
+@    s4045 type xy
+@    s4045 symbol 0
+@    s4045 symbol size 1.000000
+@    s4045 symbol color 1
+@    s4045 symbol pattern 1
+@    s4045 symbol fill color 1
+@    s4045 symbol fill pattern 0
+@    s4045 symbol linewidth 1.0
+@    s4045 symbol linestyle 1
+@    s4045 symbol char 65
+@    s4045 symbol char font 0
+@    s4045 symbol skip 0
+@    s4045 line type 1
+@    s4045 line linestyle 1
+@    s4045 line linewidth 1.0
+@    s4045 line color 1
+@    s4045 line pattern 1
+@    s4045 baseline type 0
+@    s4045 baseline off
+@    s4045 dropline off
+@    s4045 fill type 0
+@    s4045 fill rule 0
+@    s4045 fill color 1
+@    s4045 fill pattern 1
+@    s4045 avalue off
+@    s4045 avalue type 2
+@    s4045 avalue char size 1.000000
+@    s4045 avalue font 0
+@    s4045 avalue color 1
+@    s4045 avalue rot 0
+@    s4045 avalue format general
+@    s4045 avalue prec 3
+@    s4045 avalue prepend ""
+@    s4045 avalue append ""
+@    s4045 avalue offset 0.000000 , 0.000000
+@    s4045 errorbar on
+@    s4045 errorbar place both
+@    s4045 errorbar color 1
+@    s4045 errorbar pattern 1
+@    s4045 errorbar size 1.000000
+@    s4045 errorbar linewidth 1.0
+@    s4045 errorbar linestyle 1
+@    s4045 errorbar riser linewidth 1.0
+@    s4045 errorbar riser linestyle 1
+@    s4045 errorbar riser clip off
+@    s4045 errorbar riser clip length 0.100000
+@    s4045 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4045 legend  ""
+@    s4046 hidden false
+@    s4046 type xy
+@    s4046 symbol 0
+@    s4046 symbol size 1.000000
+@    s4046 symbol color 1
+@    s4046 symbol pattern 1
+@    s4046 symbol fill color 1
+@    s4046 symbol fill pattern 0
+@    s4046 symbol linewidth 1.0
+@    s4046 symbol linestyle 1
+@    s4046 symbol char 65
+@    s4046 symbol char font 0
+@    s4046 symbol skip 0
+@    s4046 line type 1
+@    s4046 line linestyle 1
+@    s4046 line linewidth 1.0
+@    s4046 line color 1
+@    s4046 line pattern 1
+@    s4046 baseline type 0
+@    s4046 baseline off
+@    s4046 dropline off
+@    s4046 fill type 0
+@    s4046 fill rule 0
+@    s4046 fill color 1
+@    s4046 fill pattern 1
+@    s4046 avalue off
+@    s4046 avalue type 2
+@    s4046 avalue char size 1.000000
+@    s4046 avalue font 0
+@    s4046 avalue color 1
+@    s4046 avalue rot 0
+@    s4046 avalue format general
+@    s4046 avalue prec 3
+@    s4046 avalue prepend ""
+@    s4046 avalue append ""
+@    s4046 avalue offset 0.000000 , 0.000000
+@    s4046 errorbar on
+@    s4046 errorbar place both
+@    s4046 errorbar color 1
+@    s4046 errorbar pattern 1
+@    s4046 errorbar size 1.000000
+@    s4046 errorbar linewidth 1.0
+@    s4046 errorbar linestyle 1
+@    s4046 errorbar riser linewidth 1.0
+@    s4046 errorbar riser linestyle 1
+@    s4046 errorbar riser clip off
+@    s4046 errorbar riser clip length 0.100000
+@    s4046 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4046 legend  ""
+@    s4047 hidden false
+@    s4047 type xy
+@    s4047 symbol 0
+@    s4047 symbol size 1.000000
+@    s4047 symbol color 2
+@    s4047 symbol pattern 1
+@    s4047 symbol fill color 2
+@    s4047 symbol fill pattern 0
+@    s4047 symbol linewidth 1.0
+@    s4047 symbol linestyle 1
+@    s4047 symbol char 65
+@    s4047 symbol char font 0
+@    s4047 symbol skip 0
+@    s4047 line type 1
+@    s4047 line linestyle 1
+@    s4047 line linewidth 1.0
+@    s4047 line color 2
+@    s4047 line pattern 1
+@    s4047 baseline type 0
+@    s4047 baseline off
+@    s4047 dropline off
+@    s4047 fill type 0
+@    s4047 fill rule 0
+@    s4047 fill color 1
+@    s4047 fill pattern 1
+@    s4047 avalue off
+@    s4047 avalue type 2
+@    s4047 avalue char size 1.000000
+@    s4047 avalue font 0
+@    s4047 avalue color 1
+@    s4047 avalue rot 0
+@    s4047 avalue format general
+@    s4047 avalue prec 3
+@    s4047 avalue prepend ""
+@    s4047 avalue append ""
+@    s4047 avalue offset 0.000000 , 0.000000
+@    s4047 errorbar on
+@    s4047 errorbar place both
+@    s4047 errorbar color 2
+@    s4047 errorbar pattern 1
+@    s4047 errorbar size 1.000000
+@    s4047 errorbar linewidth 1.0
+@    s4047 errorbar linestyle 1
+@    s4047 errorbar riser linewidth 1.0
+@    s4047 errorbar riser linestyle 1
+@    s4047 errorbar riser clip off
+@    s4047 errorbar riser clip length 0.100000
+@    s4047 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4047 legend  ""
+@    s4048 hidden false
+@    s4048 type xy
+@    s4048 symbol 0
+@    s4048 symbol size 1.000000
+@    s4048 symbol color 3
+@    s4048 symbol pattern 1
+@    s4048 symbol fill color 3
+@    s4048 symbol fill pattern 0
+@    s4048 symbol linewidth 1.0
+@    s4048 symbol linestyle 1
+@    s4048 symbol char 65
+@    s4048 symbol char font 0
+@    s4048 symbol skip 0
+@    s4048 line type 1
+@    s4048 line linestyle 1
+@    s4048 line linewidth 1.0
+@    s4048 line color 3
+@    s4048 line pattern 1
+@    s4048 baseline type 0
+@    s4048 baseline off
+@    s4048 dropline off
+@    s4048 fill type 0
+@    s4048 fill rule 0
+@    s4048 fill color 1
+@    s4048 fill pattern 1
+@    s4048 avalue off
+@    s4048 avalue type 2
+@    s4048 avalue char size 1.000000
+@    s4048 avalue font 0
+@    s4048 avalue color 1
+@    s4048 avalue rot 0
+@    s4048 avalue format general
+@    s4048 avalue prec 3
+@    s4048 avalue prepend ""
+@    s4048 avalue append ""
+@    s4048 avalue offset 0.000000 , 0.000000
+@    s4048 errorbar on
+@    s4048 errorbar place both
+@    s4048 errorbar color 3
+@    s4048 errorbar pattern 1
+@    s4048 errorbar size 1.000000
+@    s4048 errorbar linewidth 1.0
+@    s4048 errorbar linestyle 1
+@    s4048 errorbar riser linewidth 1.0
+@    s4048 errorbar riser linestyle 1
+@    s4048 errorbar riser clip off
+@    s4048 errorbar riser clip length 0.100000
+@    s4048 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4048 legend  ""
+@    s4049 hidden false
+@    s4049 type xy
+@    s4049 symbol 0
+@    s4049 symbol size 1.000000
+@    s4049 symbol color 4
+@    s4049 symbol pattern 1
+@    s4049 symbol fill color 4
+@    s4049 symbol fill pattern 0
+@    s4049 symbol linewidth 1.0
+@    s4049 symbol linestyle 1
+@    s4049 symbol char 65
+@    s4049 symbol char font 0
+@    s4049 symbol skip 0
+@    s4049 line type 1
+@    s4049 line linestyle 1
+@    s4049 line linewidth 1.0
+@    s4049 line color 4
+@    s4049 line pattern 1
+@    s4049 baseline type 0
+@    s4049 baseline off
+@    s4049 dropline off
+@    s4049 fill type 0
+@    s4049 fill rule 0
+@    s4049 fill color 1
+@    s4049 fill pattern 1
+@    s4049 avalue off
+@    s4049 avalue type 2
+@    s4049 avalue char size 1.000000
+@    s4049 avalue font 0
+@    s4049 avalue color 1
+@    s4049 avalue rot 0
+@    s4049 avalue format general
+@    s4049 avalue prec 3
+@    s4049 avalue prepend ""
+@    s4049 avalue append ""
+@    s4049 avalue offset 0.000000 , 0.000000
+@    s4049 errorbar on
+@    s4049 errorbar place both
+@    s4049 errorbar color 4
+@    s4049 errorbar pattern 1
+@    s4049 errorbar size 1.000000
+@    s4049 errorbar linewidth 1.0
+@    s4049 errorbar linestyle 1
+@    s4049 errorbar riser linewidth 1.0
+@    s4049 errorbar riser linestyle 1
+@    s4049 errorbar riser clip off
+@    s4049 errorbar riser clip length 0.100000
+@    s4049 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4049 legend  ""
+@    s4050 hidden false
+@    s4050 type xy
+@    s4050 symbol 0
+@    s4050 symbol size 1.000000
+@    s4050 symbol color 5
+@    s4050 symbol pattern 1
+@    s4050 symbol fill color 5
+@    s4050 symbol fill pattern 0
+@    s4050 symbol linewidth 1.0
+@    s4050 symbol linestyle 1
+@    s4050 symbol char 65
+@    s4050 symbol char font 0
+@    s4050 symbol skip 0
+@    s4050 line type 1
+@    s4050 line linestyle 1
+@    s4050 line linewidth 1.0
+@    s4050 line color 5
+@    s4050 line pattern 1
+@    s4050 baseline type 0
+@    s4050 baseline off
+@    s4050 dropline off
+@    s4050 fill type 0
+@    s4050 fill rule 0
+@    s4050 fill color 1
+@    s4050 fill pattern 1
+@    s4050 avalue off
+@    s4050 avalue type 2
+@    s4050 avalue char size 1.000000
+@    s4050 avalue font 0
+@    s4050 avalue color 1
+@    s4050 avalue rot 0
+@    s4050 avalue format general
+@    s4050 avalue prec 3
+@    s4050 avalue prepend ""
+@    s4050 avalue append ""
+@    s4050 avalue offset 0.000000 , 0.000000
+@    s4050 errorbar on
+@    s4050 errorbar place both
+@    s4050 errorbar color 5
+@    s4050 errorbar pattern 1
+@    s4050 errorbar size 1.000000
+@    s4050 errorbar linewidth 1.0
+@    s4050 errorbar linestyle 1
+@    s4050 errorbar riser linewidth 1.0
+@    s4050 errorbar riser linestyle 1
+@    s4050 errorbar riser clip off
+@    s4050 errorbar riser clip length 0.100000
+@    s4050 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4050 legend  ""
+@    s4051 hidden false
+@    s4051 type xy
+@    s4051 symbol 0
+@    s4051 symbol size 1.000000
+@    s4051 symbol color 6
+@    s4051 symbol pattern 1
+@    s4051 symbol fill color 6
+@    s4051 symbol fill pattern 0
+@    s4051 symbol linewidth 1.0
+@    s4051 symbol linestyle 1
+@    s4051 symbol char 65
+@    s4051 symbol char font 0
+@    s4051 symbol skip 0
+@    s4051 line type 1
+@    s4051 line linestyle 1
+@    s4051 line linewidth 1.0
+@    s4051 line color 6
+@    s4051 line pattern 1
+@    s4051 baseline type 0
+@    s4051 baseline off
+@    s4051 dropline off
+@    s4051 fill type 0
+@    s4051 fill rule 0
+@    s4051 fill color 1
+@    s4051 fill pattern 1
+@    s4051 avalue off
+@    s4051 avalue type 2
+@    s4051 avalue char size 1.000000
+@    s4051 avalue font 0
+@    s4051 avalue color 1
+@    s4051 avalue rot 0
+@    s4051 avalue format general
+@    s4051 avalue prec 3
+@    s4051 avalue prepend ""
+@    s4051 avalue append ""
+@    s4051 avalue offset 0.000000 , 0.000000
+@    s4051 errorbar on
+@    s4051 errorbar place both
+@    s4051 errorbar color 6
+@    s4051 errorbar pattern 1
+@    s4051 errorbar size 1.000000
+@    s4051 errorbar linewidth 1.0
+@    s4051 errorbar linestyle 1
+@    s4051 errorbar riser linewidth 1.0
+@    s4051 errorbar riser linestyle 1
+@    s4051 errorbar riser clip off
+@    s4051 errorbar riser clip length 0.100000
+@    s4051 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4051 legend  ""
+@    s4052 hidden false
+@    s4052 type xy
+@    s4052 symbol 0
+@    s4052 symbol size 1.000000
+@    s4052 symbol color 7
+@    s4052 symbol pattern 1
+@    s4052 symbol fill color 7
+@    s4052 symbol fill pattern 0
+@    s4052 symbol linewidth 1.0
+@    s4052 symbol linestyle 1
+@    s4052 symbol char 65
+@    s4052 symbol char font 0
+@    s4052 symbol skip 0
+@    s4052 line type 1
+@    s4052 line linestyle 1
+@    s4052 line linewidth 1.0
+@    s4052 line color 7
+@    s4052 line pattern 1
+@    s4052 baseline type 0
+@    s4052 baseline off
+@    s4052 dropline off
+@    s4052 fill type 0
+@    s4052 fill rule 0
+@    s4052 fill color 1
+@    s4052 fill pattern 1
+@    s4052 avalue off
+@    s4052 avalue type 2
+@    s4052 avalue char size 1.000000
+@    s4052 avalue font 0
+@    s4052 avalue color 1
+@    s4052 avalue rot 0
+@    s4052 avalue format general
+@    s4052 avalue prec 3
+@    s4052 avalue prepend ""
+@    s4052 avalue append ""
+@    s4052 avalue offset 0.000000 , 0.000000
+@    s4052 errorbar on
+@    s4052 errorbar place both
+@    s4052 errorbar color 7
+@    s4052 errorbar pattern 1
+@    s4052 errorbar size 1.000000
+@    s4052 errorbar linewidth 1.0
+@    s4052 errorbar linestyle 1
+@    s4052 errorbar riser linewidth 1.0
+@    s4052 errorbar riser linestyle 1
+@    s4052 errorbar riser clip off
+@    s4052 errorbar riser clip length 0.100000
+@    s4052 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4052 legend  ""
+@    s4053 hidden false
+@    s4053 type xy
+@    s4053 symbol 0
+@    s4053 symbol size 1.000000
+@    s4053 symbol color 8
+@    s4053 symbol pattern 1
+@    s4053 symbol fill color 8
+@    s4053 symbol fill pattern 0
+@    s4053 symbol linewidth 1.0
+@    s4053 symbol linestyle 1
+@    s4053 symbol char 65
+@    s4053 symbol char font 0
+@    s4053 symbol skip 0
+@    s4053 line type 1
+@    s4053 line linestyle 1
+@    s4053 line linewidth 1.0
+@    s4053 line color 8
+@    s4053 line pattern 1
+@    s4053 baseline type 0
+@    s4053 baseline off
+@    s4053 dropline off
+@    s4053 fill type 0
+@    s4053 fill rule 0
+@    s4053 fill color 1
+@    s4053 fill pattern 1
+@    s4053 avalue off
+@    s4053 avalue type 2
+@    s4053 avalue char size 1.000000
+@    s4053 avalue font 0
+@    s4053 avalue color 1
+@    s4053 avalue rot 0
+@    s4053 avalue format general
+@    s4053 avalue prec 3
+@    s4053 avalue prepend ""
+@    s4053 avalue append ""
+@    s4053 avalue offset 0.000000 , 0.000000
+@    s4053 errorbar on
+@    s4053 errorbar place both
+@    s4053 errorbar color 8
+@    s4053 errorbar pattern 1
+@    s4053 errorbar size 1.000000
+@    s4053 errorbar linewidth 1.0
+@    s4053 errorbar linestyle 1
+@    s4053 errorbar riser linewidth 1.0
+@    s4053 errorbar riser linestyle 1
+@    s4053 errorbar riser clip off
+@    s4053 errorbar riser clip length 0.100000
+@    s4053 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4053 legend  ""
+@    s4054 hidden false
+@    s4054 type xy
+@    s4054 symbol 0
+@    s4054 symbol size 1.000000
+@    s4054 symbol color 9
+@    s4054 symbol pattern 1
+@    s4054 symbol fill color 9
+@    s4054 symbol fill pattern 0
+@    s4054 symbol linewidth 1.0
+@    s4054 symbol linestyle 1
+@    s4054 symbol char 65
+@    s4054 symbol char font 0
+@    s4054 symbol skip 0
+@    s4054 line type 1
+@    s4054 line linestyle 1
+@    s4054 line linewidth 1.0
+@    s4054 line color 9
+@    s4054 line pattern 1
+@    s4054 baseline type 0
+@    s4054 baseline off
+@    s4054 dropline off
+@    s4054 fill type 0
+@    s4054 fill rule 0
+@    s4054 fill color 1
+@    s4054 fill pattern 1
+@    s4054 avalue off
+@    s4054 avalue type 2
+@    s4054 avalue char size 1.000000
+@    s4054 avalue font 0
+@    s4054 avalue color 1
+@    s4054 avalue rot 0
+@    s4054 avalue format general
+@    s4054 avalue prec 3
+@    s4054 avalue prepend ""
+@    s4054 avalue append ""
+@    s4054 avalue offset 0.000000 , 0.000000
+@    s4054 errorbar on
+@    s4054 errorbar place both
+@    s4054 errorbar color 9
+@    s4054 errorbar pattern 1
+@    s4054 errorbar size 1.000000
+@    s4054 errorbar linewidth 1.0
+@    s4054 errorbar linestyle 1
+@    s4054 errorbar riser linewidth 1.0
+@    s4054 errorbar riser linestyle 1
+@    s4054 errorbar riser clip off
+@    s4054 errorbar riser clip length 0.100000
+@    s4054 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4054 legend  ""
+@    s4055 hidden false
+@    s4055 type xy
+@    s4055 symbol 0
+@    s4055 symbol size 1.000000
+@    s4055 symbol color 10
+@    s4055 symbol pattern 1
+@    s4055 symbol fill color 10
+@    s4055 symbol fill pattern 0
+@    s4055 symbol linewidth 1.0
+@    s4055 symbol linestyle 1
+@    s4055 symbol char 65
+@    s4055 symbol char font 0
+@    s4055 symbol skip 0
+@    s4055 line type 1
+@    s4055 line linestyle 1
+@    s4055 line linewidth 1.0
+@    s4055 line color 10
+@    s4055 line pattern 1
+@    s4055 baseline type 0
+@    s4055 baseline off
+@    s4055 dropline off
+@    s4055 fill type 0
+@    s4055 fill rule 0
+@    s4055 fill color 1
+@    s4055 fill pattern 1
+@    s4055 avalue off
+@    s4055 avalue type 2
+@    s4055 avalue char size 1.000000
+@    s4055 avalue font 0
+@    s4055 avalue color 1
+@    s4055 avalue rot 0
+@    s4055 avalue format general
+@    s4055 avalue prec 3
+@    s4055 avalue prepend ""
+@    s4055 avalue append ""
+@    s4055 avalue offset 0.000000 , 0.000000
+@    s4055 errorbar on
+@    s4055 errorbar place both
+@    s4055 errorbar color 10
+@    s4055 errorbar pattern 1
+@    s4055 errorbar size 1.000000
+@    s4055 errorbar linewidth 1.0
+@    s4055 errorbar linestyle 1
+@    s4055 errorbar riser linewidth 1.0
+@    s4055 errorbar riser linestyle 1
+@    s4055 errorbar riser clip off
+@    s4055 errorbar riser clip length 0.100000
+@    s4055 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4055 legend  ""
+@    s4056 hidden false
+@    s4056 type xy
+@    s4056 symbol 0
+@    s4056 symbol size 1.000000
+@    s4056 symbol color 11
+@    s4056 symbol pattern 1
+@    s4056 symbol fill color 11
+@    s4056 symbol fill pattern 0
+@    s4056 symbol linewidth 1.0
+@    s4056 symbol linestyle 1
+@    s4056 symbol char 65
+@    s4056 symbol char font 0
+@    s4056 symbol skip 0
+@    s4056 line type 1
+@    s4056 line linestyle 1
+@    s4056 line linewidth 1.0
+@    s4056 line color 11
+@    s4056 line pattern 1
+@    s4056 baseline type 0
+@    s4056 baseline off
+@    s4056 dropline off
+@    s4056 fill type 0
+@    s4056 fill rule 0
+@    s4056 fill color 1
+@    s4056 fill pattern 1
+@    s4056 avalue off
+@    s4056 avalue type 2
+@    s4056 avalue char size 1.000000
+@    s4056 avalue font 0
+@    s4056 avalue color 1
+@    s4056 avalue rot 0
+@    s4056 avalue format general
+@    s4056 avalue prec 3
+@    s4056 avalue prepend ""
+@    s4056 avalue append ""
+@    s4056 avalue offset 0.000000 , 0.000000
+@    s4056 errorbar on
+@    s4056 errorbar place both
+@    s4056 errorbar color 11
+@    s4056 errorbar pattern 1
+@    s4056 errorbar size 1.000000
+@    s4056 errorbar linewidth 1.0
+@    s4056 errorbar linestyle 1
+@    s4056 errorbar riser linewidth 1.0
+@    s4056 errorbar riser linestyle 1
+@    s4056 errorbar riser clip off
+@    s4056 errorbar riser clip length 0.100000
+@    s4056 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4056 legend  ""
+@    s4057 hidden false
+@    s4057 type xy
+@    s4057 symbol 0
+@    s4057 symbol size 1.000000
+@    s4057 symbol color 12
+@    s4057 symbol pattern 1
+@    s4057 symbol fill color 12
+@    s4057 symbol fill pattern 0
+@    s4057 symbol linewidth 1.0
+@    s4057 symbol linestyle 1
+@    s4057 symbol char 65
+@    s4057 symbol char font 0
+@    s4057 symbol skip 0
+@    s4057 line type 1
+@    s4057 line linestyle 1
+@    s4057 line linewidth 1.0
+@    s4057 line color 12
+@    s4057 line pattern 1
+@    s4057 baseline type 0
+@    s4057 baseline off
+@    s4057 dropline off
+@    s4057 fill type 0
+@    s4057 fill rule 0
+@    s4057 fill color 1
+@    s4057 fill pattern 1
+@    s4057 avalue off
+@    s4057 avalue type 2
+@    s4057 avalue char size 1.000000
+@    s4057 avalue font 0
+@    s4057 avalue color 1
+@    s4057 avalue rot 0
+@    s4057 avalue format general
+@    s4057 avalue prec 3
+@    s4057 avalue prepend ""
+@    s4057 avalue append ""
+@    s4057 avalue offset 0.000000 , 0.000000
+@    s4057 errorbar on
+@    s4057 errorbar place both
+@    s4057 errorbar color 12
+@    s4057 errorbar pattern 1
+@    s4057 errorbar size 1.000000
+@    s4057 errorbar linewidth 1.0
+@    s4057 errorbar linestyle 1
+@    s4057 errorbar riser linewidth 1.0
+@    s4057 errorbar riser linestyle 1
+@    s4057 errorbar riser clip off
+@    s4057 errorbar riser clip length 0.100000
+@    s4057 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4057 legend  ""
+@    s4058 hidden false
+@    s4058 type xy
+@    s4058 symbol 0
+@    s4058 symbol size 1.000000
+@    s4058 symbol color 13
+@    s4058 symbol pattern 1
+@    s4058 symbol fill color 13
+@    s4058 symbol fill pattern 0
+@    s4058 symbol linewidth 1.0
+@    s4058 symbol linestyle 1
+@    s4058 symbol char 65
+@    s4058 symbol char font 0
+@    s4058 symbol skip 0
+@    s4058 line type 1
+@    s4058 line linestyle 1
+@    s4058 line linewidth 1.0
+@    s4058 line color 13
+@    s4058 line pattern 1
+@    s4058 baseline type 0
+@    s4058 baseline off
+@    s4058 dropline off
+@    s4058 fill type 0
+@    s4058 fill rule 0
+@    s4058 fill color 1
+@    s4058 fill pattern 1
+@    s4058 avalue off
+@    s4058 avalue type 2
+@    s4058 avalue char size 1.000000
+@    s4058 avalue font 0
+@    s4058 avalue color 1
+@    s4058 avalue rot 0
+@    s4058 avalue format general
+@    s4058 avalue prec 3
+@    s4058 avalue prepend ""
+@    s4058 avalue append ""
+@    s4058 avalue offset 0.000000 , 0.000000
+@    s4058 errorbar on
+@    s4058 errorbar place both
+@    s4058 errorbar color 13
+@    s4058 errorbar pattern 1
+@    s4058 errorbar size 1.000000
+@    s4058 errorbar linewidth 1.0
+@    s4058 errorbar linestyle 1
+@    s4058 errorbar riser linewidth 1.0
+@    s4058 errorbar riser linestyle 1
+@    s4058 errorbar riser clip off
+@    s4058 errorbar riser clip length 0.100000
+@    s4058 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4058 legend  ""
+@    s4059 hidden false
+@    s4059 type xy
+@    s4059 symbol 0
+@    s4059 symbol size 1.000000
+@    s4059 symbol color 14
+@    s4059 symbol pattern 1
+@    s4059 symbol fill color 14
+@    s4059 symbol fill pattern 0
+@    s4059 symbol linewidth 1.0
+@    s4059 symbol linestyle 1
+@    s4059 symbol char 65
+@    s4059 symbol char font 0
+@    s4059 symbol skip 0
+@    s4059 line type 1
+@    s4059 line linestyle 1
+@    s4059 line linewidth 1.0
+@    s4059 line color 14
+@    s4059 line pattern 1
+@    s4059 baseline type 0
+@    s4059 baseline off
+@    s4059 dropline off
+@    s4059 fill type 0
+@    s4059 fill rule 0
+@    s4059 fill color 1
+@    s4059 fill pattern 1
+@    s4059 avalue off
+@    s4059 avalue type 2
+@    s4059 avalue char size 1.000000
+@    s4059 avalue font 0
+@    s4059 avalue color 1
+@    s4059 avalue rot 0
+@    s4059 avalue format general
+@    s4059 avalue prec 3
+@    s4059 avalue prepend ""
+@    s4059 avalue append ""
+@    s4059 avalue offset 0.000000 , 0.000000
+@    s4059 errorbar on
+@    s4059 errorbar place both
+@    s4059 errorbar color 14
+@    s4059 errorbar pattern 1
+@    s4059 errorbar size 1.000000
+@    s4059 errorbar linewidth 1.0
+@    s4059 errorbar linestyle 1
+@    s4059 errorbar riser linewidth 1.0
+@    s4059 errorbar riser linestyle 1
+@    s4059 errorbar riser clip off
+@    s4059 errorbar riser clip length 0.100000
+@    s4059 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4059 legend  ""
+@    s4060 hidden false
+@    s4060 type xy
+@    s4060 symbol 0
+@    s4060 symbol size 1.000000
+@    s4060 symbol color 15
+@    s4060 symbol pattern 1
+@    s4060 symbol fill color 15
+@    s4060 symbol fill pattern 0
+@    s4060 symbol linewidth 1.0
+@    s4060 symbol linestyle 1
+@    s4060 symbol char 65
+@    s4060 symbol char font 0
+@    s4060 symbol skip 0
+@    s4060 line type 1
+@    s4060 line linestyle 1
+@    s4060 line linewidth 1.0
+@    s4060 line color 15
+@    s4060 line pattern 1
+@    s4060 baseline type 0
+@    s4060 baseline off
+@    s4060 dropline off
+@    s4060 fill type 0
+@    s4060 fill rule 0
+@    s4060 fill color 1
+@    s4060 fill pattern 1
+@    s4060 avalue off
+@    s4060 avalue type 2
+@    s4060 avalue char size 1.000000
+@    s4060 avalue font 0
+@    s4060 avalue color 1
+@    s4060 avalue rot 0
+@    s4060 avalue format general
+@    s4060 avalue prec 3
+@    s4060 avalue prepend ""
+@    s4060 avalue append ""
+@    s4060 avalue offset 0.000000 , 0.000000
+@    s4060 errorbar on
+@    s4060 errorbar place both
+@    s4060 errorbar color 15
+@    s4060 errorbar pattern 1
+@    s4060 errorbar size 1.000000
+@    s4060 errorbar linewidth 1.0
+@    s4060 errorbar linestyle 1
+@    s4060 errorbar riser linewidth 1.0
+@    s4060 errorbar riser linestyle 1
+@    s4060 errorbar riser clip off
+@    s4060 errorbar riser clip length 0.100000
+@    s4060 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4060 legend  ""
+@    s4061 hidden false
+@    s4061 type xy
+@    s4061 symbol 0
+@    s4061 symbol size 1.000000
+@    s4061 symbol color 1
+@    s4061 symbol pattern 1
+@    s4061 symbol fill color 1
+@    s4061 symbol fill pattern 0
+@    s4061 symbol linewidth 1.0
+@    s4061 symbol linestyle 1
+@    s4061 symbol char 65
+@    s4061 symbol char font 0
+@    s4061 symbol skip 0
+@    s4061 line type 1
+@    s4061 line linestyle 1
+@    s4061 line linewidth 1.0
+@    s4061 line color 1
+@    s4061 line pattern 1
+@    s4061 baseline type 0
+@    s4061 baseline off
+@    s4061 dropline off
+@    s4061 fill type 0
+@    s4061 fill rule 0
+@    s4061 fill color 1
+@    s4061 fill pattern 1
+@    s4061 avalue off
+@    s4061 avalue type 2
+@    s4061 avalue char size 1.000000
+@    s4061 avalue font 0
+@    s4061 avalue color 1
+@    s4061 avalue rot 0
+@    s4061 avalue format general
+@    s4061 avalue prec 3
+@    s4061 avalue prepend ""
+@    s4061 avalue append ""
+@    s4061 avalue offset 0.000000 , 0.000000
+@    s4061 errorbar on
+@    s4061 errorbar place both
+@    s4061 errorbar color 1
+@    s4061 errorbar pattern 1
+@    s4061 errorbar size 1.000000
+@    s4061 errorbar linewidth 1.0
+@    s4061 errorbar linestyle 1
+@    s4061 errorbar riser linewidth 1.0
+@    s4061 errorbar riser linestyle 1
+@    s4061 errorbar riser clip off
+@    s4061 errorbar riser clip length 0.100000
+@    s4061 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4061 legend  ""
+@    s4062 hidden false
+@    s4062 type xy
+@    s4062 symbol 0
+@    s4062 symbol size 1.000000
+@    s4062 symbol color 1
+@    s4062 symbol pattern 1
+@    s4062 symbol fill color 1
+@    s4062 symbol fill pattern 0
+@    s4062 symbol linewidth 1.0
+@    s4062 symbol linestyle 1
+@    s4062 symbol char 65
+@    s4062 symbol char font 0
+@    s4062 symbol skip 0
+@    s4062 line type 1
+@    s4062 line linestyle 1
+@    s4062 line linewidth 1.0
+@    s4062 line color 1
+@    s4062 line pattern 1
+@    s4062 baseline type 0
+@    s4062 baseline off
+@    s4062 dropline off
+@    s4062 fill type 0
+@    s4062 fill rule 0
+@    s4062 fill color 1
+@    s4062 fill pattern 1
+@    s4062 avalue off
+@    s4062 avalue type 2
+@    s4062 avalue char size 1.000000
+@    s4062 avalue font 0
+@    s4062 avalue color 1
+@    s4062 avalue rot 0
+@    s4062 avalue format general
+@    s4062 avalue prec 3
+@    s4062 avalue prepend ""
+@    s4062 avalue append ""
+@    s4062 avalue offset 0.000000 , 0.000000
+@    s4062 errorbar on
+@    s4062 errorbar place both
+@    s4062 errorbar color 1
+@    s4062 errorbar pattern 1
+@    s4062 errorbar size 1.000000
+@    s4062 errorbar linewidth 1.0
+@    s4062 errorbar linestyle 1
+@    s4062 errorbar riser linewidth 1.0
+@    s4062 errorbar riser linestyle 1
+@    s4062 errorbar riser clip off
+@    s4062 errorbar riser clip length 0.100000
+@    s4062 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4062 legend  ""
+@    s4063 hidden false
+@    s4063 type xy
+@    s4063 symbol 0
+@    s4063 symbol size 1.000000
+@    s4063 symbol color 1
+@    s4063 symbol pattern 1
+@    s4063 symbol fill color 1
+@    s4063 symbol fill pattern 0
+@    s4063 symbol linewidth 1.0
+@    s4063 symbol linestyle 1
+@    s4063 symbol char 65
+@    s4063 symbol char font 0
+@    s4063 symbol skip 0
+@    s4063 line type 1
+@    s4063 line linestyle 1
+@    s4063 line linewidth 1.0
+@    s4063 line color 1
+@    s4063 line pattern 1
+@    s4063 baseline type 0
+@    s4063 baseline off
+@    s4063 dropline off
+@    s4063 fill type 0
+@    s4063 fill rule 0
+@    s4063 fill color 1
+@    s4063 fill pattern 1
+@    s4063 avalue off
+@    s4063 avalue type 2
+@    s4063 avalue char size 1.000000
+@    s4063 avalue font 0
+@    s4063 avalue color 1
+@    s4063 avalue rot 0
+@    s4063 avalue format general
+@    s4063 avalue prec 3
+@    s4063 avalue prepend ""
+@    s4063 avalue append ""
+@    s4063 avalue offset 0.000000 , 0.000000
+@    s4063 errorbar on
+@    s4063 errorbar place both
+@    s4063 errorbar color 1
+@    s4063 errorbar pattern 1
+@    s4063 errorbar size 1.000000
+@    s4063 errorbar linewidth 1.0
+@    s4063 errorbar linestyle 1
+@    s4063 errorbar riser linewidth 1.0
+@    s4063 errorbar riser linestyle 1
+@    s4063 errorbar riser clip off
+@    s4063 errorbar riser clip length 0.100000
+@    s4063 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4063 legend  ""
+@    s4064 hidden false
+@    s4064 type xy
+@    s4064 symbol 0
+@    s4064 symbol size 1.000000
+@    s4064 symbol color 1
+@    s4064 symbol pattern 1
+@    s4064 symbol fill color 1
+@    s4064 symbol fill pattern 0
+@    s4064 symbol linewidth 1.0
+@    s4064 symbol linestyle 1
+@    s4064 symbol char 65
+@    s4064 symbol char font 0
+@    s4064 symbol skip 0
+@    s4064 line type 1
+@    s4064 line linestyle 1
+@    s4064 line linewidth 1.0
+@    s4064 line color 1
+@    s4064 line pattern 1
+@    s4064 baseline type 0
+@    s4064 baseline off
+@    s4064 dropline off
+@    s4064 fill type 0
+@    s4064 fill rule 0
+@    s4064 fill color 1
+@    s4064 fill pattern 1
+@    s4064 avalue off
+@    s4064 avalue type 2
+@    s4064 avalue char size 1.000000
+@    s4064 avalue font 0
+@    s4064 avalue color 1
+@    s4064 avalue rot 0
+@    s4064 avalue format general
+@    s4064 avalue prec 3
+@    s4064 avalue prepend ""
+@    s4064 avalue append ""
+@    s4064 avalue offset 0.000000 , 0.000000
+@    s4064 errorbar on
+@    s4064 errorbar place both
+@    s4064 errorbar color 1
+@    s4064 errorbar pattern 1
+@    s4064 errorbar size 1.000000
+@    s4064 errorbar linewidth 1.0
+@    s4064 errorbar linestyle 1
+@    s4064 errorbar riser linewidth 1.0
+@    s4064 errorbar riser linestyle 1
+@    s4064 errorbar riser clip off
+@    s4064 errorbar riser clip length 0.100000
+@    s4064 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4064 legend  ""
+@    s4065 hidden false
+@    s4065 type xy
+@    s4065 symbol 0
+@    s4065 symbol size 1.000000
+@    s4065 symbol color 1
+@    s4065 symbol pattern 1
+@    s4065 symbol fill color 1
+@    s4065 symbol fill pattern 0
+@    s4065 symbol linewidth 1.0
+@    s4065 symbol linestyle 1
+@    s4065 symbol char 65
+@    s4065 symbol char font 0
+@    s4065 symbol skip 0
+@    s4065 line type 1
+@    s4065 line linestyle 1
+@    s4065 line linewidth 1.0
+@    s4065 line color 1
+@    s4065 line pattern 1
+@    s4065 baseline type 0
+@    s4065 baseline off
+@    s4065 dropline off
+@    s4065 fill type 0
+@    s4065 fill rule 0
+@    s4065 fill color 1
+@    s4065 fill pattern 1
+@    s4065 avalue off
+@    s4065 avalue type 2
+@    s4065 avalue char size 1.000000
+@    s4065 avalue font 0
+@    s4065 avalue color 1
+@    s4065 avalue rot 0
+@    s4065 avalue format general
+@    s4065 avalue prec 3
+@    s4065 avalue prepend ""
+@    s4065 avalue append ""
+@    s4065 avalue offset 0.000000 , 0.000000
+@    s4065 errorbar on
+@    s4065 errorbar place both
+@    s4065 errorbar color 1
+@    s4065 errorbar pattern 1
+@    s4065 errorbar size 1.000000
+@    s4065 errorbar linewidth 1.0
+@    s4065 errorbar linestyle 1
+@    s4065 errorbar riser linewidth 1.0
+@    s4065 errorbar riser linestyle 1
+@    s4065 errorbar riser clip off
+@    s4065 errorbar riser clip length 0.100000
+@    s4065 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4065 legend  ""
+@    s4066 hidden false
+@    s4066 type xy
+@    s4066 symbol 0
+@    s4066 symbol size 1.000000
+@    s4066 symbol color 2
+@    s4066 symbol pattern 1
+@    s4066 symbol fill color 2
+@    s4066 symbol fill pattern 0
+@    s4066 symbol linewidth 1.0
+@    s4066 symbol linestyle 1
+@    s4066 symbol char 65
+@    s4066 symbol char font 0
+@    s4066 symbol skip 0
+@    s4066 line type 1
+@    s4066 line linestyle 1
+@    s4066 line linewidth 1.0
+@    s4066 line color 2
+@    s4066 line pattern 1
+@    s4066 baseline type 0
+@    s4066 baseline off
+@    s4066 dropline off
+@    s4066 fill type 0
+@    s4066 fill rule 0
+@    s4066 fill color 1
+@    s4066 fill pattern 1
+@    s4066 avalue off
+@    s4066 avalue type 2
+@    s4066 avalue char size 1.000000
+@    s4066 avalue font 0
+@    s4066 avalue color 1
+@    s4066 avalue rot 0
+@    s4066 avalue format general
+@    s4066 avalue prec 3
+@    s4066 avalue prepend ""
+@    s4066 avalue append ""
+@    s4066 avalue offset 0.000000 , 0.000000
+@    s4066 errorbar on
+@    s4066 errorbar place both
+@    s4066 errorbar color 2
+@    s4066 errorbar pattern 1
+@    s4066 errorbar size 1.000000
+@    s4066 errorbar linewidth 1.0
+@    s4066 errorbar linestyle 1
+@    s4066 errorbar riser linewidth 1.0
+@    s4066 errorbar riser linestyle 1
+@    s4066 errorbar riser clip off
+@    s4066 errorbar riser clip length 0.100000
+@    s4066 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4066 legend  ""
+@    s4067 hidden false
+@    s4067 type xy
+@    s4067 symbol 0
+@    s4067 symbol size 1.000000
+@    s4067 symbol color 3
+@    s4067 symbol pattern 1
+@    s4067 symbol fill color 3
+@    s4067 symbol fill pattern 0
+@    s4067 symbol linewidth 1.0
+@    s4067 symbol linestyle 1
+@    s4067 symbol char 65
+@    s4067 symbol char font 0
+@    s4067 symbol skip 0
+@    s4067 line type 1
+@    s4067 line linestyle 1
+@    s4067 line linewidth 1.0
+@    s4067 line color 3
+@    s4067 line pattern 1
+@    s4067 baseline type 0
+@    s4067 baseline off
+@    s4067 dropline off
+@    s4067 fill type 0
+@    s4067 fill rule 0
+@    s4067 fill color 1
+@    s4067 fill pattern 1
+@    s4067 avalue off
+@    s4067 avalue type 2
+@    s4067 avalue char size 1.000000
+@    s4067 avalue font 0
+@    s4067 avalue color 1
+@    s4067 avalue rot 0
+@    s4067 avalue format general
+@    s4067 avalue prec 3
+@    s4067 avalue prepend ""
+@    s4067 avalue append ""
+@    s4067 avalue offset 0.000000 , 0.000000
+@    s4067 errorbar on
+@    s4067 errorbar place both
+@    s4067 errorbar color 3
+@    s4067 errorbar pattern 1
+@    s4067 errorbar size 1.000000
+@    s4067 errorbar linewidth 1.0
+@    s4067 errorbar linestyle 1
+@    s4067 errorbar riser linewidth 1.0
+@    s4067 errorbar riser linestyle 1
+@    s4067 errorbar riser clip off
+@    s4067 errorbar riser clip length 0.100000
+@    s4067 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4067 legend  ""
+@    s4068 hidden false
+@    s4068 type xy
+@    s4068 symbol 0
+@    s4068 symbol size 1.000000
+@    s4068 symbol color 4
+@    s4068 symbol pattern 1
+@    s4068 symbol fill color 4
+@    s4068 symbol fill pattern 0
+@    s4068 symbol linewidth 1.0
+@    s4068 symbol linestyle 1
+@    s4068 symbol char 65
+@    s4068 symbol char font 0
+@    s4068 symbol skip 0
+@    s4068 line type 1
+@    s4068 line linestyle 1
+@    s4068 line linewidth 1.0
+@    s4068 line color 4
+@    s4068 line pattern 1
+@    s4068 baseline type 0
+@    s4068 baseline off
+@    s4068 dropline off
+@    s4068 fill type 0
+@    s4068 fill rule 0
+@    s4068 fill color 1
+@    s4068 fill pattern 1
+@    s4068 avalue off
+@    s4068 avalue type 2
+@    s4068 avalue char size 1.000000
+@    s4068 avalue font 0
+@    s4068 avalue color 1
+@    s4068 avalue rot 0
+@    s4068 avalue format general
+@    s4068 avalue prec 3
+@    s4068 avalue prepend ""
+@    s4068 avalue append ""
+@    s4068 avalue offset 0.000000 , 0.000000
+@    s4068 errorbar on
+@    s4068 errorbar place both
+@    s4068 errorbar color 4
+@    s4068 errorbar pattern 1
+@    s4068 errorbar size 1.000000
+@    s4068 errorbar linewidth 1.0
+@    s4068 errorbar linestyle 1
+@    s4068 errorbar riser linewidth 1.0
+@    s4068 errorbar riser linestyle 1
+@    s4068 errorbar riser clip off
+@    s4068 errorbar riser clip length 0.100000
+@    s4068 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4068 legend  ""
+@    s4069 hidden false
+@    s4069 type xy
+@    s4069 symbol 0
+@    s4069 symbol size 1.000000
+@    s4069 symbol color 5
+@    s4069 symbol pattern 1
+@    s4069 symbol fill color 5
+@    s4069 symbol fill pattern 0
+@    s4069 symbol linewidth 1.0
+@    s4069 symbol linestyle 1
+@    s4069 symbol char 65
+@    s4069 symbol char font 0
+@    s4069 symbol skip 0
+@    s4069 line type 1
+@    s4069 line linestyle 1
+@    s4069 line linewidth 1.0
+@    s4069 line color 5
+@    s4069 line pattern 1
+@    s4069 baseline type 0
+@    s4069 baseline off
+@    s4069 dropline off
+@    s4069 fill type 0
+@    s4069 fill rule 0
+@    s4069 fill color 1
+@    s4069 fill pattern 1
+@    s4069 avalue off
+@    s4069 avalue type 2
+@    s4069 avalue char size 1.000000
+@    s4069 avalue font 0
+@    s4069 avalue color 1
+@    s4069 avalue rot 0
+@    s4069 avalue format general
+@    s4069 avalue prec 3
+@    s4069 avalue prepend ""
+@    s4069 avalue append ""
+@    s4069 avalue offset 0.000000 , 0.000000
+@    s4069 errorbar on
+@    s4069 errorbar place both
+@    s4069 errorbar color 5
+@    s4069 errorbar pattern 1
+@    s4069 errorbar size 1.000000
+@    s4069 errorbar linewidth 1.0
+@    s4069 errorbar linestyle 1
+@    s4069 errorbar riser linewidth 1.0
+@    s4069 errorbar riser linestyle 1
+@    s4069 errorbar riser clip off
+@    s4069 errorbar riser clip length 0.100000
+@    s4069 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4069 legend  ""
+@    s4070 hidden false
+@    s4070 type xy
+@    s4070 symbol 0
+@    s4070 symbol size 1.000000
+@    s4070 symbol color 6
+@    s4070 symbol pattern 1
+@    s4070 symbol fill color 6
+@    s4070 symbol fill pattern 0
+@    s4070 symbol linewidth 1.0
+@    s4070 symbol linestyle 1
+@    s4070 symbol char 65
+@    s4070 symbol char font 0
+@    s4070 symbol skip 0
+@    s4070 line type 1
+@    s4070 line linestyle 1
+@    s4070 line linewidth 1.0
+@    s4070 line color 6
+@    s4070 line pattern 1
+@    s4070 baseline type 0
+@    s4070 baseline off
+@    s4070 dropline off
+@    s4070 fill type 0
+@    s4070 fill rule 0
+@    s4070 fill color 1
+@    s4070 fill pattern 1
+@    s4070 avalue off
+@    s4070 avalue type 2
+@    s4070 avalue char size 1.000000
+@    s4070 avalue font 0
+@    s4070 avalue color 1
+@    s4070 avalue rot 0
+@    s4070 avalue format general
+@    s4070 avalue prec 3
+@    s4070 avalue prepend ""
+@    s4070 avalue append ""
+@    s4070 avalue offset 0.000000 , 0.000000
+@    s4070 errorbar on
+@    s4070 errorbar place both
+@    s4070 errorbar color 6
+@    s4070 errorbar pattern 1
+@    s4070 errorbar size 1.000000
+@    s4070 errorbar linewidth 1.0
+@    s4070 errorbar linestyle 1
+@    s4070 errorbar riser linewidth 1.0
+@    s4070 errorbar riser linestyle 1
+@    s4070 errorbar riser clip off
+@    s4070 errorbar riser clip length 0.100000
+@    s4070 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4070 legend  ""
+@    s4071 hidden false
+@    s4071 type xy
+@    s4071 symbol 0
+@    s4071 symbol size 1.000000
+@    s4071 symbol color 7
+@    s4071 symbol pattern 1
+@    s4071 symbol fill color 7
+@    s4071 symbol fill pattern 0
+@    s4071 symbol linewidth 1.0
+@    s4071 symbol linestyle 1
+@    s4071 symbol char 65
+@    s4071 symbol char font 0
+@    s4071 symbol skip 0
+@    s4071 line type 1
+@    s4071 line linestyle 1
+@    s4071 line linewidth 1.0
+@    s4071 line color 7
+@    s4071 line pattern 1
+@    s4071 baseline type 0
+@    s4071 baseline off
+@    s4071 dropline off
+@    s4071 fill type 0
+@    s4071 fill rule 0
+@    s4071 fill color 1
+@    s4071 fill pattern 1
+@    s4071 avalue off
+@    s4071 avalue type 2
+@    s4071 avalue char size 1.000000
+@    s4071 avalue font 0
+@    s4071 avalue color 1
+@    s4071 avalue rot 0
+@    s4071 avalue format general
+@    s4071 avalue prec 3
+@    s4071 avalue prepend ""
+@    s4071 avalue append ""
+@    s4071 avalue offset 0.000000 , 0.000000
+@    s4071 errorbar on
+@    s4071 errorbar place both
+@    s4071 errorbar color 7
+@    s4071 errorbar pattern 1
+@    s4071 errorbar size 1.000000
+@    s4071 errorbar linewidth 1.0
+@    s4071 errorbar linestyle 1
+@    s4071 errorbar riser linewidth 1.0
+@    s4071 errorbar riser linestyle 1
+@    s4071 errorbar riser clip off
+@    s4071 errorbar riser clip length 0.100000
+@    s4071 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4071 legend  ""
+@    s4072 hidden false
+@    s4072 type xy
+@    s4072 symbol 0
+@    s4072 symbol size 1.000000
+@    s4072 symbol color 8
+@    s4072 symbol pattern 1
+@    s4072 symbol fill color 8
+@    s4072 symbol fill pattern 0
+@    s4072 symbol linewidth 1.0
+@    s4072 symbol linestyle 1
+@    s4072 symbol char 65
+@    s4072 symbol char font 0
+@    s4072 symbol skip 0
+@    s4072 line type 1
+@    s4072 line linestyle 1
+@    s4072 line linewidth 1.0
+@    s4072 line color 8
+@    s4072 line pattern 1
+@    s4072 baseline type 0
+@    s4072 baseline off
+@    s4072 dropline off
+@    s4072 fill type 0
+@    s4072 fill rule 0
+@    s4072 fill color 1
+@    s4072 fill pattern 1
+@    s4072 avalue off
+@    s4072 avalue type 2
+@    s4072 avalue char size 1.000000
+@    s4072 avalue font 0
+@    s4072 avalue color 1
+@    s4072 avalue rot 0
+@    s4072 avalue format general
+@    s4072 avalue prec 3
+@    s4072 avalue prepend ""
+@    s4072 avalue append ""
+@    s4072 avalue offset 0.000000 , 0.000000
+@    s4072 errorbar on
+@    s4072 errorbar place both
+@    s4072 errorbar color 8
+@    s4072 errorbar pattern 1
+@    s4072 errorbar size 1.000000
+@    s4072 errorbar linewidth 1.0
+@    s4072 errorbar linestyle 1
+@    s4072 errorbar riser linewidth 1.0
+@    s4072 errorbar riser linestyle 1
+@    s4072 errorbar riser clip off
+@    s4072 errorbar riser clip length 0.100000
+@    s4072 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4072 legend  ""
+@    s4073 hidden false
+@    s4073 type xy
+@    s4073 symbol 0
+@    s4073 symbol size 1.000000
+@    s4073 symbol color 9
+@    s4073 symbol pattern 1
+@    s4073 symbol fill color 9
+@    s4073 symbol fill pattern 0
+@    s4073 symbol linewidth 1.0
+@    s4073 symbol linestyle 1
+@    s4073 symbol char 65
+@    s4073 symbol char font 0
+@    s4073 symbol skip 0
+@    s4073 line type 1
+@    s4073 line linestyle 1
+@    s4073 line linewidth 1.0
+@    s4073 line color 9
+@    s4073 line pattern 1
+@    s4073 baseline type 0
+@    s4073 baseline off
+@    s4073 dropline off
+@    s4073 fill type 0
+@    s4073 fill rule 0
+@    s4073 fill color 1
+@    s4073 fill pattern 1
+@    s4073 avalue off
+@    s4073 avalue type 2
+@    s4073 avalue char size 1.000000
+@    s4073 avalue font 0
+@    s4073 avalue color 1
+@    s4073 avalue rot 0
+@    s4073 avalue format general
+@    s4073 avalue prec 3
+@    s4073 avalue prepend ""
+@    s4073 avalue append ""
+@    s4073 avalue offset 0.000000 , 0.000000
+@    s4073 errorbar on
+@    s4073 errorbar place both
+@    s4073 errorbar color 9
+@    s4073 errorbar pattern 1
+@    s4073 errorbar size 1.000000
+@    s4073 errorbar linewidth 1.0
+@    s4073 errorbar linestyle 1
+@    s4073 errorbar riser linewidth 1.0
+@    s4073 errorbar riser linestyle 1
+@    s4073 errorbar riser clip off
+@    s4073 errorbar riser clip length 0.100000
+@    s4073 comment "/home/mariano/Doctorado/QD/KP/KP_splines/matlab/resultados/E_vs_kz-5.dat"
+@    s4073 legend  ""
+@target G0.S4017
+@type xy
+0 -85.643771
+0.020512821 -85.68352
+0.041025641 -85.8026
+0.061538462 -86.00192
+0.082051282 -86.284854
+0.1025641 -86.655413
+0.12307692 -87.114593
+0.14358974 -87.658177
+0.16410256 -88.277108
+0.18461538 -88.959153
+0.20512821 -89.691095
+0.22564103 -90.476438
+0.24615385 -91.508295
+0.26666667 -93.102729
+0.28717949 -94.547993
+0.30769231 -95.048565
+0.32820513 -95.506546
+0.34871795 -96.158666
+0.36923077 -96.961227
+0.38974359 -99.613606
+0.41025641 -100.24686
+0.43076923 -100.9221
+0.45128205 -101.73425
+0.47179487 -102.67898
+0.49230769 -103.72527
+0.51282051 -107.00618
+0.53333333 -110.38725
+0.55384615 -113.51369
+0.57435897 -116.4766
+0.59487179 -119.31563
+0.61538462 -122.04411
+0.63589744 -124.66066
+0.65641026 -127.17935
+0.67692308 -129.63016
+0.6974359 -132.04558
+0.71794872 -134.45269
+0.73846154 -136.87265
+0.75897436 -139.32196
+0.77948718 -141.81344
+0.8 -144.35653
+&
+@target G0.S4018
+@type xy
+0 -75.729855
+0.020512821 -75.98826
+0.041025641 -76.646246
+0.061538462 -77.495497
+0.082051282 -78.353726
+0.1025641 -79.085975
+0.12307692 -79.618421
+0.14358974 -79.932228
+0.16410256 -80.038549
+0.18461538 -80.058601
+0.20512821 -82.231579
+0.22564103 -85.698616
+0.24615385 -89.142516
+0.26666667 -92.110886
+0.28717949 -94.441784
+0.30769231 -94.910107
+0.32820513 -95.457224
+0.34871795 -95.867015
+0.36923077 -96.952674
+0.38974359 -98.029283
+0.41025641 -99.028561
+0.43076923 -100.11467
+0.45128205 -101.27428
+0.47179487 -102.4977
+0.49230769 -103.67426
+0.51282051 -105.1282
+0.53333333 -107.4835
+0.55384615 -109.7619
+0.57435897 -111.97978
+0.59487179 -114.15039
+0.61538462 -116.28183
+0.63589744 -118.37906
+0.65641026 -120.44693
+0.67692308 -122.48858
+0.6974359 -124.50224
+0.71794872 -126.49331
+0.73846154 -128.47807
+0.75897436 -130.47382
+0.77948718 -132.49963
+0.8 -134.57702
+&
+@target G0.S4019
+@type xy
+0 -75.729855
+0.020512821 -75.982455
+0.041025641 -76.624874
+0.061538462 -77.450972
+0.082051282 -78.280784
+0.1025641 -78.984226
+0.12307692 -79.493772
+0.14358974 -79.794754
+0.16410256 -79.900078
+0.18461538 -79.925498
+0.20512821 -82.168712
+0.22564103 -85.643273
+0.24615385 -89.107841
+0.26666667 -92.086478
+0.28717949 -94.333299
+0.30769231 -94.851286
+0.32820513 -95.344818
+0.34871795 -95.729275
+0.36923077 -96.845814
+0.38974359 -97.866379
+0.41025641 -98.869043
+0.43076923 -99.958084
+0.45128205 -101.12075
+0.47179487 -102.34769
+0.49230769 -103.63448
+0.51282051 -105.12105
+0.53333333 -107.44199
+0.55384615 -109.72578
+0.57435897 -111.95102
+0.59487179 -114.12993
+0.61538462 -116.26974
+0.63589744 -118.37459
+0.65641026 -120.44531
+0.67692308 -122.48327
+0.6974359 -124.49648
+0.71794872 -126.49114
+0.73846154 -128.47218
+0.75897436 -130.4559
+0.77948718 -132.4674
+0.8 -134.53075
+&
+@target G0.S4020
+@type xy
+0 -75.353545
+0.020512821 -75.390866
+0.041025641 -75.504418
+0.061538462 -75.697121
+0.082051282 -75.980685
+0.1025641 -76.3646
+0.12307692 -76.84869
+0.14358974 -77.434756
+0.16410256 -78.111869
+0.18461538 -79.220387
+0.20512821 -80.086994
+0.22564103 -81.108923
+0.24615385 -82.439891
+0.26666667 -83.958194
+0.28717949 -85.683592
+0.30769231 -87.587698
+0.32820513 -90.453164
+0.34871795 -93.772242
+0.36923077 -96.270732
+0.38974359 -96.85602
+0.41025641 -97.683277
+0.43076923 -98.69045
+0.45128205 -99.73709
+0.47179487 -100.64881
+0.49230769 -103.30017
+0.51282051 -105.0852
+0.53333333 -106.51896
+0.55384615 -107.9727
+0.57435897 -109.47987
+0.59487179 -111.03739
+0.61538462 -112.64182
+0.63589744 -114.28959
+0.65641026 -116.3329
+0.67692308 -118.49334
+0.6974359 -120.75741
+0.71794872 -123.11762
+0.73846154 -125.56536
+0.75897436 -128.10022
+0.77948718 -130.70918
+0.8 -133.37129
+&
+@target G0.S4021
+@type xy
+0 -75.353545
+0.020512821 -75.390836
+0.041025641 -75.504332
+0.061538462 -75.696972
+0.082051282 -75.978711
+0.1025641 -76.361329
+0.12307692 -76.843756
+0.14358974 -77.427582
+0.16410256 -78.110645
+0.18461538 -79.200251
+0.20512821 -79.946561
+0.22564103 -81.059989
+0.24615385 -82.381393
+0.26666667 -83.895911
+0.28717949 -85.615776
+0.30769231 -87.495266
+0.32820513 -90.404682
+0.34871795 -93.698875
+0.36923077 -96.145925
+0.38974359 -96.73248
+0.41025641 -97.554821
+0.43076923 -98.55413
+0.45128205 -99.591844
+0.47179487 -100.49819
+0.49230769 -103.29767
+0.51282051 -104.97974
+0.53333333 -106.38272
+0.55384615 -107.84196
+0.57435897 -109.35506
+0.59487179 -110.91897
+0.61538462 -112.53026
+0.63589744 -114.28342
+0.65641026 -116.27402
+0.67692308 -118.44341
+0.6974359 -120.7187
+0.71794872 -123.09268
+0.73846154 -125.55687
+0.75897436 -128.09002
+0.77948718 -130.67955
+0.8 -133.32361
+&
+@target G0.S4022
+@type xy
+0 -75.353545
+0.020512821 -75.38898
+0.041025641 -75.499222
+0.061538462 -75.693715
+0.082051282 -75.972868
+0.1025641 -76.339103
+0.12307692 -76.807563
+0.14358974 -77.393446
+0.16410256 -78.107534
+0.18461538 -78.96139
+0.20512821 -79.898703
+0.22564103 -80.765763
+0.24615385 -81.634061
+0.26666667 -82.508523
+0.28717949 -84.408242
+0.30769231 -86.900197
+0.32820513 -88.576094
+0.34871795 -89.840831
+0.36923077 -91.274946
+0.38974359 -92.800486
+0.41025641 -94.343136
+0.43076923 -95.759291
+0.45128205 -98.062045
+0.47179487 -100.34546
+0.49230769 -102.71471
+0.51282051 -104.78336
+0.53333333 -105.98844
+0.55384615 -107.35834
+0.57435897 -108.88184
+0.59487179 -110.54943
+0.61538462 -112.3528
+0.63589744 -114.21776
+0.65641026 -115.97725
+0.67692308 -117.70159
+0.6974359 -119.45996
+0.71794872 -121.25047
+0.73846154 -123.07226
+0.75897436 -124.92569
+0.77948718 -126.81232
+0.8 -128.73484
+&
+@target G0.S4023
+@type xy
+0 -75.353545
+0.020512821 -75.388911
+0.041025641 -75.498872
+0.061538462 -75.692733
+0.082051282 -75.972634
+0.1025641 -76.338796
+0.12307692 -76.807361
+0.14358974 -77.392791
+0.16410256 -78.099637
+0.18461538 -78.94542
+0.20512821 -79.874999
+0.22564103 -80.718871
+0.24615385 -81.581714
+0.26666667 -82.455278
+0.28717949 -84.374319
+0.30769231 -86.831143
+0.32820513 -88.565278
+0.34871795 -89.834447
+0.36923077 -91.264716
+0.38974359 -92.782606
+0.41025641 -94.310576
+0.43076923 -95.732545
+0.45128205 -98.048306
+0.47179487 -100.31981
+0.49230769 -102.67756
+0.51282051 -104.7285
+0.53333333 -105.92659
+0.55384615 -107.2903
+0.57435897 -108.81019
+0.59487179 -110.47711
+0.61538462 -112.28257
+0.63589744 -114.1854
+0.65641026 -115.88091
+0.67692308 -117.61358
+0.6974359 -119.38073
+0.71794872 -121.18042
+0.73846154 -123.01178
+0.75897436 -124.87512
+0.77948718 -126.77196
+0.8 -128.70497
+&
+@target G0.S4024
+@type xy
+0 -74.127664
+0.020512821 -74.116493
+0.041025641 -74.127484
+0.061538462 -74.202039
+0.082051282 -74.347166
+0.1025641 -74.564955
+0.12307692 -74.862245
+0.14358974 -75.245707
+0.16410256 -76.0926
+0.18461538 -78.760689
+0.20512821 -79.863513
+0.22564103 -79.991249
+0.24615385 -80.477141
+0.26666667 -82.159272
+0.28717949 -83.736797
+0.30769231 -85.561093
+0.32820513 -87.139214
+0.34871795 -88.731915
+0.36923077 -90.353009
+0.38974359 -91.996418
+0.41025641 -93.721663
+0.43076923 -95.503076
+0.45128205 -95.411943
+0.47179487 -99.589461
+0.49230769 -101.22005
+0.51282051 -101.68973
+0.53333333 -102.54975
+0.55384615 -103.76177
+0.57435897 -105.22804
+0.59487179 -106.88634
+0.61538462 -108.69214
+0.63589744 -110.61041
+0.65641026 -112.61342
+0.67692308 -114.68053
+0.6974359 -116.79881
+0.71794872 -118.96407
+0.73846154 -121.18156
+0.75897436 -123.46481
+0.77948718 -125.83173
+0.8 -128.29927
+&
+@target G0.S4025
+@type xy
+0 -74.127423
+0.020512821 -74.116418
+0.041025641 -74.126645
+0.061538462 -74.199841
+0.082051282 -74.343645
+0.1025641 -74.560337
+0.12307692 -74.856895
+0.14358974 -75.240236
+0.16410256 -76.089076
+0.18461538 -78.737722
+0.20512821 -79.840542
+0.22564103 -79.903209
+0.24615385 -80.43061
+0.26666667 -82.154042
+0.28717949 -83.694104
+0.30769231 -85.558019
+0.32820513 -87.131086
+0.34871795 -88.725238
+0.36923077 -90.343091
+0.38974359 -91.97532
+0.41025641 -93.681746
+0.43076923 -95.476533
+0.45128205 -95.402512
+0.47179487 -99.575565
+0.49230769 -101.08485
+0.51282051 -101.57699
+0.53333333 -102.43814
+0.55384615 -103.64721
+0.57435897 -105.11169
+0.59487179 -106.76926
+0.61538462 -108.57456
+0.63589744 -110.4921
+0.65641026 -112.49442
+0.67692308 -114.5618
+0.6974359 -116.68267
+0.71794872 -118.85428
+0.73846154 -121.08271
+0.75897436 -123.38113
+0.77948718 -125.76578
+0.8 -128.25137
+&
+@target G0.S4026
+@type xy
+0 -68.557298
+0.020512821 -68.480067
+0.041025641 -68.312787
+0.061538462 -68.202674
+0.082051282 -68.31967
+0.1025641 -69.217456
+0.12307692 -71.0806
+0.14358974 -73.423134
+0.16410256 -75.826903
+0.18461538 -76.50049
+0.20512821 -77.3397
+0.22564103 -78.455369
+0.24615385 -79.910709
+0.26666667 -81.5608
+0.28717949 -82.23835
+0.30769231 -81.997768
+0.32820513 -83.000566
+0.34871795 -84.094375
+0.36923077 -85.287016
+0.38974359 -86.574353
+0.41025641 -88.619762
+0.43076923 -91.377774
+0.45128205 -95.355165
+0.47179487 -95.396004
+0.49230769 -96.34884
+0.51282051 -97.633539
+0.53333333 -99.150436
+0.55384615 -100.77859
+0.57435897 -102.45155
+0.59487179 -104.14585
+0.61538462 -105.87725
+0.63589744 -107.68602
+0.65641026 -109.61762
+0.67692308 -111.72606
+0.6974359 -114.00626
+0.71794872 -116.42332
+0.73846154 -118.94375
+0.75897436 -121.53794
+0.77948718 -124.18005
+0.8 -126.85056
+&
+@target G0.S4027
+@type xy
+0 -68.485738
+0.020512821 -68.411245
+0.041025641 -68.250894
+0.061538462 -68.150425
+0.082051282 -68.282823
+0.1025641 -69.216435
+0.12307692 -71.077941
+0.14358974 -73.420326
+0.16410256 -75.82117
+0.18461538 -76.495124
+0.20512821 -77.333639
+0.22564103 -78.437004
+0.24615385 -79.90738
+0.26666667 -81.510639
+0.28717949 -82.07273
+0.30769231 -81.992662
+0.32820513 -82.995192
+0.34871795 -84.084575
+0.36923077 -85.279293
+0.38974359 -86.537541
+0.41025641 -88.582228
+0.43076923 -91.323461
+0.45128205 -95.28772
+0.47179487 -95.28652
+0.49230769 -96.221646
+0.51282051 -97.513089
+0.53333333 -99.060864
+0.55384615 -100.71543
+0.57435897 -102.4104
+0.59487179 -104.12911
+0.61538462 -105.85885
+0.63589744 -107.60884
+0.65641026 -109.45212
+0.67692308 -111.47916
+0.6974359 -113.72081
+0.71794872 -116.13172
+0.73846154 -118.66352
+0.75897436 -121.27905
+0.77948718 -123.94767
+0.8 -126.64591
+&
+@target G0.S4028
+@type xy
+0 -65.80957
+0.020512821 -65.929147
+0.041025641 -66.254688
+0.061538462 -66.799237
+0.082051282 -67.619253
+0.1025641 -68.335863
+0.12307692 -68.777003
+0.14358974 -69.315018
+0.16410256 -69.907834
+0.18461538 -72.201862
+0.20512821 -74.88767
+0.22564103 -77.495444
+0.24615385 -79.451804
+0.26666667 -80.1689
+0.28717949 -81.052784
+0.30769231 -81.865691
+0.32820513 -81.295059
+0.34871795 -79.520613
+0.36923077 -80.257021
+0.38974359 -82.965589
+0.41025641 -85.968197
+0.43076923 -88.193646
+0.45128205 -90.032922
+0.47179487 -91.660235
+0.49230769 -93.178068
+0.51282051 -94.592167
+0.53333333 -95.939238
+0.55384615 -97.331568
+0.57435897 -98.811265
+0.59487179 -100.38647
+0.61538462 -102.05566
+0.63589744 -103.7994
+0.65641026 -105.56932
+0.67692308 -107.35135
+0.6974359 -109.13853
+0.71794872 -110.92668
+0.73846154 -112.7546
+0.75897436 -114.64229
+0.77948718 -116.60031
+0.8 -118.63514
+&
+@target G0.S4029
+@type xy
+0 -65.80957
+0.020512821 -65.928855
+0.041025641 -66.254062
+0.061538462 -66.798802
+0.082051282 -67.614697
+0.1025641 -68.304977
+0.12307692 -68.749021
+0.14358974 -69.290149
+0.16410256 -69.885667
+0.18461538 -72.198678
+0.20512821 -74.883823
+0.22564103 -77.489593
+0.24615385 -79.421456
+0.26666667 -80.153496
+0.28717949 -81.040818
+0.30769231 -81.729054
+0.32820513 -81.183515
+0.34871795 -79.491957
+0.36923077 -80.130537
+0.38974359 -82.826494
+0.41025641 -85.765925
+0.43076923 -87.96323
+0.45128205 -89.769012
+0.47179487 -91.360257
+0.49230769 -92.847814
+0.51282051 -94.26551
+0.53333333 -95.647996
+0.55384615 -97.071919
+0.57435897 -98.575526
+0.59487179 -100.17307
+0.61538462 -101.87231
+0.63589744 -103.66822
+0.65641026 -105.52022
+0.67692308 -107.32301
+0.6974359 -109.07134
+0.71794872 -110.8471
+0.73846154 -112.67343
+0.75897436 -114.56352
+0.77948718 -116.52539
+0.8 -118.5645
+&
+@target G0.S4030
+@type xy
+0 -65.517479
+0.020512821 -65.482209
+0.041025641 -65.406439
+0.061538462 -65.277385
+0.082051282 -65.054021
+0.1025641 -64.766658
+0.12307692 -65.186937
+0.14358974 -67.14703
+0.16410256 -69.632481
+0.18461538 -70.591757
+0.20512821 -71.274604
+0.22564103 -71.968781
+0.24615385 -72.687797
+0.26666667 -73.456518
+0.28717949 -74.319211
+0.30769231 -75.358547
+0.32820513 -76.778333
+0.34871795 -79.381667
+0.36923077 -79.501322
+0.38974359 -81.667048
+0.41025641 -82.56866
+0.43076923 -83.430717
+0.45128205 -84.387245
+0.47179487 -85.45647
+0.49230769 -86.618478
+0.51282051 -87.842018
+0.53333333 -89.099723
+0.55384615 -90.482941
+0.57435897 -92.371104
+0.59487179 -94.236207
+0.61538462 -96.127019
+0.63589744 -98.066125
+0.65641026 -100.06497
+0.67692308 -102.12953
+0.6974359 -104.26291
+0.71794872 -106.46665
+0.73846154 -108.74131
+0.75897436 -111.0869
+0.77948718 -113.50615
+0.8 -115.99763
+&
+@target G0.S4031
+@type xy
+0 -65.517479
+0.020512821 -65.481709
+0.041025641 -65.404675
+0.061538462 -65.273172
+0.082051282 -65.046329
+0.1025641 -64.757431
+0.12307692 -65.184715
+0.14358974 -67.140083
+0.16410256 -69.62752
+0.18461538 -70.571945
+0.20512821 -71.25468
+0.22564103 -71.94757
+0.24615385 -72.663696
+0.26666667 -73.427523
+0.28717949 -74.282792
+0.30769231 -75.311806
+0.32820513 -76.719478
+0.34871795 -79.233431
+0.36923077 -79.492022
+0.38974359 -81.461559
+0.41025641 -82.357412
+0.43076923 -83.247665
+0.45128205 -84.224661
+0.47179487 -85.302086
+0.49230769 -86.461169
+0.51282051 -87.672133
+0.53333333 -88.908268
+0.55384615 -90.435685
+0.57435897 -92.33787
+0.59487179 -94.20818
+0.61538462 -96.101721
+0.63589744 -98.042971
+0.65641026 -100.04407
+0.67692308 -102.11129
+0.6974359 -104.24789
+0.71794872 -106.45543
+0.73846154 -108.73446
+0.75897436 -111.08487
+0.77948718 -113.5031
+0.8 -115.98954
+&
+@target G0.S4032
+@type xy
+0 -61.092827
+0.020512821 -61.316322
+0.041025641 -61.929627
+0.061538462 -62.795334
+0.082051282 -63.73486
+0.1025641 -64.537829
+0.12307692 -64.925552
+0.14358974 -65.807525
+0.16410256 -66.3066
+0.18461538 -66.818869
+0.20512821 -67.362476
+0.22564103 -67.950929
+0.24615385 -68.594599
+0.26666667 -69.300439
+0.28717949 -70.066038
+0.30769231 -70.845096
+0.32820513 -71.52131
+0.34871795 -75.219516
+0.36923077 -79.41872
+0.38974359 -79.89652
+0.41025641 -80.493062
+0.43076923 -81.177957
+0.45128205 -82.761543
+0.47179487 -84.442891
+0.49230769 -85.940684
+0.51282051 -87.034609
+0.53333333 -88.430707
+0.55384615 -90.374325
+0.57435897 -91.660976
+0.59487179 -92.966861
+0.61538462 -94.308321
+0.63589744 -95.706655
+0.65641026 -97.18376
+0.67692308 -98.757697
+0.6974359 -100.43848
+0.71794872 -102.22563
+0.73846154 -104.10917
+0.75897436 -106.07387
+0.77948718 -108.1043
+0.8 -110.18963
+&
+@target G0.S4033
+@type xy
+0 -61.092827
+0.020512821 -61.314834
+0.041025641 -61.925331
+0.061538462 -62.789341
+0.082051282 -63.729199
+0.1025641 -64.535409
+0.12307692 -64.920293
+0.14358974 -65.799999
+0.16410256 -66.297708
+0.18461538 -66.808385
+0.20512821 -67.350285
+0.22564103 -67.93695
+0.24615385 -68.578679
+0.26666667 -69.281974
+0.28717949 -70.042134
+0.30769231 -70.80141
+0.32820513 -71.259602
+0.34871795 -75.141382
+0.36923077 -79.380441
+0.38974359 -79.850497
+0.41025641 -80.437581
+0.43076923 -81.126871
+0.45128205 -82.738303
+0.47179487 -84.415509
+0.49230769 -85.862075
+0.51282051 -86.871315
+0.53333333 -88.322337
+0.55384615 -90.152636
+0.57435897 -91.400954
+0.59487179 -92.661321
+0.61538462 -93.951192
+0.63589744 -95.293271
+0.65641026 -96.711499
+0.67692308 -98.226781
+0.6974359 -99.852103
+0.71794872 -101.58853
+0.73846154 -103.4246
+0.75897436 -105.33918
+0.77948718 -107.30379
+0.8 -109.27533
+&
+@target G0.S4034
+@type xy
+0 -57.416706
+0.020512821 -57.69004
+0.041025641 -58.454969
+0.061538462 -59.617657
+0.082051282 -61.113756
+0.1025641 -62.901785
+0.12307692 -64.435792
+0.14358974 -64.0376
+0.16410256 -63.651749
+0.18461538 -63.268253
+0.20512821 -62.877824
+0.22564103 -62.477521
+0.24615385 -62.251685
+0.26666667 -64.175467
+0.28717949 -66.432423
+0.30769231 -68.834075
+0.32820513 -71.012677
+0.34871795 -73.70158
+0.36923077 -75.69603
+0.38974359 -77.493536
+0.41025641 -79.242915
+0.43076923 -81.010624
+0.45128205 -81.914441
+0.47179487 -82.698723
+0.49230769 -83.577046
+0.51282051 -84.921846
+0.53333333 -86.79406
+0.55384615 -88.269334
+0.57435897 -89.934127
+0.59487179 -91.612779
+0.61538462 -93.26194
+0.63589744 -94.859751
+0.65641026 -96.390681
+0.67692308 -97.835199
+0.6974359 -99.136586
+0.71794872 -100.20075
+0.73846154 -101.08888
+0.75897436 -103.09045
+0.77948718 -105.52406
+0.8 -108.03086
+&
+@target G0.S4035
+@type xy
+0 -57.363897
+0.020512821 -57.645422
+0.041025641 -58.424927
+0.061538462 -59.598908
+0.082051282 -61.102313
+0.1025641 -62.895372
+0.12307692 -64.425104
+0.14358974 -64.025783
+0.16410256 -63.639353
+0.18461538 -63.255011
+0.20512821 -62.862505
+0.22564103 -62.45804
+0.24615385 -62.238627
+0.26666667 -64.157561
+0.28717949 -66.425167
+0.30769231 -68.833067
+0.32820513 -70.976863
+0.34871795 -73.556451
+0.36923077 -75.543536
+0.38974359 -77.352507
+0.41025641 -79.130721
+0.43076923 -80.939326
+0.45128205 -81.871299
+0.47179487 -82.65929
+0.49230769 -83.538192
+0.51282051 -84.838763
+0.53333333 -86.684986
+0.55384615 -88.219396
+0.57435897 -89.899738
+0.59487179 -91.588215
+0.61538462 -93.246172
+0.63589744 -94.852937
+0.65641026 -96.388336
+0.67692308 -97.825084
+0.6974359 -99.128079
+0.71794872 -100.13701
+0.73846154 -100.67776
+0.75897436 -102.57373
+0.77948718 -104.98271
+0.8 -107.38795
+&
+@target G0.S4036
+@type xy
+0 -56.322455
+0.020512821 -56.263251
+0.041025641 -56.116123
+0.061538462 -55.937927
+0.082051282 -55.73636
+0.1025641 -55.670706
+0.12307692 -55.927351
+0.14358974 -56.364923
+0.16410256 -57.006377
+0.18461538 -57.829592
+0.20512821 -58.885313
+0.22564103 -60.324827
+0.24615385 -62.172425
+0.26666667 -62.234247
+0.28717949 -63.745708
+0.30769231 -66.478187
+0.32820513 -70.340049
+0.34871795 -70.949704
+0.36923077 -72.011975
+0.38974359 -73.149561
+0.41025641 -74.331896
+0.43076923 -75.552161
+0.45128205 -76.804381
+0.47179487 -78.074338
+0.49230769 -79.330889
+0.51282051 -80.571999
+0.53333333 -81.808881
+0.55384615 -83.073293
+0.57435897 -84.410793
+0.59487179 -85.818737
+0.61538462 -87.293567
+0.63589744 -88.829637
+0.65641026 -90.4207
+0.67692308 -92.060084
+0.6974359 -94.372067
+0.71794872 -97.164547
+0.73846154 -100.5327
+0.75897436 -102.49479
+0.77948718 -104.20643
+0.8 -106.03502
+&
+@target G0.S4037
+@type xy
+0 -56.2114
+0.020512821 -56.153589
+0.041025641 -56.007036
+0.061538462 -55.819737
+0.082051282 -55.586615
+0.1025641 -55.655052
+0.12307692 -55.92181
+0.14358974 -56.354887
+0.16410256 -56.999996
+0.18461538 -57.824795
+0.20512821 -58.876044
+0.22564103 -60.286456
+0.24615385 -62.138996
+0.26666667 -62.23176
+0.28717949 -63.651946
+0.30769231 -66.370161
+0.32820513 -70.17863
+0.34871795 -70.911446
+0.36923077 -71.980911
+0.38974359 -73.118563
+0.41025641 -74.299288
+0.43076923 -75.518402
+0.45128205 -76.772593
+0.47179487 -78.052997
+0.49230769 -79.328079
+0.51282051 -80.540886
+0.53333333 -81.802089
+0.55384615 -83.03189
+0.57435897 -84.335172
+0.59487179 -85.735478
+0.61538462 -87.205232
+0.63589744 -88.738807
+0.65641026 -90.329879
+0.67692308 -91.977422
+0.6974359 -94.291269
+0.71794872 -96.988958
+0.73846154 -99.980594
+0.75897436 -102.16007
+0.77948718 -103.91049
+0.8 -105.75233
+&
+@target G0.S4038
+@type xy
+0 -54.779847
+0.020512821 -54.755264
+0.041025641 -54.750778
+0.061538462 -54.877508
+0.082051282 -55.2387
+0.1025641 -55.531402
+0.12307692 -55.879888
+0.14358974 -56.329664
+0.16410256 -56.872394
+0.18461538 -57.568219
+0.20512821 -58.436246
+0.22564103 -59.431545
+0.24615385 -60.400761
+0.26666667 -61.752815
+0.28717949 -62.12456
+0.30769231 -61.871586
+0.32820513 -63.813826
+0.34871795 -65.708591
+0.36923077 -67.580806
+0.38974359 -69.392905
+0.41025641 -71.086843
+0.43076923 -72.576506
+0.45128205 -73.610879
+0.47179487 -75.085526
+0.49230769 -77.681201
+0.51282051 -80.208775
+0.53333333 -81.750568
+0.55384615 -83.007941
+0.57435897 -84.264213
+0.59487179 -85.523042
+0.61538462 -86.812456
+0.63589744 -88.139507
+0.65641026 -89.801406
+0.67692308 -91.971619
+0.6974359 -93.740644
+0.71794872 -95.454797
+0.73846154 -97.194714
+0.75897436 -98.952632
+0.77948718 -100.72124
+0.8 -102.49407
+&
+@target G0.S4039
+@type xy
+0 -54.606911
+0.020512821 -54.590559
+0.041025641 -54.598788
+0.061538462 -54.726471
+0.082051282 -55.064059
+0.1025641 -55.497958
+0.12307692 -55.863685
+0.14358974 -56.322529
+0.16410256 -56.859855
+0.18461538 -57.545878
+0.20512821 -58.393856
+0.22564103 -59.337866
+0.24615385 -60.294545
+0.26666667 -61.653669
+0.28717949 -62.108454
+0.30769231 -61.768648
+0.32820513 -63.700761
+0.34871795 -65.591033
+0.36923077 -67.457172
+0.38974359 -69.262306
+0.41025641 -70.94819
+0.43076923 -72.424789
+0.45128205 -73.413222
+0.47179487 -74.994662
+0.49230769 -77.597269
+0.51282051 -80.052999
+0.53333333 -81.557105
+0.55384615 -82.775723
+0.57435897 -84.003429
+0.59487179 -85.255881
+0.61538462 -86.538865
+0.63589744 -87.860492
+0.65641026 -89.751791
+0.67692308 -91.917478
+0.6974359 -93.656677
+0.71794872 -95.377243
+0.73846154 -97.125253
+0.75897436 -98.892704
+0.77948718 -100.67204
+0.8 -102.45658
+&
+@target G0.S4040
+@type xy
+0 -48.144058
+0.020512821 -48.146086
+0.041025641 -48.150533
+0.061538462 -48.146808
+0.082051282 -48.249914
+0.1025641 -48.437021
+0.12307692 -48.714822
+0.14358974 -49.123791
+0.16410256 -49.635719
+0.18461538 -50.252389
+0.20512821 -51.131969
+0.22564103 -53.435562
+0.24615385 -55.857018
+0.26666667 -57.993337
+0.28717949 -59.894146
+0.30769231 -61.759821
+0.32820513 -61.515501
+0.34871795 -61.42911
+0.36923077 -62.336373
+0.38974359 -64.352332
+0.41025641 -66.504225
+0.43076923 -68.874952
+0.45128205 -71.76471
+0.47179487 -74.151401
+0.49230769 -75.631372
+0.51282051 -77.217974
+0.53333333 -78.851572
+0.55384615 -80.524976
+0.57435897 -82.246624
+0.59487179 -84.018985
+0.61538462 -85.855246
+0.63589744 -87.773949
+0.65641026 -89.512957
+0.67692308 -90.942291
+0.6974359 -92.437522
+0.71794872 -94.0096
+0.73846154 -95.671327
+0.75897436 -97.438864
+0.77948718 -99.334006
+0.8 -101.38755
+&
+@target G0.S4041
+@type xy
+0 -48.144058
+0.020512821 -48.145607
+0.041025641 -48.147221
+0.061538462 -48.137057
+0.082051282 -48.225024
+0.1025641 -48.409756
+0.12307692 -48.651728
+0.14358974 -49.052573
+0.16410256 -49.558381
+0.18461538 -50.177766
+0.20512821 -51.128359
+0.22564103 -53.39059
+0.24615385 -55.791548
+0.26666667 -57.908253
+0.28717949 -59.795583
+0.30769231 -61.745508
+0.32820513 -61.4999
+0.34871795 -61.415654
+0.36923077 -62.308492
+0.38974359 -64.323864
+0.41025641 -66.472873
+0.43076923 -68.833272
+0.45128205 -71.676407
+0.47179487 -74.137588
+0.49230769 -75.616743
+0.51282051 -77.206131
+0.53333333 -78.845592
+0.55384615 -80.523015
+0.57435897 -82.235357
+0.59487179 -83.99772
+0.61538462 -85.823982
+0.63589744 -87.733245
+0.65641026 -89.23009
+0.67692308 -90.657447
+0.6974359 -92.152794
+0.71794872 -93.72732
+0.73846154 -95.394161
+0.75897436 -97.169948
+0.77948718 -99.077069
+0.8 -101.1469
+&
+@target G0.S4042
+@type xy
+0 -47.513484
+0.020512821 -47.557108
+0.041025641 -47.692409
+0.061538462 -47.934694
+0.082051282 -48.152866
+0.1025641 -48.397345
+0.12307692 -48.648133
+0.14358974 -48.847369
+0.16410256 -48.963414
+0.18461538 -49.470676
+0.20512821 -50.758971
+0.22564103 -51.51549
+0.24615385 -52.333511
+0.26666667 -53.198169
+0.28717949 -54.567512
+0.30769231 -56.54984
+0.32820513 -58.524249
+0.34871795 -60.421346
+0.36923077 -61.371593
+0.38974359 -61.2969
+0.41025641 -61.224826
+0.43076923 -61.158254
+0.45128205 -61.160704
+0.47179487 -63.207255
+0.49230769 -65.131319
+0.51282051 -67.039527
+0.53333333 -68.958638
+0.55384615 -70.899211
+0.57435897 -72.86552
+0.59487179 -74.8585
+0.61538462 -76.876886
+0.63589744 -78.917783
+0.65641026 -80.977279
+0.67692308 -83.051606
+0.6974359 -85.139263
+0.71794872 -87.243846
+0.73846154 -89.376325
+0.75897436 -91.554856
+0.77948718 -93.801426
+0.8 -96.137125
+&
+@target G0.S4043
+@type xy
+0 -47.427659
+0.020512821 -47.470776
+0.041025641 -47.603191
+0.061538462 -47.839008
+0.082051282 -48.091816
+0.1025641 -48.338592
+0.12307692 -48.624807
+0.14358974 -48.830819
+0.16410256 -48.951806
+0.18461538 -49.461318
+0.20512821 -50.708227
+0.22564103 -51.433934
+0.24615385 -52.2521
+0.26666667 -53.111672
+0.28717949 -54.552647
+0.30769231 -56.527368
+0.32820513 -58.496826
+0.34871795 -60.392972
+0.36923077 -61.358432
+0.38974359 -61.284673
+0.41025641 -61.213402
+0.43076923 -61.146437
+0.45128205 -61.128326
+0.47179487 -63.177139
+0.49230769 -65.102466
+0.51282051 -67.01116
+0.53333333 -68.930029
+0.55384615 -70.869642
+0.57435897 -72.834251
+0.59487179 -74.824751
+0.61538462 -76.839857
+0.63589744 -78.876789
+0.65641026 -80.93204
+0.67692308 -83.002701
+0.6974359 -85.088573
+0.71794872 -87.194627
+0.73846154 -89.332587
+0.75897436 -91.520199
+0.77948718 -93.77798
+0.8 -96.125212
+&
+@target G0.S4044
+@type xy
+0 -45.890648
+0.020512821 -45.881483
+0.041025641 -45.854817
+0.061538462 -45.813206
+0.082051282 -45.761032
+0.1025641 -45.704399
+0.12307692 -45.65067
+0.14358974 -45.611413
+0.16410256 -47.196207
+0.18461538 -49.185814
+0.20512821 -50.407857
+0.22564103 -50.974579
+0.24615385 -51.406707
+0.26666667 -52.112306
+0.28717949 -53.202535
+0.30769231 -54.137283
+0.32820513 -55.086538
+0.34871795 -56.036722
+0.36923077 -57.002165
+0.38974359 -57.989254
+0.41025641 -58.985126
+0.43076923 -59.926464
+0.45128205 -61.082307
+0.47179487 -60.980259
+0.49230769 -62.014681
+0.51282051 -63.255388
+0.53333333 -64.547266
+0.55384615 -65.860998
+0.57435897 -67.160242
+0.59487179 -68.451002
+0.61538462 -70.05271
+0.63589744 -72.025371
+0.65641026 -74.206446
+0.67692308 -76.542911
+0.6974359 -79.01637
+0.71794872 -81.615115
+0.73846154 -84.326522
+0.75897436 -87.135837
+0.77948718 -90.028383
+0.8 -92.992938
+&
+@target G0.S4045
+@type xy
+0 -45.889789
+0.020512821 -45.880621
+0.041025641 -45.853943
+0.061538462 -45.812312
+0.082051282 -45.760123
+0.1025641 -45.703501
+0.12307692 -45.649841
+0.14358974 -45.610904
+0.16410256 -47.16391
+0.18461538 -49.171941
+0.20512821 -50.397286
+0.22564103 -50.97037
+0.24615385 -51.405976
+0.26666667 -52.111847
+0.28717949 -53.130134
+0.30769231 -54.064427
+0.32820513 -55.01041
+0.34871795 -55.955092
+0.36923077 -56.911616
+0.38974359 -57.8837
+0.41025641 -58.851199
+0.43076923 -59.711374
+0.45128205 -61.067495
+0.47179487 -60.956072
+0.49230769 -61.974578
+0.51282051 -63.202071
+0.53333333 -64.47724
+0.55384615 -65.767356
+0.57435897 -67.028749
+0.59487179 -68.283063
+0.61538462 -69.930435
+0.63589744 -71.934375
+0.65641026 -74.130955
+0.67692308 -76.47636
+0.6974359 -78.955
+0.71794872 -81.556058
+0.73846154 -84.267435
+0.75897436 -87.075193
+0.77948718 -89.965808
+0.8 -92.929129
+&
+@target G0.S4046
+@type xy
+0 -40.621811
+0.020512821 -40.658357
+0.041025641 -40.747074
+0.061538462 -40.827293
+0.082051282 -41.114759
+0.1025641 -41.916834
+0.12307692 -43.251652
+0.14358974 -45.049691
+0.16410256 -45.601474
+0.18461538 -45.614933
+0.20512821 -45.674622
+0.22564103 -46.831151
+0.24615385 -48.479846
+0.26666667 -50.265912
+0.28717949 -51.488762
+0.30769231 -52.363646
+0.32820513 -53.155482
+0.34871795 -53.942206
+0.36923077 -54.743866
+0.38974359 -55.567532
+0.41025641 -56.664496
+0.43076923 -58.448711
+0.45128205 -59.918324
+0.47179487 -60.863063
+0.49230769 -60.877083
+0.51282051 -61.631131
+0.53333333 -63.038805
+0.55384615 -64.396784
+0.57435897 -65.865343
+0.59487179 -67.474223
+0.61538462 -69.21121
+0.63589744 -71.05271
+0.65641026 -72.977826
+0.67692308 -74.992532
+0.6974359 -77.09984
+0.71794872 -79.30055
+0.73846154 -81.59354
+0.75897436 -83.975852
+0.77948718 -86.442689
+0.8 -88.987481
+&
+@target G0.S4047
+@type xy
+0 -40.621811
+0.020512821 -40.658353
+0.041025641 -40.746484
+0.061538462 -40.823067
+0.082051282 -41.113059
+0.1025641 -41.90727
+0.12307692 -43.227757
+0.14358974 -45.022632
+0.16410256 -45.600557
+0.18461538 -45.614128
+0.20512821 -45.67407
+0.22564103 -46.828341
+0.24615385 -48.478495
+0.26666667 -50.26564
+0.28717949 -51.484122
+0.30769231 -52.358917
+0.32820513 -53.150684
+0.34871795 -53.938357
+0.36923077 -54.742892
+0.38974359 -55.543388
+0.41025641 -56.56295
+0.43076923 -58.271844
+0.45128205 -59.9017
+0.47179487 -60.834589
+0.49230769 -60.834652
+0.51282051 -61.60489
+0.53333333 -63.032806
+0.55384615 -64.383915
+0.57435897 -65.858235
+0.59487179 -67.473158
+0.61538462 -69.197346
+0.63589744 -71.020441
+0.65641026 -72.944771
+0.67692308 -74.957607
+0.6974359 -77.062238
+0.71794872 -79.259665
+0.73846154 -81.548936
+0.75897436 -83.927258
+0.77948718 -86.390036
+0.8 -88.931006
+&
+@target G0.S4048
+@type xy
+0 -40.284569
+0.020512821 -40.296722
+0.041025641 -40.34267
+0.061538462 -40.419933
+0.082051282 -41.094558
+0.1025641 -41.71947
+0.12307692 -42.248266
+0.14358974 -42.764844
+0.16410256 -43.458404
+0.18461538 -44.345968
+0.20512821 -45.455715
+0.22564103 -45.781775
+0.24615385 -45.953153
+0.26666667 -46.210581
+0.28717949 -46.579429
+0.30769231 -47.098321
+0.32820513 -47.958134
+0.34871795 -49.201965
+0.36923077 -50.633043
+0.38974359 -52.657076
+0.41025641 -54.568892
+0.43076923 -55.956628
+0.45128205 -57.203495
+0.47179487 -58.407592
+0.49230769 -60.075458
+0.51282051 -60.851877
+0.53333333 -62.314915
+0.55384615 -64.022259
+0.57435897 -65.726617
+0.59487179 -67.442591
+0.61538462 -69.190713
+0.63589744 -71.007019
+0.65641026 -72.891831
+0.67692308 -74.845432
+0.6974359 -76.863814
+0.71794872 -78.943736
+0.73846154 -81.081877
+0.75897436 -83.274421
+0.77948718 -85.517007
+0.8 -87.805184
+&
+@target G0.S4049
+@type xy
+0 -40.28381
+0.020512821 -40.296719
+0.041025641 -40.342662
+0.061538462 -40.419918
+0.082051282 -41.092008
+0.1025641 -41.719311
+0.12307692 -42.239188
+0.14358974 -42.758739
+0.16410256 -43.454001
+0.18461538 -44.342393
+0.20512821 -45.452489
+0.22564103 -45.781461
+0.24615385 -45.953133
+0.26666667 -46.209968
+0.28717949 -46.577715
+0.30769231 -47.094146
+0.32820513 -47.957605
+0.34871795 -49.198824
+0.36923077 -50.626917
+0.38974359 -52.640763
+0.41025641 -54.487714
+0.43076923 -55.859688
+0.45128205 -57.075343
+0.47179487 -58.279312
+0.49230769 -60.026612
+0.51282051 -60.793528
+0.53333333 -62.290263
+0.55384615 -63.977095
+0.57435897 -65.684927
+0.59487179 -67.40669
+0.61538462 -69.17822
+0.63589744 -70.996586
+0.65641026 -72.878667
+0.67692308 -74.830219
+0.6974359 -76.846999
+0.71794872 -78.925596
+0.73846154 -81.062517
+0.75897436 -83.253733
+0.77948718 -85.494561
+0.8 -87.780056
+&
+@target G0.S4050
+@type xy
+0 -40.281471
+0.020512821 -40.291069
+0.041025641 -40.32043
+0.061538462 -40.383807
+0.082051282 -40.529585
+0.1025641 -40.673105
+0.12307692 -40.852178
+0.14358974 -41.068373
+0.16410256 -41.322861
+0.18461538 -41.616392
+0.20512821 -41.94957
+0.22564103 -42.323138
+0.24615385 -42.956078
+0.26666667 -44.10785
+0.28717949 -45.26837
+0.30769231 -46.411412
+0.32820513 -47.37357
+0.34871795 -48.685862
+0.36923077 -50.463649
+0.38974359 -51.830617
+0.41025641 -53.266178
+0.43076923 -54.770311
+0.45128205 -56.383779
+0.47179487 -58.087142
+0.49230769 -59.325922
+0.51282051 -60.740575
+0.53333333 -60.924273
+0.55384615 -61.626489
+0.57435897 -63.968908
+0.59487179 -66.4501
+0.61538462 -68.652154
+0.63589744 -70.6412
+0.65641026 -72.495162
+0.67692308 -74.242289
+0.6974359 -75.881043
+0.71794872 -77.410983
+0.73846154 -78.841541
+0.75897436 -80.191215
+0.77948718 -81.48286
+0.8 -83.414814
+&
+@target G0.S4051
+@type xy
+0 -40.281471
+0.020512821 -40.291036
+0.041025641 -40.320297
+0.061538462 -40.377933
+0.082051282 -40.529564
+0.1025641 -40.673079
+0.12307692 -40.852138
+0.14358974 -41.068284
+0.16410256 -41.322647
+0.18461538 -41.615914
+0.20512821 -41.948628
+0.22564103 -42.321488
+0.24615385 -42.954925
+0.26666667 -44.106245
+0.28717949 -45.266155
+0.30769231 -46.408429
+0.32820513 -47.364677
+0.34871795 -48.666659
+0.36923077 -50.462088
+0.38974359 -51.823604
+0.41025641 -53.251456
+0.43076923 -54.741732
+0.45128205 -56.319789
+0.47179487 -58.015651
+0.49230769 -59.319688
+0.51282051 -60.73439
+0.53333333 -60.857095
+0.55384615 -61.609354
+0.57435897 -63.926559
+0.59487179 -66.385998
+0.61538462 -68.65115
+0.63589744 -70.590432
+0.65641026 -72.40587
+0.67692308 -74.12013
+0.6974359 -75.731212
+0.71794872 -77.239933
+0.73846154 -78.656417
+0.75897436 -79.998703
+0.77948718 -81.288412
+0.8 -83.38476
+&
+@target G0.S4052
+@type xy
+0 -40.281471
+0.020512821 -40.235237
+0.041025641 -40.136751
+0.061538462 -40.371157
+0.082051282 -40.445628
+0.1025641 -40.546636
+0.12307692 -40.677041
+0.14358974 -40.839547
+0.16410256 -41.036675
+0.18461538 -41.270899
+0.20512821 -41.544801
+0.22564103 -41.86106
+0.24615385 -42.737721
+0.26666667 -43.192949
+0.28717949 -43.686782
+0.30769231 -44.215994
+0.32820513 -45.426681
+0.34871795 -46.689873
+0.36923077 -47.408182
+0.38974359 -48.138037
+0.41025641 -48.921015
+0.43076923 -50.420591
+0.45128205 -52.034411
+0.47179487 -53.73554
+0.49230769 -55.53194
+0.51282051 -57.433724
+0.53333333 -59.458465
+0.55384615 -61.071003
+0.57435897 -61.297258
+0.59487179 -61.631072
+0.61538462 -63.025648
+0.63589744 -65.026164
+0.65641026 -67.072842
+0.67692308 -69.182045
+0.6974359 -71.36265
+0.71794872 -73.618757
+0.73846154 -75.951836
+0.75897436 -78.362196
+0.77948718 -80.849836
+0.8 -82.739161
+&
+@target G0.S4053
+@type xy
+0 -40.281471
+0.020512821 -40.234368
+0.041025641 -40.134225
+0.061538462 -40.370854
+0.082051282 -40.445082
+0.1025641 -40.545769
+0.12307692 -40.675777
+0.14358974 -40.837809
+0.16410256 -41.034387
+0.18461538 -41.267985
+0.20512821 -41.541185
+0.22564103 -41.856649
+0.24615385 -42.735126
+0.26666667 -43.189228
+0.28717949 -43.681828
+0.30769231 -44.209736
+0.32820513 -45.418171
+0.34871795 -46.674415
+0.36923077 -47.399347
+0.38974359 -48.131385
+0.41025641 -48.915351
+0.43076923 -50.414824
+0.45128205 -52.028335
+0.47179487 -53.729748
+0.49230769 -55.527454
+0.51282051 -57.432309
+0.53333333 -59.453661
+0.55384615 -60.998326
+0.57435897 -61.221542
+0.59487179 -61.554922
+0.61538462 -63.010162
+0.63589744 -65.009691
+0.65641026 -67.054848
+0.67692308 -69.161984
+0.6974359 -71.340176
+0.71794872 -73.593818
+0.73846154 -75.924682
+0.75897436 -78.333335
+0.77948718 -80.819966
+0.8 -82.546814
+&
+@target G0.S4054
+@type xy
+0 -39.129077
+0.020512821 -39.230988
+0.041025641 -39.5221
+0.061538462 -39.704298
+0.082051282 -39.485082
+0.1025641 -39.180725
+0.12307692 -38.84115
+0.14358974 -38.481931
+0.16410256 -38.698675
+0.18461538 -39.695595
+0.20512821 -40.740801
+0.22564103 -41.830101
+0.24615385 -42.222179
+0.26666667 -42.630142
+0.28717949 -43.086246
+0.30769231 -43.591282
+0.32820513 -44.777437
+0.34871795 -45.368891
+0.36923077 -46.057854
+0.38974359 -47.434412
+0.41025641 -48.888363
+0.43076923 -49.773984
+0.45128205 -50.707487
+0.47179487 -51.73045
+0.49230769 -52.857296
+0.51282051 -54.115782
+0.53333333 -55.496755
+0.55384615 -57.012956
+0.57435897 -59.049752
+0.59487179 -61.045137
+0.61538462 -62.103472
+0.63589744 -63.256864
+0.65641026 -65.112232
+0.67692308 -67.062302
+0.6974359 -69.10538
+0.71794872 -71.240407
+0.73846154 -73.466847
+0.75897436 -75.784551
+0.77948718 -78.193603
+0.8 -80.694156
+&
+@target G0.S4055
+@type xy
+0 -39.129077
+0.020512821 -39.230257
+0.041025641 -39.518487
+0.061538462 -39.698053
+0.082051282 -39.480901
+0.1025641 -39.177176
+0.12307692 -38.837903
+0.14358974 -38.478929
+0.16410256 -38.698494
+0.18461538 -39.695279
+0.20512821 -40.740265
+0.22564103 -41.82929
+0.24615385 -42.216863
+0.26666667 -42.623776
+0.28717949 -43.078652
+0.30769231 -43.582251
+0.32820513 -44.769788
+0.34871795 -45.359708
+0.36923077 -46.054408
+0.38974359 -47.430092
+0.41025641 -48.883235
+0.43076923 -49.768866
+0.45128205 -50.702763
+0.47179487 -51.726242
+0.49230769 -52.854363
+0.51282051 -54.115293
+0.53333333 -55.496668
+0.55384615 -57.001518
+0.57435897 -59.036607
+0.59487179 -61.030511
+0.61538462 -62.029027
+0.63589744 -63.253783
+0.65641026 -65.108695
+0.67692308 -67.058417
+0.6974359 -69.101346
+0.71794872 -71.236493
+0.73846154 -73.463362
+0.75897436 -75.781817
+0.77948718 -78.191931
+0.8 -80.693837
+&
+@target G0.S4056
+@type xy
+0 -34.271615
+0.020512821 -34.310885
+0.041025641 -34.429678
+0.061538462 -34.635995
+0.082051282 -35.235214
+0.1025641 -36.01763
+0.12307692 -36.857178
+0.14358974 -37.74656
+0.16410256 -38.157367
+0.18461538 -38.024595
+0.20512821 -38.155706
+0.22564103 -38.821647
+0.24615385 -39.577918
+0.26666667 -40.427609
+0.28717949 -41.487851
+0.30769231 -43.516791
+0.32820513 -44.145892
+0.34871795 -44.760011
+0.36923077 -45.989095
+0.38974359 -46.63742
+0.41025641 -47.313581
+0.43076923 -48.017484
+0.45128205 -48.749144
+0.47179487 -49.757528
+0.49230769 -51.475728
+0.51282051 -53.23909
+0.53333333 -55.054596
+0.55384615 -56.883313
+0.57435897 -58.298258
+0.59487179 -59.842518
+0.61538462 -61.49879
+0.63589744 -62.753614
+0.65641026 -63.63106
+0.67692308 -64.769955
+0.6974359 -66.161413
+0.71794872 -67.762973
+0.73846154 -69.526142
+0.75897436 -71.410616
+0.77948718 -73.38474
+0.8 -75.629977
+&
+@target G0.S4057
+@type xy
+0 -34.271078
+0.020512821 -34.310342
+0.041025641 -34.429123
+0.061538462 -34.635445
+0.082051282 -35.235165
+0.1025641 -36.01755
+0.12307692 -36.857094
+0.14358974 -37.746437
+0.16410256 -38.155105
+0.18461538 -38.023232
+0.20512821 -38.155072
+0.22564103 -38.820998
+0.24615385 -39.577271
+0.26666667 -40.427181
+0.28717949 -41.486542
+0.30769231 -43.516601
+0.32820513 -44.135197
+0.34871795 -44.75744
+0.36923077 -45.978164
+0.38974359 -46.624451
+0.41025641 -47.298217
+0.43076923 -47.999309
+0.45128205 -48.727694
+0.47179487 -49.753059
+0.49230769 -51.473149
+0.51282051 -53.238572
+0.53333333 -55.049961
+0.55384615 -56.882403
+0.57435897 -58.296739
+0.59487179 -59.840339
+0.61538462 -61.496179
+0.63589744 -62.682366
+0.65641026 -63.563513
+0.67692308 -64.705454
+0.6974359 -66.099037
+0.71794872 -67.702544
+0.73846154 -69.468498
+0.75897436 -71.35755
+0.77948718 -73.338982
+0.8 -75.626015
+&
+@target G0.S4058
+@type xy
+0 -33.357748
+0.020512821 -33.507546
+0.041025641 -33.918542
+0.061538462 -34.505678
+0.082051282 -34.89807
+0.1025641 -35.269742
+0.12307692 -35.738693
+0.14358974 -36.319588
+0.16410256 -36.966781
+0.18461538 -37.55976
+0.20512821 -38.037417
+0.22564103 -38.144942
+0.24615385 -38.346511
+0.26666667 -39.324833
+0.28717949 -41.372938
+0.30769231 -42.413413
+0.32820513 -43.543886
+0.34871795 -44.750853
+0.36923077 -45.40717
+0.38974359 -46.116037
+0.41025641 -46.878771
+0.43076923 -47.69675
+0.45128205 -48.571373
+0.47179487 -49.508632
+0.49230769 -50.496145
+0.51282051 -51.549057
+0.53333333 -52.664136
+0.55384615 -53.842729
+0.57435897 -55.086184
+0.59487179 -56.39586
+0.61538462 -57.773147
+0.63589744 -59.219474
+0.65641026 -60.736333
+0.67692308 -62.325295
+0.6974359 -63.988041
+0.71794872 -65.763069
+0.73846154 -68.092128
+0.75897436 -70.506826
+0.77948718 -73.017214
+0.8 -75.580685
+&
+@target G0.S4059
+@type xy
+0 -33.357684
+0.020512821 -33.50749
+0.041025641 -33.918515
+0.061538462 -34.50565
+0.082051282 -34.897606
+0.1025641 -35.269405
+0.12307692 -35.738568
+0.14358974 -36.319507
+0.16410256 -36.966624
+0.18461538 -37.559225
+0.20512821 -38.036713
+0.22564103 -38.144929
+0.24615385 -38.345697
+0.26666667 -39.323545
+0.28717949 -41.372735
+0.30769231 -42.412462
+0.32820513 -43.54215
+0.34871795 -44.738259
+0.36923077 -45.392446
+0.38974359 -46.098965
+0.41025641 -46.859145
+0.43076923 -47.67438
+0.45128205 -48.546089
+0.47179487 -49.504041
+0.49230769 -50.46461
+0.51282051 -51.514248
+0.53333333 -52.62601
+0.55384615 -53.801301
+0.57435897 -55.041543
+0.59487179 -56.348187
+0.61538462 -57.722727
+0.63589744 -59.16672
+0.65641026 -60.681789
+0.67692308 -62.269644
+0.6974359 -63.932097
+0.71794872 -65.762775
+0.73846154 -68.08907
+0.75897436 -70.501668
+0.77948718 -73.011639
+0.8 -75.523713
+&
+@target G0.S4060
+@type xy
+0 -27.546254
+0.020512821 -27.415333
+0.041025641 -27.057988
+0.061538462 -26.540051
+0.082051282 -25.895893
+0.1025641 -25.867237
+0.12307692 -26.660662
+0.14358974 -27.610458
+0.16410256 -28.691519
+0.18461538 -30.195807
+0.20512821 -32.348133
+0.22564103 -34.669304
+0.24615385 -37.033058
+0.26666667 -38.664148
+0.28717949 -39.113121
+0.30769231 -39.712388
+0.32820513 -40.477193
+0.34871795 -41.408811
+0.36923077 -42.498155
+0.38974359 -43.729991
+0.41025641 -45.086621
+0.43076923 -46.551485
+0.45128205 -48.111702
+0.47179487 -49.483398
+0.49230769 -50.296027
+0.51282051 -51.111393
+0.53333333 -51.954757
+0.55384615 -52.8261
+0.57435897 -53.72534
+0.59487179 -54.652295
+0.61538462 -55.606641
+0.63589744 -57.132833
+0.65641026 -59.200786
+0.67692308 -61.32608
+0.6974359 -63.51145
+0.71794872 -65.726409
+0.73846154 -67.544262
+0.75897436 -70.140674
+0.77948718 -72.821466
+0.8 -75.421031
+&
+@target G0.S4061
+@type xy
+0 -27.546254
+0.020512821 -27.415275
+0.041025641 -27.057753
+0.061538462 -26.539527
+0.082051282 -25.893647
+0.1025641 -25.8573
+0.12307692 -26.655993
+0.14358974 -27.609562
+0.16410256 -28.689436
+0.18461538 -30.195651
+0.20512821 -32.347461
+0.22564103 -34.669298
+0.24615385 -37.032227
+0.26666667 -38.662553
+0.28717949 -39.110566
+0.30769231 -39.708701
+0.32820513 -40.472352
+0.34871795 -41.402864
+0.36923077 -42.49128
+0.38974359 -43.722541
+0.41025641 -45.079076
+0.43076923 -46.544384
+0.45128205 -48.105624
+0.47179487 -49.475693
+0.49230769 -50.266461
+0.51282051 -51.076916
+0.53333333 -51.914765
+0.55384615 -52.779972
+0.57435897 -53.67244
+0.59487179 -54.591973
+0.61538462 -55.53822
+0.63589744 -57.129458
+0.65641026 -59.196801
+0.67692308 -61.322478
+0.6974359 -63.509328
+0.71794872 -65.671096
+0.73846154 -67.542474
+0.75897436 -70.091944
+0.77948718 -72.768245
+0.8 -75.386235
+&
+@target G0.S4062
+@type xy
+0 -23.962958
+0.020512821 -24.037615
+0.041025641 -24.265809
+0.061538462 -24.668748
+0.082051282 -25.313933
+0.1025641 -25.659873
+0.12307692 -26.322513
+0.14358974 -27.343159
+0.16410256 -28.533069
+0.18461538 -29.634625
+0.20512821 -30.372839
+0.22564103 -31.097957
+0.24615385 -31.88456
+0.26666667 -32.866663
+0.28717949 -33.929514
+0.30769231 -35.006248
+0.32820513 -36.060066
+0.34871795 -37.075605
+0.36923077 -38.055158
+0.38974359 -39.010368
+0.41025641 -39.954102
+0.43076923 -40.887979
+0.45128205 -41.767513
+0.47179487 -42.990719
+0.49230769 -44.508557
+0.51282051 -46.086457
+0.53333333 -47.742569
+0.55384615 -49.478192
+0.57435897 -51.289865
+0.59487179 -53.172582
+0.61538462 -55.122468
+0.63589744 -56.587852
+0.65641026 -58.087098
+0.67692308 -60.309253
+0.6974359 -62.625987
+0.71794872 -65.038072
+0.73846154 -67.500257
+0.75897436 -69.438646
+0.77948718 -71.417808
+0.8 -73.483432
+&
+@target G0.S4063
+@type xy
+0 -23.959927
+0.020512821 -24.034191
+0.041025641 -24.26105
+0.061538462 -24.661125
+0.082051282 -25.302265
+0.1025641 -25.646927
+0.12307692 -26.314748
+0.14358974 -27.336088
+0.16410256 -28.530012
+0.18461538 -29.628079
+0.20512821 -30.354505
+0.22564103 -31.062619
+0.24615385 -31.826643
+0.26666667 -32.811221
+0.28717949 -33.875437
+0.30769231 -34.953659
+0.32820513 -36.008867
+0.34871795 -37.025249
+0.36923077 -38.005163
+0.38974359 -38.960326
+0.41025641 -39.903031
+0.43076923 -40.831485
+0.45128205 -41.663593
+0.47179487 -42.972452
+0.49230769 -44.498235
+0.51282051 -46.078999
+0.53333333 -47.736891
+0.55384615 -49.474312
+0.57435897 -51.287975
+0.59487179 -53.172428
+0.61538462 -55.120465
+0.63589744 -56.510601
+0.65641026 -58.05221
+0.67692308 -60.274214
+0.6974359 -62.589291
+0.71794872 -64.998284
+0.73846154 -67.488796
+0.75897436 -69.387646
+0.77948718 -71.370516
+0.8 -73.440818
+&
+@target G0.S4064
+@type xy
+0 -22.962319
+0.020512821 -23.009836
+0.041025641 -23.153209
+0.061538462 -23.371609
+0.082051282 -23.86464
+0.1025641 -24.755062
+0.12307692 -25.07339
+0.14358974 -25.333099
+0.16410256 -26.085342
+0.18461538 -27.536254
+0.20512821 -28.861935
+0.22564103 -30.114598
+0.24615385 -31.291125
+0.26666667 -32.233462
+0.28717949 -33.087039
+0.30769231 -33.919874
+0.32820513 -34.766228
+0.34871795 -35.65467
+0.36923077 -36.60481
+0.38974359 -37.631942
+0.41025641 -38.751654
+0.43076923 -39.989101
+0.45128205 -41.413196
+0.47179487 -42.673014
+0.49230769 -43.821351
+0.51282051 -45.173799
+0.53333333 -46.698986
+0.55384615 -48.354507
+0.57435897 -50.11576
+0.59487179 -51.972171
+0.61538462 -53.919795
+0.63589744 -55.957827
+0.65641026 -57.595148
+0.67692308 -58.627458
+0.6974359 -59.68343
+0.71794872 -61.643176
+0.73846154 -64.036136
+0.75897436 -66.510459
+0.77948718 -69.059308
+0.8 -71.678981
+&
+@target G0.S4065
+@type xy
+0 -22.930055
+0.020512821 -22.978134
+0.041025641 -23.123141
+0.061538462 -23.342931
+0.082051282 -23.86046
+0.1025641 -24.7451
+0.12307692 -25.067285
+0.14358974 -25.325453
+0.16410256 -26.072532
+0.18461538 -27.519476
+0.20512821 -28.850346
+0.22564103 -30.113771
+0.24615385 -31.27595
+0.26666667 -32.227551
+0.28717949 -33.08477
+0.30769231 -33.90942
+0.32820513 -34.747838
+0.34871795 -35.628958
+0.36923077 -36.572179
+0.38974359 -37.5925
+0.41025641 -38.705692
+0.43076923 -39.939903
+0.45128205 -41.402033
+0.47179487 -42.533772
+0.49230769 -43.699089
+0.51282051 -45.077497
+0.53333333 -46.624381
+0.55384615 -48.294374
+0.57435897 -50.065338
+0.59487179 -51.928459
+0.61538462 -53.880675
+0.63589744 -55.921591
+0.65641026 -57.508236
+0.67692308 -58.529894
+0.6974359 -59.573981
+0.71794872 -61.496324
+0.73846154 -63.887903
+0.75897436 -66.362617
+0.77948718 -68.91406
+0.8 -71.538444
+&
+@target G0.S4066
+@type xy
+0 -20.412826
+0.020512821 -20.720564
+0.041025641 -21.513222
+0.061538462 -22.607479
+0.082051282 -23.637638
+0.1025641 -24.330869
+0.12307692 -24.825343
+0.14358974 -25.291467
+0.16410256 -25.412428
+0.18461538 -24.93342
+0.20512821 -24.66684
+0.22564103 -24.603689
+0.24615385 -24.735398
+0.26666667 -25.151579
+0.28717949 -25.999658
+0.30769231 -27.187128
+0.32820513 -28.541242
+0.34871795 -29.986033
+0.36923077 -31.488168
+0.38974359 -33.031145
+0.41025641 -34.6075
+0.43076923 -36.215045
+0.45128205 -37.852665
+0.47179487 -39.511263
+0.49230769 -41.158515
+0.51282051 -42.757532
+0.53333333 -44.328163
+0.55384615 -45.91931
+0.57435897 -47.565997
+0.59487179 -49.289197
+0.61538462 -51.101611
+0.63589744 -53.010623
+0.65641026 -55.01982
+0.67692308 -57.129883
+0.6974359 -59.339031
+0.71794872 -60.761518
+0.73846154 -61.860182
+0.75897436 -62.97826
+0.77948718 -64.347482
+0.8 -67.252152
+&
+@target G0.S4067
+@type xy
+0 -20.412826
+0.020512821 -20.717368
+0.041025641 -21.50387
+0.061538462 -22.590334
+0.082051282 -23.633382
+0.1025641 -24.325453
+0.12307692 -24.819434
+0.14358974 -25.285853
+0.16410256 -25.409797
+0.18461538 -24.931576
+0.20512821 -24.666543
+0.22564103 -24.603135
+0.24615385 -24.734168
+0.26666667 -25.149513
+0.28717949 -25.995042
+0.30769231 -27.178825
+0.32820513 -28.529824
+0.34871795 -29.972552
+0.36923077 -31.473813
+0.38974359 -33.017229
+0.41025641 -34.595503
+0.43076923 -36.206511
+0.45128205 -37.848363
+0.47179487 -39.50739
+0.49230769 -41.139649
+0.51282051 -42.709126
+0.53333333 -44.253136
+0.55384615 -45.825002
+0.57435897 -47.457802
+0.59487179 -49.170793
+0.61538462 -50.97554
+0.63589744 -52.878606
+0.65641026 -54.882989
+0.67692308 -56.989009
+0.6974359 -59.194767
+0.71794872 -60.638618
+0.73846154 -61.721848
+0.75897436 -62.822063
+0.77948718 -64.347281
+0.8 -67.250409
+&
+@target G0.S4068
+@type xy
+0 -15.605056
+0.020512821 -15.396025
+0.041025641 -14.897178
+0.061538462 -14.308992
+0.082051282 -14.32545
+0.1025641 -15.384159
+0.12307692 -16.52298
+0.14358974 -17.663473
+0.16410256 -18.751695
+0.18461538 -19.776772
+0.20512821 -20.763574
+0.22564103 -21.743509
+0.24615385 -22.719321
+0.26666667 -23.612285
+0.28717949 -24.281363
+0.30769231 -24.806327
+0.32820513 -25.341959
+0.34871795 -25.949168
+0.36923077 -26.651885
+0.38974359 -27.464809
+0.41025641 -28.399074
+0.43076923 -29.461192
+0.45128205 -30.652668
+0.47179487 -31.971761
+0.49230769 -33.414934
+0.51282051 -34.977612
+0.53333333 -36.651237
+0.55384615 -38.430475
+0.57435897 -40.311471
+0.59487179 -42.29154
+0.61538462 -44.368741
+0.63589744 -46.541582
+0.65641026 -48.808865
+0.67692308 -51.169609
+0.6974359 -53.622994
+0.71794872 -56.168297
+0.73846154 -58.804799
+0.75897436 -61.531618
+0.77948718 -64.11554
+0.8 -65.273455
+&
+@target G0.S4069
+@type xy
+0 -15.520093
+0.020512821 -15.313692
+0.041025641 -14.819245
+0.061538462 -14.235842
+0.082051282 -14.301339
+0.1025641 -15.356936
+0.12307692 -16.491383
+0.14358974 -17.629244
+0.16410256 -18.717698
+0.18461538 -19.746038
+0.20512821 -20.738502
+0.22564103 -21.725616
+0.24615385 -22.709312
+0.26666667 -23.609959
+0.28717949 -24.278203
+0.30769231 -24.799521
+0.32820513 -25.331794
+0.34871795 -25.935894
+0.36923077 -26.636609
+0.38974359 -27.449692
+0.41025641 -28.386427
+0.43076923 -29.452224
+0.45128205 -30.647351
+0.47179487 -31.969573
+0.49230769 -33.414551
+0.51282051 -34.975211
+0.53333333 -36.647324
+0.55384615 -38.425444
+0.57435897 -40.305613
+0.59487179 -42.28509
+0.61538462 -44.361921
+0.63589744 -46.534627
+0.65641026 -48.802028
+0.67692308 -51.163159
+0.6974359 -53.617212
+0.71794872 -56.163477
+0.73846154 -58.801239
+0.75897436 -61.529613
+0.77948718 -63.938693
+0.8 -65.073106
+&
+@target G0.S4070
+@type xy
+0 -12.099031
+0.020512821 -12.250928
+0.041025641 -12.694212
+0.061538462 -13.392226
+0.082051282 -13.735601
+0.1025641 -13.254612
+0.12307692 -12.879987
+0.14358974 -12.628907
+0.16410256 -12.771333
+0.18461538 -13.812678
+0.20512821 -14.896689
+0.22564103 -16.015296
+0.24615385 -17.146574
+0.26666667 -18.274721
+0.28717949 -19.393954
+0.30769231 -20.508565
+0.32820513 -21.629796
+0.34871795 -22.771804
+0.36923077 -23.948573
+0.38974359 -25.172018
+0.41025641 -26.450771
+0.43076923 -27.789492
+0.45128205 -29.189136
+0.47179487 -30.648773
+0.49230769 -32.168616
+0.51282051 -33.751719
+0.53333333 -35.402799
+0.55384615 -37.264577
+0.57435897 -39.523242
+0.59487179 -41.8256
+0.61538462 -44.140874
+0.63589744 -46.420332
+0.65641026 -48.603353
+0.67692308 -50.646478
+0.6974359 -52.550842
+0.71794872 -54.351953
+0.73846154 -56.30757
+0.75897436 -58.878614
+0.77948718 -61.542425
+0.8 -64.298537
+&
+@target G0.S4071
+@type xy
+0 -12.099031
+0.020512821 -12.249549
+0.041025641 -12.689296
+0.061538462 -13.384554
+0.082051282 -13.652005
+0.1025641 -13.171995
+0.12307692 -12.794277
+0.14358974 -12.535557
+0.16410256 -12.757182
+0.18461538 -13.770117
+0.20512821 -14.84751
+0.22564103 -15.961963
+0.24615385 -17.090458
+0.26666667 -18.217386
+0.28717949 -19.33727
+0.30769231 -20.45443
+0.32820513 -21.579728
+0.34871795 -22.726585
+0.36923077 -23.908057
+0.38974359 -25.135247
+0.41025641 -26.416449
+0.43076923 -27.756603
+0.45128205 -29.157346
+0.47179487 -30.618389
+0.49230769 -32.140158
+0.51282051 -33.725524
+0.53333333 -35.378971
+0.55384615 -37.126351
+0.57435897 -39.234176
+0.59487179 -41.545537
+0.61538462 -43.86798
+0.63589744 -46.152612
+0.65641026 -48.339459
+0.67692308 -50.386255
+0.6974359 -52.294665
+0.71794872 -54.099874
+0.73846154 -56.300375
+0.75897436 -58.872704
+0.77948718 -61.538099
+0.8 -64.296154
+&
+@target G0.S4072
+@type xy
+0 -8.7677982
+0.020512821 -8.826874
+0.041025641 -9.0068645
+0.061538462 -9.3141716
+0.082051282 -9.754718
+0.1025641 -10.330496
+0.12307692 -11.037974
+0.14358974 -11.866525
+0.16410256 -12.478016
+0.18461538 -12.473988
+0.20512821 -12.588687
+0.22564103 -12.818312
+0.24615385 -13.160284
+0.26666667 -13.622468
+0.28717949 -14.668627
+0.30769231 -15.902676
+0.32820513 -17.239749
+0.34871795 -18.676393
+0.36923077 -20.204429
+0.38974359 -21.812448
+0.41025641 -23.490294
+0.43076923 -25.234062
+0.45128205 -27.046471
+0.47179487 -28.933003
+0.49230769 -30.898191
+0.51282051 -32.943742
+0.53333333 -35.067818
+0.55384615 -37.104868
+0.57435897 -38.925891
+0.59487179 -40.804062
+0.61538462 -42.762957
+0.63589744 -44.804381
+0.65641026 -46.930008
+0.67692308 -49.141483
+0.6974359 -51.440465
+0.71794872 -53.828627
+0.73846154 -56.091475
+0.75897436 -57.802157
+0.77948718 -59.505944
+0.8 -61.216423
+&
+@target G0.S4073
+@type xy
+0 -8.7487438
+0.020512821 -8.8056957
+0.041025641 -8.9803672
+0.061538462 -9.2812885
+0.082051282 -9.7158918
+0.1025641 -10.286417
+0.12307692 -10.98837
+0.14358974 -11.807708
+0.16410256 -12.430918
+0.18461538 -12.399676
+0.20512821 -12.505141
+0.22564103 -12.717403
+0.24615385 -13.039842
+0.26666667 -13.535444
+0.28717949 -14.209267
+0.30769231 -15.390831
+0.32820513 -16.742407
+0.34871795 -18.193365
+0.36923077 -19.737237
+0.38974359 -21.364196
+0.41025641 -23.064227
+0.43076923 -24.831689
+0.45128205 -26.667034
+0.47179487 -28.574312
+0.49230769 -30.557608
+0.51282051 -32.618775
+0.53333333 -34.756384
+0.55384615 -36.965026
+0.57435897 -38.906671
+0.59487179 -40.786975
+0.61538462 -42.74783
+0.63589744 -44.791002
+0.65641026 -46.918154
+0.67692308 -49.130945
+0.6974359 -51.431081
+0.71794872 -53.820319
+0.73846154 -55.843104
+0.75897436 -57.556848
+0.77948718 -59.26292
+0.8 -60.974782
+&

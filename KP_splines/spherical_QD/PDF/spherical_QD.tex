@@ -1,0 +1,405 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{physics}
+
+\title{$\ve{k}\cdot \ve{p}$ method using B-splines in spherical quantum dot}
+\author{MG, OO}
+
+\newcommand{\ve}[1]{\mathbf{#1}}
+
+\newcommand{\dx}[1]{\frac{d{#1}}{dx}}
+\newcommand{\dy}[1]{\frac{d{#1}}{dy}}
+\newcommand{\dz}[1]{\frac{d{#1}}{dz}}
+\newcommand{\ddx}[1]{\frac{d^2{#1}}{dx^2}}
+\newcommand{\ddy}[1]{\frac{d^2{#1}}{dy^2}}
+\newcommand{\ddz}[1]{\frac{d^2{#1}}{dz^2}}
+\newcommand{\dr}[1]{\frac{d{#1}}{dr}}
+\newcommand{\ddr}[1]{\frac{d^2{#1}}{dr^2}}
+\newcommand{\drx}{\frac{dr}{dx}}
+\newcommand{\dry}{\frac{dr}{dy}}
+\newcommand{\drz}{\frac{dr}{dz}}
+\newcommand{\dphi}[1]{\frac{d{#1}}{d\varphi}}
+\newcommand{\ddphi}[1]{\frac{d^2{#1}}{d\varphi^2}}
+\newcommand{\dphix}{\frac{d\varphi}{dx}}
+\newcommand{\dphiy}{\frac{d\varphi}{dy}}
+\newcommand{\dphiz}{\frac{d\varphi}{dz}}
+\newcommand{\dt}[1]{\frac{d{#1}}{d\theta}}
+\newcommand{\ddt}[1]{\frac{d^2{#1}}{d\theta^2}}
+\newcommand{\dtx}{\frac{d\theta}{dx}}
+\newcommand{\dty}{\frac{d\theta}{dy}}
+\newcommand{\dtz}{\frac{d\theta}{dz}}
+\newcommand{\cphi}{\cos(\varphi)}
+\newcommand{\ccphi}{\cos^2(\varphi)}
+\newcommand{\sphi}{\sin(\varphi)}
+\newcommand{\ssphi}{\sin^2(\varphi)}
+\newcommand{\ct}{\cos(\theta)}
+\newcommand{\cct}{\cos^2(\theta)}
+\newcommand{\st}{\sin(\theta)}
+\newcommand{\sst}{\sin^2(\theta)}
+
+%\newcommand{\bra}[1]{\langle #1 \rvert}
+%\newcommand{\ket}[1]{\lvert #1 \rangle}
+
+\begin{document}
+\maketitle
+
+\section{8-band Hamiltonian}
+In this section we show the Hamiltonian for a spherical quantum dot (QD), the
+electronic structure is solved in the envelope approximation using an
+eight-band $\ve{k}\cdot\ve{p}$ Hamiltonian~\cite{pryor1998eight},
+
+\begin{equation}\label{eq:8bandhamiltonian}
+H = \begin{pmatrix}
+    A & 0 & V^{\star}  & 0                  & \sqrt{3}V & -\sqrt{2}U & -U        & \sqrt{2}V^{\star} \\
+    0 & A & -\sqrt{2}U & -\sqrt{3}V^{\star} & 0         & -V         & \sqrt{2}V & U \\
+    V & -\sqrt{2}U & -P+Q & -S^{\star} & R & 0 & \sqrt{\frac{3}{2}}S & -\sqrt{2}Q \\
+    0 & -\sqrt{3}V & -S & -P-Q & 0 & R & -\sqrt{2}R & \frac{1}{\sqrt{2}}S \\
+    \sqrt{3}V^{\star} & 0 & R^{\star} & 0 & -P-Q & S^{\star} & \frac{1}{\sqrt{2}}S^{\star} & \sqrt{2}R^{\star} \\
+    -\sqrt{2}U & -V^{\star} & 0 & R^{\star} & S & -P+Q & \sqrt{2}Q & \sqrt{\frac{3}{2}} S^{\star} \\
+    -U & \sqrt{2}V^{\star} & \sqrt{\frac{3}{2}}S^{\star} & -\sqrt{2}R^{\star} & \frac{1}{\sqrt{2}}S & \sqrt{2}Q & -P-\Delta & 0 \\
+    \sqrt{2}V & U & -\sqrt{2}Q & \frac{1}{\sqrt{2}}S^{\star} & \sqrt{2}R & \sqrt{\frac{3}{2}}S & 0 & -P-\Delta
+    \end{pmatrix} \,,
+\end{equation}
+
+\noindent
+where
+
+\begin{equation}\label{eq:operators}
+\begin{split}
+A &= E_{c} - \frac{\hbar^2}{2m_0} \nabla^2\,, \\
+P &= -E_{v} - \gamma_1 \frac{\hbar^2}{2m_0} \nabla^2 \,,\\
+Q &= -\gamma_2 \frac{\hbar^2}{2m_0}\left(\partial_x^2 + \partial_y^2 - 2\partial_z^2\right) \,,\\
+R &= \sqrt{3} \frac{\hbar^2}{2m_0}\left[\gamma_2\left(\partial_x^2 - \partial_y^2\right) - 2i\gamma_3 \partial_x\partial_y\right]\,, \\
+S &= -\sqrt{3} \gamma_3 \frac{\hbar^2}{m_0} \partial_z\left(\partial_x - i \partial_y\right) \,,\\
+U &= -\frac{i}{\sqrt{3}} P_0 \partial_z\,,\\
+V &= -\frac{i}{\sqrt{6}} P_0 \left(\partial_x - i\partial_y\right)\,.
+\end{split}
+\end{equation}
+
+The Hamiltoniano Eq. \ref{eq:8bandhamiltonian} is the same that use Kishore and Peeters in~\cite{kishore2014electronic}.
+
+In Spherical coordinates the Laplace operator is
+\begin{equation}
+\nabla^2 = \frac{1}{r^2}\frac{d}{dr}\left(r^2\frac{d}{dr}\right) + \frac{1}{r^2\,\sin^2(\theta)}\frac{d^2}{d\varphi^2}
+           + \frac{1}{r^2\,\sin(\theta)}\frac{d}{d\theta}\left(\sin(\theta)\frac{d}{d\theta}\right)\,,
+\end{equation}
+
+\noindent
+the first order derivative are
+
+\begin{equation}\label{eq:der}
+\begin{split}
+\dx{} &= \cphi\,\st\,\dr{} - \frac{\sphi}{r\,\st}\dphi{} + \frac{\cphi\,\ct}{r}\dt{}\,, \\
+\dy{} &= \sphi\,\st\,\dr{} + \frac{\cphi}{r\,\st}\dphi{} + \frac{\sphi\,\ct}{r}\dt{}\,, \\
+\dz{} &= \ct\,\dr{} - \frac{\st}{r} \dt{}\,.
+\end{split}
+\end{equation}
+
+\noindent
+The remaining operators are
+
+\begin{equation}
+\begin{split}
+\ddx{} + \ddy{} - 2\ddz{} =& \left(\sst - 2\cct\right) \ddr{} + \frac{1 + \cct - 2\sst}{r}\dr{}{} \\
+                    +& \frac{1}{r^2\sst}\ddphi{} + \left(\frac{\ct}{r^2\st} - 6\frac{\ct\st}{r^2}\right)\dt{} \\
+                    +& 6\frac{\ct\st}{r}\dr{}{}\left(\dt{}\right) - 2\frac{\sst}{r^2}\ddt{}\,,
+\end{split}
+\end{equation}
+
+\begin{equation}
+\dx{} - i\dy{} = e^{-i\varphi}\st\dr{} - i\frac{e^{-i\varphi}}{r\st}\dphi{} + e^{-i\varphi}\frac{\ct}{r}\dt{}\,,
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\dz{}\left(\dx{} - i\dy{}\right) =& e^{-i\varphi}\left[\ct\st\ddr{} + \frac{i\,\ct}{r^2\st}\dphi{} \right. \\
+                           -& \frac{i\,\ct}{r\st}\dr{}\left(\dphi{}\right) - \frac{\cct}{r^2}\dt{} + \frac{\cct}{r}\dr{}\left(\dt{}\right) \\
+                           -& \frac{\ct\st}{r}\dr{} - \frac{\sst}{r}\dt{}\left(\dr{}\right) + \frac{i\,\ct}{r\sst}\dphi{} \\
+                           -& \left.\frac{i}{r\st}\dt{}\left(\dphi{}\right) + \frac{\sst}{r}\dt{} - \frac{\ct\st}{r}\ddt{} \right]
+\end{split}
+\end{equation}
+
+\begin{equation}\label{eq:d2x2}
+\begin{split}
+\ddx{} =& \ccphi\sst\,\ddr{} + \frac{\cphi\sphi}{r^2}\dphi{} \\
+     -& \frac{\cphi\sphi}{r}\dr{}\left(\dphi{}\right) - \frac{\ccphi\ct\st}{r^2}\dt{} \\
+     +& \frac{\ccphi\ct\st}{r} \dr{}\left(\dt{}\right) + \frac{\ssphi}{r}\dr{} \\
+     -& \frac{\cphi\sphi}{r}\dphi{}\left(\dr{}\right) + \frac{\cphi\sphi}{r^2\sst}\dphi{} \\
+     +& \frac{\ssphi}{r^2\sst}\ddphi{} + \frac{\ssphi\ct}{r^2\st}\dt{} \\
+     -& \frac{\cphi\sphi\ct}{r^2\st} \dphi{}\left(\dt{}\right) + \frac{\ccphi\cct}{r}\dr{} \\
+     +& \frac{\ccphi\ct\st}{r}\dt{}\left(\dr{}\right) + \frac{\cphi\sphi\cct}{r\sst}\dphi{} \\
+     -& \frac{\cphi\sphi\ct}{r^2\st} \dt{}\left(\dphi{}\right) - \frac{\ccphi\ct\st}{r^2}\dt{} \\
+     +& \frac{\ccphi\cct}{r^2}\ddt{}\,,
+\end{split}
+\end{equation}
+
+\begin{equation}\label{eq:d2y2}
+\begin{split}
+\ddy{} =& \ssphi\sst\,\ddr{} - \frac{\cphi\sphi}{r^2}\dphi{} \\
+     +& \frac{\cphi\sphi}{r}\dr{}\left(\dphi{}\right) - \frac{\ssphi\ct\st}{r^2}\dt{} \\
+     +& \frac{\ssphi\ct\st}{r} \dr{}\left(\dt{}\right) + \frac{\ccphi}{r}\dr{} \\
+     +& \frac{\cphi\sphi}{r}\dphi{}\left(\dr{}\right) - \frac{\cphi\sphi}{r^2\sst}\dphi{} \\
+     +& \frac{\ccphi}{r^2\sst}\ddphi{} + \frac{\ccphi\ct}{r^2\st}\dt{} \\
+     +& \frac{\cphi\sphi\ct}{r^2\st} \dphi{}\left(\dt{}\right) + \frac{\ssphi\cct}{r}\dr{} \\
+     +& \frac{\ssphi\ct\st}{r}\dt{}\left(\dr{}\right) - \frac{\cphi\sphi\cct}{r\sst}\dphi{} \\
+     +& \frac{\cphi\sphi\ct}{r^2\st} \dt{}\left(\dphi{}\right) - \frac{\ssphi\ct\st}{r^2}\dt{} \\
+     +& \frac{\ssphi\cct}{r^2}\ddt{}\,,
+\end{split}
+\end{equation}
+
+\begin{equation}\label{eq:d2z2}
+\begin{split}
+\ddz{} =& \cct\,\ddr{} + 2 \frac{\ct\st}{r^2}\dt{} - \frac{\ct\st}{r}\dr{}\left(\dt{}\right)\\
+     +& \frac{\sst}{r}\dr{} - \frac{\ct\st}{r}\dt{}\left(\dr{}\right) + \frac{\sst}{r^2}\ddt{}\,,
+\end{split}
+\end{equation}
+
+
+\begin{equation}\label{eq:dxdy}
+\begin{split}
+\dx{}\left(\dy{}\right) =& \cphi\sphi\sst\ddr{} - \frac{\ccphi}{r^2\st}\dphi{} + \frac{\ccphi}{r\st}\dr{}\left(\dphi{}\right) \\
+                   -& \frac{\cphi\sphi\ct\st}{r^2}\dt{} \\
+                   +& \frac{\cphi\sphi\ct\st}{r^2} \dr{}\left(\dt{}\right) \\
+                   -& \frac{\cphi\sphi}{r}\dr{} - \frac{\sst}{r}\dphi{}\left(\dr{}\right) + \frac{\ssphi}{r^2\sst}\dphi{} \\
+                   -& \frac{\cphi\sphi}{r^2\sst}\ddphi{} - \frac{\cphi\sphi\ct}{r^2\st}\dt{} \\
+                   -& \frac{\ssphi\ct}{r^2\st}\dphi{}\left(\dt{}\right) + \frac{\cphi\sphi\cct}{r}\dr{} \\
+                   +& \frac{\cphi\sphi\ct\st}{r}\dt{}\left(\dr{}\right) - \frac{\ccphi\cct}{r^2\sst}\dphi{} \\
+                   +& \frac{\ccphi\ct}{r^2\st}\dt{}\left(\dphi{}\right) - \frac{\cphi\sphi\ct\st}{r^2}\dt{} \\
+                   +& \frac{\cphi\sphi\cct}{r^2}\ddt{}\,.
+\end{split}
+\end{equation}
+
+%%%%%%%%%%%%%%%%
+\section{Matrix elements $(l=0)$}
+
+In this section we show the matrix elements of the operators in Eq. \ref{eq:operators} in a basis
+with null angular momentum, so each function depend only of the radial coordinate,
+
+\begin{equation}\label{eq:basis}
+\phi_n(r) = B_n(r)\,,
+\end{equation}
+
+\noindent where $B_n(r)$ is the $B$-spline $n$ of order $k$. The solution of the
+time independent Schr\"odinger equation is then a linear combination of the basis
+function,
+
+\begin{equation}\label{eq:variational-sol}
+\psi(r) = \sum_{n=1}^N \phi_n(r)\,,
+\end{equation}
+
+\noindent where $\psi(r)$ satisfy the boundary conditions $psi(r=0)= c$ with $c$
+a constant, and $\psi(\infty) = 0$.
+
+In this basis the matrix elements are
+
+\begin{equation}
+\bra{n_1}\dx{}\ket{n_2} = \bra{n_1}\dy{}\ket{n_2} = \bra{n_1}\dz{}\ket{n_2} = 0
+\end{equation}
+
+\begin{equation}
+\mel{n_1}{\dz{}\left(\dx{} - i \dy{}\right)}{n_2} = 0
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\bra{n_1}\ddx{}\ket{n_2} &= \bra{n_1}\ddy{}\ket{n_2} = \bra{n_1}\ddz{}\ket{n_2} =\\
+                       &= -\frac{1}{3}\,\int_0^{\infty} r^2\frac{dB_{n_1}}{dr} \frac{dB_{n_2}}{dr} dr
+\end{split}
+\end{equation}
+
+\section{Matrix elements $(l\neq 0)$}
+In this section we evaluate the matrix elements using a basis with different angular
+momentum but the component on the operator $L_z$ is zero, in particular we chose as basis the functions
+
+\begin{equation}
+|n,l\rangle = B_n(r) P_l(\ct)\,,
+\end{equation}
+
+\noindent where $P_l(\ct)$ are the Legendre Polynomials.
+
+First we calculate the derivative of the Legendre Polynomial respect to the variable $\theta$
+
+\begin{equation}
+\frac{d}{d\theta}P_l(\ct) = -\frac{(l+1)}{\st} \left[\ct\,P_l(\ct) - P_{l+1}(\ct)\right]\,,
+\end{equation}
+
+\noindent and the second order derivative is
+
+\begin{equation}
+\begin{split}
+\ddt{} P_l(\ct) &= \frac{(l+1)}{\sst} \left[1 + (l+1) \cct\right]P_l(\ct) \\
+              &- 2(l+1)(l+2) \frac{\ct}{\sst}P_{l+1}(\ct) \\
+              &+ \frac{(l+1)(l+2)}{\sst} P_{l+2}(\ct)\,.
+\end{split}
+\end{equation}
+
+We start showing the matrix element of the operators $\dx{}$, $\dy{}$ and $\dz{}$.
+Considering that the basis functions have null component of the $L_z$, {\it i.e},
+they have azimuthal symmetry we deduce
+
+\begin{equation}
+\langle n_1,l_1|\dx{}|n_2,l_2\rangle = \langle n_1,l_1|\dy{}|n_2,l_2\rangle = 0\,,
+\end{equation}
+
+\noindent the case of $\dz{}$ is different, for this case we have
+
+\begin{equation}
+\begin{split}
+\langle n_1,l_1|\dz{}|n_2,l_2\rangle &= 2\pi\left(\int_0^{\infty} B_{n_1}\dr{B_{n_2}}\,r^2\,dr \right)
+                                            \left(\int_0^{\pi} P_{l_1}(\ct)P_{l_2}(\ct)\ct\st d\theta\right) \\
+                                     &- 2\pi\left(\int_0^{\infty} B_{n_1}\,B_{n_2}\,r^2\,dr \right)
+                                            \left(\int_0^{\pi} P_{l_1}(\ct)\dt{P_{l_2}(\ct)}\st\st d\theta\right)\,, \\
+                                     &= 2\pi\left(\int_0^{\infty} B_{n_1}\dr{B_{n_2}}\,r^2\,dr \right)
+                                            \left(\int_{-1}^{1} P_{l_1}(u)P_{l_2}(u)\,u\, du\right) \\
+                                     &- 2\pi\left(\int_0^{\infty} B_{n_1}\,B_{n_2}\,r^2\,dr \right)
+                                            \left(\int_{-1}^{1}(-1) P_{l_1}(u)\dt{P_{l_2}(u)}\,(1-u^2)\,du\right)\,.
+\end{split}
+\end{equation}
+
+Now we continue with the operator $\ddx{}$, applying this operator on the element
+$|n,l\rangle$ we get
+
+\begin{equation}
+\begin{split}
+\ddx{}|n,l\rangle &= \ccphi \sst \ddr{} B_n(r)\, P_l(\ct) \\
+                &+ \frac{\ssphi+\ccphi\cct}{r}\dr{} B_n(r)\,P_l(\ct) \\
+                &+2\frac{\ccphi\ct\st}{r}\dr{B_n(r)} \dt{P_l(\ct)} \\
+                &-2\frac{\ccphi\ct\st}{r^2} B_n(r) \dt{P_l(\ct)} \\
+                &+ \frac{\ssphi\ct}{r^2\st} B_n(r)\dt{P_l(\ct)} \\
+                &+ \frac{\ccphi\sst}{r^2}B_n(r)\ddt{P_l(\ct)}
+\end{split}
+\end{equation}
+
+\noindent so the matrix elements are
+
+\begin{equation}
+\begin{split}
+\langle n_1,l_1|\ddx{}|n_2,l_2\rangle =& \left(\int_0^{\infty} B_{n_1} \ddr{B_{n_2}}r^2\,dr\right)
+                                         \left(\int_0^{2\pi} \ccphi\,d\phi\right) \\
+                                       & \left(\int_0^{\pi} P_{l_1}(\ct)P_{l_2}(\ct)\sst\st\,d\theta\right) \\
+                                      +& \left(\int_0^{\infty} B_{n_1} \dr{B_{n_2}}r\,dr\right)
+                                         \left(\int_0^{2\pi} \ssphi\,d\phi\right) \\
+                                       & \left(\int_0^{\pi} P_{l_1}(\ct)P_{l_2}(\ct)\st\,d\theta\right) \\
+                                      +& \left(\int_0^{\infty} B_{n_1} \dr{B_{n_2}}r\,dr\right)
+                                         \left(\int_0^{2\pi} \ccphi\,d\phi\right) \\
+                                       & \left(\int_0^{\pi} P_{l_1}(\ct)P_{l_2}(\ct)\cct\st\,d\theta\right) \\
+                                      +&2\left(\int_0^{\infty} B_{n_1} \dr{B_{n_2}}r\,dr\right)
+                                         \left(\int_0^{2\pi} \ccphi\,d\phi\right) \\
+                                       & \left(\int_0^{\pi} P_{l_1}(\ct)\dt{P_{l_2}(\ct)}\ct\sst\,d\theta\right) \\
+                                      -&2\left(\int_0^{\infty} B_{n_1}\,B_{n_2}\,dr\right)
+                                         \left(\int_0^{2\pi} \ccphi\,d\phi\right) \\
+                                       & \left(\int_0^{\pi} P_{l_1}(\ct)\dt{P_{l_2}(\ct)}\ct\sst\,d\theta\right) \\
+                                      +& \left(\int_0^{\infty} B_{n_1}\,B_{n_2}\,dr\right)
+                                         \left(\int_0^{2\pi} \ssphi\,d\phi\right) \\
+                                       & \left(\int_0^{\pi} P_{l_1}(\ct)\dt{P_{l_2}(\ct)}\ct\,d\theta\right) \\
+                                      +& \left(\int_0^{\infty} B_{n_1}\,B_{n_2}\,dr\right)
+                                         \left(\int_0^{2\pi} \ccphi\,d\phi\right) \\
+                                       & \left(\int_0^{\pi} P_{l_1}(\ct)\ddt{P_{l_2}(\ct)}\cct\st\,d\theta\right)\,. \\
+\end{split}
+\end{equation}
+
+\noindent After the evaluation of the integral over the variable $\varphi$ and making the
+change of variable $u = \ct$ we get
+
+\begin{equation}
+\begin{split}
+\langle n_1,l_1|\ddx{}|n_2,l_2\rangle =& \pi\left(\int_0^{\infty} B_{n_1} \ddr{B_{n_2}}r^2\,dr\right)
+                                         \left(\int_{-1}^{1} P_{l_1}(u)P_{l_2}(u)(1-u^2)\,du\right) \\
+                                      +& \pi\left(\int_0^{\infty} B_{n_1} \dr{B_{n_2}}r\,dr\right)
+                                         \left(\int_{-1}^{1} P_{l_1}(u)P_{l_2}(u)\,du\right) \\
+                                      +& \pi\left(\int_0^{\infty} B_{n_1} \dr{B_{n_2}}r\,dr\right)
+                                         \left(\int_{-1}^{1} P_{l_1}(u)P_{l_2}(u)\,u^2\,du\right) \\
+                                      +&2\pi\left(\int_0^{\infty} B_{n_1} \dr{B_{n_2}}r\,dr\right)
+                                         \left(\int_{-1}^{1}(-1) P_{l_1}(u)\frac{dP_{l_2}(u)}{du}u(1-u^2)\,du\right) \\
+                                      -&2\pi\left(\int_0^{\infty} B_{n_1}\,B_{n_2}\,dr\right)
+                                         \left(\int_{-1}^{1}(-1) P_{l_1}(u)\frac{dP_{l_2}(u)}{du}u(1-u^2)\,du\right) \\
+                                      +& \pi\left(\int_0^{\infty} B_{n_1}\,B_{n_2}\,dr\right)
+                                         \left(\int_{-1}^{1}(-1) P_{l_1}(u)\frac{dP_{l_2}(u)}{du}u\,du\right) \\
+                                      +& \pi\left(\int_0^{\infty} B_{n_1}\,B_{n_2}\,dr\right)
+                                         \left(\int_{-1}^{1} P_{l_1}(u)\left[(1-u^2)\frac{d^2P_{l_2}(u)}{du^2}
+                                                                             -u \frac{dP_{l_2}(u)}{du}\right]u^2du\right)\,. \\
+\end{split}
+\end{equation}
+
+\noindent The integrals of the Legendre Polynomials can be evaluated using different
+numerical methods, in particular using a Gauss-Legendre quadrature of order ten,
+can obtain the results with great precision. The matrix elements of the
+operator $\ddy{}$ has the same form as the $\ddx{}$, simply by the symmetry of
+the basis functions. For the case of the derivatives of the
+polynomials here are some useful relations
+
+\begin{equation}
+\dt{P_l(\ct)} = -\sqrt{1-u^2}\,\, \frac{dP_l(u)}{du}\,,
+\end{equation}
+
+\begin{equation}
+\frac{dP_l}{du} = \frac{(l+1)}{(1-u^2)}\left[ u P_l(u) - P_{l+1}(u)\right]\,,
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac{d^2P_l}{du^2} = \frac{(l+1)}{(1-u^2)} &\left[(1+(l+2)\,u^2)\,P_l(u) \right. \\
+                        -&\left.(2l+5)\,u\,P_{l+1}(u) + (l+2)\,P_{l+2}(x) \right]\,,
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+(1-u^2)\,\frac{d^2P_l}{du^2} - u\,\frac{dP_l}{du} =& \frac{(l+1)}{(1-u^2)} \left[(1+(l+1)\,u^2)\,P_l(u) \right. \\
+                        &\left.-2\,(l+2)\,u\,P_{l+1}(u) + (l+2)\,P_{l+2}(x) \right]\,.
+\end{split}
+\end{equation}
+
+The operator $\ddz{}$ applied on an element of the basis is
+
+\begin{equation}
+\begin{split}
+\ddz{}|n,l\rangle =&\cct\ddr{B_n}P_l(\ct) + \frac{\sst}{r}\dr{B_n}P_l(\ct) \\
+                  -&2\frac{\ct\st}{r}\dr{B_n}\dt{P_l} + 2\frac{\ct\st}{r^2}B_n(r)\dt{P_l} \\
+                  +&\frac{\sst}{r^2}B_n(r)\ddt{P_l}\,,
+\end{split}
+\end{equation}
+
+\noindent so the matrix elements are
+
+\begin{equation}
+\begin{split}
+\langle n_1,l_1|\ddz{}|n_2,l_2\rangle =& 2\pi\left(\int_0^{\infty}B_{n_1}\ddr{B_{n_2}}r^2\,dr\right)
+                                             \left(\int_0^{\pi} P_{l_1}(\ct)P_{l_2}(\ct)\cct\st\,d\theta\right) \\
+                                      +& 2\pi\left(\int_0^{\infty}B_{n_1}\dr{B_{n_2}}r\,dr\right)
+                                             \left(\int_0^{\pi} P_{l_1}(\ct)P_{l_2}(\ct)\sst\st\,d\theta\right) \\
+                                      -& 4\pi\left(\int_0^{\infty}B_{n_1}\dr{B_{n_2}}r\,dr\right)
+                                             \left(\int_0^{\pi} P_{l_1}(\ct)\dt{P_{l_2}(\ct)}\ct\sst\,d\theta\right) \\
+                                      +& 4\pi\left(\int_0^{\infty}B_{n_1}\,B_{n_2}r\,dr\right)
+                                             \left(\int_0^{\pi} P_{l_1}(\ct)\dt{P_{l_2}(\ct)}\ct\sst\,d\theta\right) \\
+                                      +& 2\pi\left(\int_0^{\infty}B_{n_1}\,B_{n_2}r\,dr\right)
+                                             \left(\int_0^{\pi} P_{l_1}(\ct)\ddt{P_{l_2}(\ct)}\sst\st\,d\theta\right)\,,
+\end{split}
+\end{equation}
+
+\noindent again doing the same change of variable we get
+
+\begin{equation}
+\begin{split}
+\langle n_1,l_1|\ddz{}|n_2,l_2\rangle =& 2\pi\left(\int_0^{\infty}B_{n_1}\ddr{B_{n_2}}r^2\,dr\right)
+                                             \left(\int_{-1}^{1} P_{l_1}(u)P_{l_2}(u)\,u^2\,du\right) \\
+                                      +& 2\pi\left(\int_0^{\infty}B_{n_1}\dr{B_{n_2}}r\,dr\right)
+                                             \left(\int_{-1}^{1} P_{l_1}(u)P_{l_2}(u)\,(1-u^2)\,du\right) \\
+                                      -& 4\pi\left(\int_0^{\infty}B_{n_1}\dr{B_{n_2}}r\,dr\right)
+                                             \left(\int_{-1}^{1} P_{l_1}(u)P_{l_2}(u)\,u\,(1-u^2)\,du\right) \\
+                                      +& 4\pi\left(\int_0^{\infty}B_{n_1}\,B_{n_2}r\,dr\right)
+                                             \left(\int_{-1}^{1} P_{l_1}(u)P_{l_2}(u)\,u\,(1-u^2)\,du\right) \\
+                                      +& 2\pi\left(\int_0^{\infty}B_{n_1}\,B_{n_2}r\,dr\right)
+                                             \left(\int_{-1}^{1} P_{l_1}(u)
+                                             \left[(1-u^2)\frac{d^2P_{l_2}(u)}{du^2}-u\frac{dP_{l_2}(u)}{du} \right](1-u^2)\,du\right)\,,
+\end{split}
+\end{equation}
+
+The remainder operators have matrix element equal to zero.
+%-------------------------------%
+\bibliography{bin}{}
+\bibliographystyle{plain}
+
+\end{document}

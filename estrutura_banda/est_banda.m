@@ -7,7 +7,7 @@ h = 6.58211899E-16; % hbarra en eV/S
 
 % Radio del core del quantum dot
 Rc = 10; % en nm
-radios = linspace(1, 20, 50);
+radios = linspace(1, 20, 100);
 
 % Parametros del material del Shell (GaAs en este caso)
 gamma_L_2 = [6.85, 2.1, 2.9];
@@ -45,7 +45,8 @@ for r = radios
   gamma(2:3) = gamma_L(2:3) - 0.5*Ep/(3.0*Eg+Delta);
 
   % vecto k
-  k = [0, 0, 1];
+  k = [1, 1, 1];
+  k = k./norm(k);
 
   % Calculo los elementos de matriz
   A = function_A(h, m0, E_c, E_v, P0, gamma, k);
@@ -53,7 +54,7 @@ for r = radios
   Q = function_Q(h, m0, E_c, E_v, P0, gamma, k);
   R = function_R(h, m0, E_c, E_v, P0, gamma, k);
   S = function_S(h, m0, E_c, E_v, P0, gamma, k);
-  U = function_S(h, m0, E_c, E_v, P0, gamma, k);
+  U = function_U(h, m0, E_c, E_v, P0, gamma, k);
   V = function_V(h, m0, E_c, E_v, P0, gamma, k);
 
   % Armo el hamiltoniano completo como una matriz 8x8
@@ -73,4 +74,4 @@ for r = radios
 
 end
 
-save('salida.dat', '-ascii', 'salida');
+save('./resultados/k111.dat', '-ascii', 'salida');

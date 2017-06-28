@@ -1,0 +1,6 @@
+
+set terminal qt enhanced background rgb 'white'
+
+plot "./res20170523/E_vs_B.dat" u 1:1331 w l, "" u 1:1332 w l, "" u 1:1333 w l, \
+"" u 1:1334 w l, "" u 1:1335 w l, "" u 1:1336 w l, "" u 1:1337 w l, "" u 1:1338 w l, \
+"" u 1:1339 w l, "" u 1:1340 w l, "" u 1:1341 w l, "" u 1:1342 w l

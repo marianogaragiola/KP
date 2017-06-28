@@ -1,0 +1,18 @@
+# Num_interavaos = 50 
+# kord = 7 
+# N_base = 55 , N_cuad = 100 
+# N_dim hamiltoniano, N_dim_H = 3960 
+# Parametros del material 
+# Eg = 1.519000 eV
+# Ep = 23.810000 eV
+# Epx = 15.790000 eV
+# EGC = 0.000000 eV
+# delta = 0.341000 eV
+# Delta_c = 0.180000 eV
+# gamma = [1.825100, -0.262500, 0.387500] 
+# gamma_tilde = [1.825100, -0.262500, 0.387500] 
+# gamma_delta = [1.825100, -0.262500, 0.387500] 
+# gamma_td = [1.629700, -0.221400, 0.346500] 
+# kz inicial = 0.000000 T
+# kz final = 0.015875 T
+# autovalores del problema 

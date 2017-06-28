@@ -1,0 +1,282 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\title{$\ve{k}\cdot \ve{p}$ method using B-splines}
+\author{MG, OO}
+
+\newcommand{\ve}[1]{\mathbf{#1}}
+
+\begin{document}
+\maketitle
+
+\section{8-band $\ve{k}\cdot \ve{p}$ method}
+In this section we show the Hamiltonian for a nanowire using the $\ve{k\cdot p}$ and the B-splines
+as the basis functions. In particular we show the matrix element of the Hamiltonian for the
+eigenvalue problem. The following calculations are based on \cite{kishore2014electronic}.
+
+The 8-band Hamiltonian with magnetic field is given by
+
+\begin{eqnarray}
+H_8 &=& \begin{pmatrix}
+      E_{7-} & 0 & -\frac{1}{\sqrt{2}}P^+ & \sqrt{\frac{2}{3}}P^z & \frac{1}{\sqrt{6}}P^- & 0 & \frac{1}{\sqrt{3}}P^z & \frac{1}{\sqrt{3}}P^- \\
+
+      0      & E_{7-} & 0 & -\frac{1}{\sqrt{6}}P^+ & \sqrt{\frac{2}{3}}P^z & \frac{1}{\sqrt{2}}P^- & \frac{1}{\sqrt{3}}P^+ & -\frac{1}{\sqrt{3}}P^z \\
+
+      -\frac{1}{\sqrt{2}}P^- & 0 & E_{8+}^H & B & C & 0 & \frac{1}{\sqrt{2}}B_{\Delta} & \sqrt{2}C_{\Delta} \\
+
+      \sqrt{\frac{2}{3}}P^z & -\frac{1}{\sqrt{6}}P^- & B^{\dag} & E_{8+}^L & 0 & C & -\sqrt{2}A_{\Delta} & -\sqrt{\frac{3}{2}}B_{\Delta} \\
+
+      \frac{1}{\sqrt{6}}P^+ & \sqrt{\frac{2}{3}}P^z & C^{\dag} & 0 & E_{8+}^L & -B & -\sqrt{\frac{3}{2}}B_{\Delta}^{\dag} & \sqrt{2}A_{\Delta} \\
+
+      0      & \frac{1}{\sqrt{2}}P^+ & 0 & C^{\dag} & -B^{\dag} & E_{8+}^H & -\sqrt{2}C_{\Delta}^{\dag} & \frac{1}{\sqrt{2}}B_{\Delta}^{\dag} \\
+
+      \frac{1}{\sqrt{3}}P^z & \frac{1}{\sqrt{3}}P^- & \frac{1}{\sqrt{2}}B_{\Delta}^{\dag} & -\sqrt{2}A_{\Delta}^{\dag} & -\sqrt{\frac{3}{2}}B_{\Delta} & -\sqrt{2}C_{\Delta} & E_{7+} & 0 \\
+
+      \frac{1}{\sqrt{3}}P^+ & -\frac{1}{\sqrt{3}}P^z & \sqrt{2}C_{\Delta}^{\dag} & -\sqrt{\frac{3}{2}}B_{\Delta}^{\dag} & \sqrt{2}A_{\Delta}^{\dag} & \frac{1}{\sqrt{2}}B_{\Delta} & 0 & E_{7+}
+      \end{pmatrix} \\
+      & & + I_{8\times8}\left( g \mu_B \kappa B\right) \,,
+\end{eqnarray}
+\noindent
+where the terms with operators $B$ and $C$ give the interaction between the various valence band states of
+the same and opposite spin terms, respectively, the $P$ operator gives the interaction between the valence
+and conduction band states, and $I_{8\times8}$ is the $8\times8$ identity matrix.
+
+The matrix elements fo the 8-band Hamiltonian in the presence of magnetic field $B$ are given as
+\begin{eqnarray}
+E_{7-}^H &=& E_1 + \frac{\hbar^2}{2}\left[\frac{1}{2}\left[k_+ \frac{1}{m_0} k_- + k_- \frac{1}{m_0} k_+ \right] + k_z \frac{1}{m_0} k_z \right]\,, \\
+E_{8+}^H &=& E_2 - \frac{\hbar^2}{2m_0} \left[\frac{1}{2}\left[k_+(\tilde{\gamma}_1+\tilde{\gamma}_2) k_- + k_-(\tilde{\gamma}_1+\tilde{\gamma}_2) k_+ \right] + k_z(\tilde{\gamma}_1 -2 \tilde{\gamma}_2) k_z \right]\,, \\
+E_{8+}^L &=& E_2 - \frac{\hbar^2}{2m_0} \left[\frac{1}{2}\left[k_+(\tilde{\gamma}_1-\tilde{\gamma}_2) k_- + k_-(\tilde{\gamma}_1-\tilde{\gamma}_2) k_+ \right] + k_z(\tilde{\gamma}_1 +2 \tilde{\gamma}_2) k_z \right]\,, \\
+C &=& \frac{\hbar^2}{2m_0} \left[ \sqrt{3} \left[k_- \tilde{\gamma}k_- + k_+\mu k_+ \right] \right]\,, \\
+B &=& \frac{\hbar^2}{2m_0} \left[ \sqrt{3} \left[k_- \tilde{\gamma}_3 k_z + k_z\tilde{\gamma}_3 k_- \right] \right]\,, \\
+E_{7+}^H &=& E_2 - \Delta_{SO} - \frac{\hbar^2}{2 m_0}\left[\frac{1}{2}\left(k_+\tilde{\gamma}_1 k_- + k_-\tilde{\gamma}_1 k_+ \right) + \tilde{\gamma}_1 k_z^2 \right]\,, \\
+A &=& \frac{\hbar^2}{2 m_0} \left[2\tilde{\gamma}_2 k_z^2 - \left(\frac{1}{2}\left(k_+\tilde{\gamma}_2 k_- + k_-\tilde{\gamma}_2 k_+ \right) \right) \right]\,, \\
+P^{\pm} &=& P k_{\pm} \,, \\
+P^z &=& P k_z \,, \\
+P &=& \frac{\hbar}{m_0} \langle S\vert p_x\vert i X\rangle\,, \\
+E_p &=& \left(\frac{2 m_0}{\hbar^2}\right) P^2\,.
+\end{eqnarray}
+
+\noindent
+Here $k_{\pm} = k_{\pm}^0 + k_{\pm}^B$, with $k_{\pm}^0 = -i e^{\pm i \varphi}
+\left(\frac{\partial}{\partial \rho} \pm \frac{i}{\rho}\frac{\partial}{\partial \varphi}\right)$
+and $k_{\pm} = \pm i \frac{\rho}{2 l_B^2} e^{\pm i \varphi}$. Each one of these
+elements becomes a $N\times N$ matrix, with $N$ the basis size.
+
+The radial part of the envelope wavefunction is expanded in the basis of B-splines, so the total
+envelope wavefunction is given by
+\begin{equation}
+\psi(\rho, \varphi, z) = \frac{e^{i k z}}{\sqrt{L}} \frac{e^{i m \varphi}}{\sqrt{2 \pi}} \sum_{n} c_n B_n(\rho) = \sum_{n} c_n \phi_{nkm}(\rho, \varphi, z)\,.
+\end{equation}
+
+Let take a look in the element $E_{7-}^H$. This element can be writen in a simpler way
+\begin{equation}
+E_{7-}^H = E_1 - \frac{\hbar^2}{2 m_0} \left[\frac{1}{\rho} \frac{\partial}{\partial \rho}\left(\rho \frac{\partial}{\partial \rho}  \right)
+ + \frac{1}{\rho^2} \frac{\partial^2}{\partial \varphi^2} + \frac{\partial^2}{\partial z^2} \right]
+\end{equation}
+\noindent
+The matrix elements of $E_{7-}^H$ in the basis of B-splines are
+\begin{equation}
+\begin{split}
+  \langle n_1 m k|E_{7-}^H|n_2 m k\rangle =& E_1 S_{n_1, n_2} + \frac{\hbar^2}{2 m_0}
+  \left[\int_0^{R} \rho \frac{d B_{n_1}}{d\rho} \frac{d B_{n_2}}{d\rho} d\rho\right. \\
+  &\left.+\, m^2 \int_0^{R} \frac{B_{n_1}(\rho)B_{n_2}(\rho)}{\rho} d\rho + k^2 S_{n_1,n_2} \right]\,.
+\end{split}
+\end{equation}
+
+The blocks $E_{7+}^H$, $E_{8+}^H$ and $E_{8+}^L$ have a similar expresion
+\begin{equation}
+  E_{7+}^H = E_2 - \Delta_{SO} + \frac{\hbar^2}{2 m_0}\tilde{\gamma}_1 \left[\frac{1}{\rho} \frac{\partial}{\partial \rho}\left(\rho \frac{\partial}{\partial \rho}  \right)
+   + \frac{1}{\rho^2} \frac{\partial^2}{\partial \varphi^2} + \frac{\partial^2}{\partial z^2} \right]\,,
+\end{equation}
+
+\begin{equation}
+  E_{8+}^H = E_2 + \frac{\hbar^2}{2 m_0} \left[\left(\tilde{\gamma}_1 + \tilde{\gamma}_2\right)
+  \left(\frac{1}{\rho} \frac{\partial}{\partial \rho}\left(\rho \frac{\partial}{\partial \rho}  \right)
+   + \frac{1}{\rho^2} \frac{\partial^2}{\partial \varphi^2}\right)
+   + \left(\tilde{\gamma}_1-2\tilde{\gamma}_2\right)\frac{\partial^2}{\partial z^2} \right] \,,
+\end{equation}
+
+\begin{equation}
+  E_{8+}^L = E_2 + \frac{\hbar^2}{2 m_0} \left[\left(\tilde{\gamma}_1 - \tilde{\gamma}_2\right)
+  \left(\frac{1}{\rho} \frac{\partial}{\partial \rho}\left(\rho \frac{\partial}{\partial \rho}  \right)
+   + \frac{1}{\rho^2} \frac{\partial^2}{\partial \varphi^2}\right)
+   + \left(\tilde{\gamma}_1+2\tilde{\gamma}_2\right)\frac{\partial^2}{\partial z^2} \right]\,.
+\end{equation}
+\noindent
+The matrix elements of these blocks are
+\begin{equation}
+\begin{split}
+  \langle n_1 m k|E_{7+}^H|n_2 m k\rangle =& (E_2 - \Delta)\,S_{n_1, n_2} - \frac{\hbar^2\tilde{\gamma}_1}{2 m_0}
+  \left[\int_0^{R} \rho \frac{d B_{n_1}}{d\rho} \frac{d B_{n_2}}{d\rho} d\rho\right. \\
+  &\left.+\, m^2 \int_0^{R} \frac{B_{n_1}(\rho)B_{n_2}(\rho)}{\rho} d\rho + k_z^2 S_{n_1,n_2} \right]\,,
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+  \langle n_1 m k|E_{8+}^H|n_2 m k\rangle =& E_2\,S_{n_1, n_2} - \frac{\hbar^2}{2 m_0}
+  \left[(\tilde{\gamma}_1+\tilde{\gamma}_2)\left(\int_0^{R} \rho \frac{d B_{n_1}}{d\rho}
+  \frac{d B_{n_2}}{d\rho} d\rho\right.\right. \\
+  &\left.\left.+\, m^2 \int_0^{R} \frac{B_{n_1}(\rho)B_{n_2}(\rho)}{\rho} d\rho\right) +
+  (\tilde{\gamma}_1-2\tilde{\gamma}_2)k^2 S_{n_1,n_2} \right]\,.
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+  \langle n_1 m k|E_{8+}^L|n_2 m k\rangle =& E_2\,S_{n_1, n_2} - \frac{\hbar^2}{2 m_0}
+  \left[(\tilde{\gamma}_1-\tilde{\gamma}_2)\left(\int_0^{R} \rho \frac{d B_{n_1}}{d\rho}
+  \frac{d B_{n_2}}{d\rho} d\rho\right.\right. \\
+  &\left.\left.+\, m^2 \int_0^{R} \frac{B_{n_1}(\rho)B_{n_2}(\rho)}{\rho} d\rho\right) +
+  (\tilde{\gamma}_1+2\tilde{\gamma}_2)k^2 S_{n_1,n_2} \right]\,.
+\end{split}
+\end{equation}
+
+\noindent
+The matrix elements above can be used for the case of different angular momentum multiplying by $\delta_{m_1,m_2}$.
+
+The blok $P^{\pm}$ mix elements with different angular momentum, the corresponding matrix elements are
+\begin{equation}
+\begin{split}
+\langle n_1 m_1 k|P^{\pm}|n_2 m_2 k\rangle &= \frac{-i P}{L} \delta_{m_2-m_1\pm1} \left(
+                                             \int_{0}^R B_{n_1}(\rho) \frac{d B_{n_2}}{d \rho}\rho d\rho \right.\\
+                                           & \mp m_2 \int_{0}^R B_{n_1}(\rho) B_{n_2}(\rho) d\rho \\
+                                           & \left.\pm \frac{1}{2l_B^2} \int_{0}^R B_{n_1}(\rho) B_{n_2}(\rho) \rho^2 d\rho \right)\,,
+\end{split}
+\end{equation}
+\noindent
+in case of $P^z$ the matrix elements are
+\begin{equation}
+\langle n_1 m_1 k_1|P^{z}|n_2 m_2 k_2\rangle = P\,k_2\,\delta_{k_1,k_2}\,\delta_{m_1,m_2}\,\int_0^R \rho B_{n_1}(\rho) B_{n_2}(\rho)\,d\rho\,.
+\end{equation}
+
+Now, the block $A$ is
+\begin{equation}
+A = \frac{\hbar^2 \tilde{\gamma}_2}{2 m_0}\left[ -2 \frac{\partial^2}{\partial z^2} +
+    \frac{1}{\rho}\frac{\partial}{\partial \rho}\left(\rho \frac{\partial}{\partial \rho} \right) +
+    \frac{1}{\rho^2} \frac{\partial^2}{\partial \varphi^2} \right]\,,
+\end{equation}
+\noindent so
+\begin{equation}
+\begin{split}
+\langle n_1 m k|A|n_2 m k\rangle &= \frac{\hbar^2 \tilde{\gamma}_2}{2 m_0}
+                                    \left[\int_0^R \frac{dB_{n_1}}{d\rho} \frac{dB_{n_2}}{d\rho} \rho d\rho
+                                         - m^2 \int_0^R \frac{B_{n_1}(\rho)B_{n_2}(\rho)}{\rho} d\rho \right.\\
+                                 &  \left.- 2 k^2 \int_0^R  B_{n_1}(\rho)B_{n_2}(\rho) \rho d\rho\right]\,.
+\end{split}
+\end{equation}
+
+For the block $C$ we write
+\begin{equation}
+\begin{split}
+\langle n_1 m_1 k|C|n_2 m_2 k\rangle = \frac{\sqrt{3}\hbar^2}{2 m_0}&\left( \tilde{\gamma}\langle n_1 m_1 k|k_-k_-|n_2 m_2 k\rangle \right. \\
+                &\left.+ \mu \langle n_1 m_1 k|k_+k_+|n_2 m_2 k\rangle\right)\,,
+\end{split}
+\end{equation}
+\noindent the operators $k_-k_-$ and $k_+k_+$ can be writen in the coordinate representation as
+\begin{equation}
+k_{\pm\pm} = - e^{\pm i 2\varphi}\left[\frac{\partial^2}{\partial \rho^2} -
+               \frac{1}{\rho}\frac{\partial}{\partial \rho} \pm
+               \frac{2 i}{\rho}\frac{\partial}{\partial \varphi} \frac{\partial}{\partial \rho} \mp
+               \frac{2 i}{\rho^2}\frac{\partial}{\partial \varphi} -
+               \frac{1}{\rho^2}\frac{\partial^2}{\partial \varphi^2}  \right] \,,
+\end{equation}
+
+\noindent
+the matrix elements of these operators are
+
+\begin{equation}
+\begin{split}
+\langle n_1 m_1 k|k_{\pm}k_{\pm}|n_2 m_2 k\rangle =& \delta(m_2-m_1 \pm 2)
+                                 \left[\int_0^R \rho\, \frac{dB_{n_1}}{d \rho}\,\frac{dB_{n_2}}{d \rho}\, d\rho -\right.\\
+                                 &\left(2\mp 2m_2 \right) \int_0^R B_{n_1}(\rho)\,\frac{dB_{n_2}}{d \rho}\,d\rho -\\
+                                 &\left.\left(m_2^2-2m_2\right)\int_0^R \frac{B_{n_1}(\rho)\,B_{n_2}(\rho)}{\rho}\,d\rho \right]\,.
+\end{split}
+\end{equation}
+
+The matrix element of the block $B$ are
+\begin{equation}
+\begin{split}
+  \langle n_1 m_1 k|B|n_2 m_2 k\rangle &= \frac{\sqrt{3}\hbar^2\tilde{\gamma}_3}{m0}
+  k \delta(m_2-m_1-1)\left[\int_0^R \rho B_{n_1}(\rho) \frac{dB_{n_2}}{d\rho} d\rho \right.\\
+  & \left.+ m_2 \int_0^R B_{n_1}(\rho) B_{n_2}(\rho) d\rho \right]
+\end{split}
+\end{equation}
+
+\subsection{Non-zero magnetic field}
+
+For the case in which a magnetic field is applied on to the system we need to
+include the term $k_{\pm}^B = \pm i \frac{\rho}{2\,l_B^2}\,e^{\pm i \varphi}$,
+so some blocks change. Firts the operators $k_-\,k_+$ and $k_+\,k_-$ are
+
+\begin{equation}
+  \begin{split}
+    k_-\,k_+ = k_+\,k_- =& -\frac{1}{\rho}\frac{\partial}{\partial \rho}
+                          \left(\rho \frac{\partial}{\partial \rho}\right) -
+                          \frac{1}{\rho^2}\frac{\partial^2}{\partial \varphi^2} \\
+                         & + \frac{i}{l_B^2} \frac{\partial}{\partial \varphi}
+                         -\frac{1}{2\,l_B^2}-\left(\frac{\rho}{2\,l_B^2}\right)^2\,,
+  \end{split}
+\end{equation}
+
+\noindent the operators $k_{\pm}k_{\pm}$
+
+\begin{equation}
+  \begin{split}
+    k_{\pm}k_{\pm} =& -e^{\pm i 2\varphi}\left[\frac{\partial^2}{\partial \rho}
+                    - \frac{1}{\rho}\frac{\partial}{\partial \rho}
+                    \pm \frac{2i}{\rho}\frac{\partial}{\partial \rho}\frac{\partial}{\partial \varphi}
+                    \mp \frac{2i}{\rho^2}\frac{\partial}{\partial\varphi}\right. \\
+                    &\left.-\frac{1}{\rho^2}\frac{\partial^2}{\partial \varphi^2}
+                    \mp\frac{\rho}{l_B^2}\frac{\partial}{\partial \rho}
+                    -\frac{i}{l_B^2}\frac{\partial}{\partial \varphi}
+                    +\left(\frac{\rho}{2\,l_B^2}\right)\right]\,\,
+  \end{split}
+\end{equation}
+
+\noindent where $l_B = \left(\frac{\hbar}{e B}\right)^{1/2}$.
+
+The matrix elements are
+
+\begin{equation}
+  \begin{split}
+    \langle n_1 m_1 k|k_+k_-|n_2 m_2 k\rangle &= \delta_{m_1 m_2} \left[
+    \int_0^R \rho \frac{dB_{n_1}}{d\rho}\frac{dB_{n_2}}{d\rho}d\rho \right.\\
+    &+ m_2^2 \int_0^R \frac{B_{n_1}(\rho)B_{n_2}(\rho)}{\rho} d\rho \\
+    &-\left(\frac{1}{2l_B^2}+\frac{m_2}{l_B^2}\right)\int_0^R \rho B_{n_1}(\rho)B_{n_2}(\rho)d\rho \\
+    &\left. + \frac{1}{4l_B^4}\int_0^R \rho^3 B_{n_1}(\rho)B_{n_2}(\rho) d\rho \right]\,,
+  \end{split}
+\end{equation}
+
+\noindent and
+
+\begin{equation}
+  \begin{split}
+    \langle n_1 m_1 k|k_{\pm}k_{\pm}|n_2 m_2 k\rangle &= \delta(m_2-m_1\pm 2)
+    \left[\int_0^R \rho \frac{dB_{n_1}}{d\rho}\frac{dB_{n_2}}{d\rho}d\rho \right.\\
+    &-(2 \pm 2m_2)\int_0^R B_{n_1}(\rho) \frac{dB_{n_2}}{d\rho}d\rho \\
+    &+(m_2^2 \pm 2 m_2)\int_0^R \frac{B_{n_1}(\rho)B_{n_2}(\rho)}{\rho} d\rho \\
+    &\mp \frac{1}{l_B^2} \int_0^R \rho^2 B_{n_1}(\rho) \frac{dB_{n_2}}{d\rho} d\rho \\
+    & - \frac{m_2}{l_B^2} \int_0^R \rho B_{n_1}(\rho) B_{n_2}(\rho) d\rho\\
+    &\left. - \frac{1}{4l_B^4}\int_0^R \rho^3 B_{n_1}(\rho) B_{n_2}(\rho) d\rho\right]
+  \end{split}
+\end{equation}
+
+--------------------------
+\begin{equation}
+  \begin{split}
+    \langle n_1 m_1 k|B|n_2 m_2 k\rangle &= \frac{\sqrt{3}\hbar^2\tilde{\gamma}_3}{m0}
+    k \delta(m_2-m_1-1)\left[\int_0^R \rho B_{n_1}(\rho) \frac{dB_{n_2}}{d\rho} d\rho \right.\\
+    & \left.+ m_2 \int_0^R B_{n_1}(\rho) B_{n_2}(\rho) d\rho
+    - \frac{i}{2 l_B^2}\int_0^R \rho^2 B_{n_1}(\rho) B_{n_2}(\rho) d\rho \right]
+  \end{split}
+\end{equation}
+
+
+%-------------------------------%
+\bibliography{bin}{}
+\bibliographystyle{plain}
+
+\end{document}
